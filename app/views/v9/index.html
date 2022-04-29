@@ -1,0 +1,26 @@
+{% extends "../layout.html" %}
+
+
+
+{% block pageTitle %}
+ Dashboard - {{serviceName}}
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1 class="govuk-heading-l">
+  {{serviceName}}
+</h1>
+
+<ul class="govuk-list">
+  <li>
+    <a href="./new">Option 1: Record a new hazardous waste movement</a> (based on Figma, but using Task List)
+  </li>
+  <li>
+    <a href="./win">Option 2: Record a new hazardous waste movement</a> (breaking tasks into sections)
+  </li>
+</ul>
+
+{% endblock %}

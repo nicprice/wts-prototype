@@ -22,18 +22,16 @@ router.get('/', function (req, res) {
 });
 
 
-// router.get('/v8', function (req, res) {
-//   res.render('./views/v8/_routes')
-// });
+// Set service name based on sub folders for different prototypes
 
-// router.use('/v8', require('./views/v8/_routes'))
-
-// const v8 = require('./views/v8/_routes');
-// router.use('/v8', v8);
+router.get('/v9/*', function(req, res, next){
+  res.locals['serviceName'] = 'Move and track waste'
+  next()
+});
 
 
-const registerapplicationv8 = require('./views/v8/_routes');
-router.use('/v8', registerapplicationv8);
+const registerapplicationv9 = require('./views/v9/_routes');
+router.use('/v9', registerapplicationv9);
 
 
 module.exports = router
