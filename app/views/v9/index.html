@@ -6,7 +6,25 @@
  Dashboard - {{serviceName}}
 {% endblock %}
 
+{% block beforeContent %}
 
+<div id="profile">
+  <div class="login-nav">
+    <span class="login-nav__org-name">
+      <strong>Big Company Ltd</strong>
+    </span>
+    <ul class="login-nav__list">
+      <li class="login-nav__list-item">
+        Roger |
+        </li>
+        <li class="login-nav__list-item">
+          <a href="#" class="govuk-link login-hav__link govuk-link--no-visited-state">Sign out</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
 
 {% block content %}
 
@@ -16,10 +34,10 @@
 
 <ul class="govuk-list">
   <li>
-    <a href="./new">Option 1: Record a new hazardous waste movement</a> (based on Figma, but using Task List)
+    <a href="./new-new">Option 1: Record a new hazardous waste movement</a> (based on Figma, but using Task List)
   </li>
   <li>
-    <a href="./win">Option 2: Record a new hazardous waste movement</a> (breaking tasks into sections)
+    <a href="./new-win">Option 2: Record a new hazardous waste movement</a> (breaking tasks into sections)
   </li>
 </ul>
 

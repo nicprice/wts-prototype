@@ -21,6 +21,7 @@ router.get('/', function (req, res) {
   res.render('./index')
 });
 
+router.use('/v9', require('./views/v9/_routes'))
 
 // Set service name based on sub folders for different prototypes
 
@@ -29,9 +30,6 @@ router.get('/v9/*', function(req, res, next){
   next()
 });
 
-
-const registerapplicationv9 = require('./views/v9/_routes');
-router.use('/v9', registerapplicationv9);
 
 
 module.exports = router

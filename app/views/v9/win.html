@@ -18,7 +18,6 @@
     </ol>
   </div>
 
-
 {% endblock %}
 
 {% block content %}
@@ -91,6 +90,12 @@
                 </a>
               </span>
               <strong class="govuk-tag {{ producer_info_status_class }} app-task-list__tag" id="producer_info_status">{{ producer_info_status }}</strong>
+              {% if cover_note == 'true' %}
+              <br />
+              <span class="cover-note">
+                Euromovement Limited
+              </span>
+              {% endif %}
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">

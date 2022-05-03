@@ -3,7 +3,19 @@ const router = express.Router()
 
 
 
-router.get('*/new', function (req, res) {
+router.get('/index', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+
+
+
+// Option 1 - As per V8 in Figma, but only using task list__tag
+
+
+router.get('/new-new', function (req, res) {
+
+  req.session.data['win_type'] = 'new'
 
   // Set up all the section statuses
 
@@ -45,8 +57,16 @@ router.get('*/new', function (req, res) {
   req.session.data['payment_status'] = 'Cannot start yet'
   req.session.data['payment_status_class'] = 'govuk-tag--grey'
 
+  res.redirect('new');
+
+});
+
+
+router.get('/new', function (req, res) {
+
   res.render( './' + req.originalUrl, {
 
+    cover_note: req.session.data['cover_note'],
     total_sections: req.session.data['total_sections'],
     completed_sections: req.session.data['completed_sections'],
     producer_info_status: req.session.data['producer_info_status'],
@@ -71,10 +91,23 @@ router.get('*/new', function (req, res) {
     payment_status_class: req.session.data['payment_status_class']
 
   })
-});
+})
 
 
-router.get('*/win', function (req, res) {
+
+
+
+// Option 2 - Grouping tasks into total_sections
+
+
+router.get('/new-win', function (req, res) {
+
+  req.session.data['win_type'] = 'win'
+
+  req.session.data['cover_note'] = 'true'
+
+  req.session.data['total_sections'] = '10'
+  req.session.data['completed_sections'] = '0'
 
   // Set up all the section statuses
 
@@ -82,9 +115,6 @@ router.get('*/win', function (req, res) {
     // Not started = 'govuk-tag--grey'
     // In progress = 'govuk-tag--blue'
     // Completed = ''
-
-  req.session.data['total_sections'] = '10'
-  req.session.data['completed_sections'] = '0'
 
   req.session.data['producer_info_status'] = 'In progress'
   req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
@@ -116,8 +146,16 @@ router.get('*/win', function (req, res) {
   req.session.data['payment_status'] = 'Cannot start yet'
   req.session.data['payment_status_class'] = 'govuk-tag--grey'
 
+
+  res.redirect('win');
+
+})
+
+router.get('/win', function (req, res) {
+
   res.render( './' + req.originalUrl, {
 
+    cover_note: req.session.data['cover_note'],
     total_sections: req.session.data['total_sections'],
     completed_sections: req.session.data['completed_sections'],
     producer_info_status: req.session.data['producer_info_status'],
@@ -142,8 +180,23 @@ router.get('*/win', function (req, res) {
     payment_status_class: req.session.data['payment_status_class']
 
   })
-});
+})
 
+
+
+
+// Producer information
+
+router.get('/producer', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/producer', function(req, res) {
+  req.session.data['producer_info_status'] = "Completed";
+  req.session.data['producer_info_status_class'] = "";
+  req.session.data['completed_sections'] = '1'
+  res.redirect( req.session.data['win_type'] );
+})
 
 
 

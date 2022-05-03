@@ -1,0 +1,102 @@
+{% extends "../layout.html" %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "win"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Producer information</h1>
+
+      {{ govukSummaryList({
+        classes: 'govuk-!-margin-bottom-9',
+        rows: [
+          {
+            key: {
+              text: "Business name"
+            },
+            value: {
+              text: "Euromovement Limited"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "business name"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: '<p class="govuk-body">Unit 15<br>Berryedge Park<br>Dunstable<br>LU5 4AX<br>England</p>'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Contact details"
+            },
+            value: {
+              html: '<p class="govuk-body">roger@euromovement.com</p><p class="govuk-body">07123 456789</p>'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "contact details"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "SIC code"
+            },
+            value: {
+              html: '<p class="govuk-body">41201</p><p class="govuk-body">Construction of commercial buildings</p>'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "SIC code"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+      <form method="post" {{ novalidateVal }}>
+
+        <input type="hidden" name="producer-details-confirmed" value="true">
+
+        {{ govukButton({
+          text: "Confirm producer details"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
