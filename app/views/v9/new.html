@@ -1,7 +1,7 @@
 {% extends "../layout.html" %}
 
 {% block pageTitle %}
- Record new waste movement - {{serviceName}}
+ Record a new waste movement - {{serviceName}}
 {% endblock %}
 
 
@@ -13,7 +13,7 @@
         <a class="govuk-breadcrumbs__link" href="./">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        Record new waste movement
+        Record a new waste movement
       </li>
     </ol>
   </div>
@@ -30,15 +30,12 @@
       </h1>
 
       <p class="govuk-body govuk-!-margin-bottom-7">
-        You have completed {{ completed_sections }} of {{ total_sections }} sections.
+        You have completed {{ completed_sections }} of {{ data['total_sections'] }} sections.
       </p>
 
 
       <ul class="app-task-list">
         <li>
-          <!-- <h2 class="app-task-list__section">
-            About the waste
-          </h2> -->
           <ul class="app-task-list__items">
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
@@ -46,31 +43,31 @@
                   Producer information
                 </a>
               </span>
-              <strong class="govuk-tag {{ producer_info_status_class }} app-task-list__tag" id="producer_info_status">{{ producer_info_status }}</strong>
+              <strong class="govuk-tag {{ data['producer_info_status_class'] }} app-task-list__tag" id="producer_info_status">{{ data['producer_info_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="pick-up-information" aria-describedby="pick_up_status">
+                <a href="pick-up" aria-describedby="pick_up_status">
                   Pick up information
                 </a>
               </span>
-              <strong class="govuk-tag {{ pick_up_status_class }} app-task-list__tag" id="pick_up_status">{{ pick_up_status }}</strong>
+              <strong class="govuk-tag {{ data['pick_up_status_class'] }} app-task-list__tag" id="pick_up_status">{{ data['pick_up_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="carrier" aria-describedby="carrier_contact_status">
+                <a href="carrier-contact" aria-describedby="carrier_contact_status">
                   Carrier contact information
                 </a>
               </span>
-              <strong class="govuk-tag {{ carrier_contact_status_class }} app-task-list__tag" id="carrier_contact_status">{{ carrier_contact_status }}</strong>
+              <strong class="govuk-tag {{ data['carrier_contact_status_class'] }} app-task-list__tag" id="carrier_contact_status">{{ data['carrier_contact_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="receiver" aria-describedby="receiver_contact_status">
+                <a href="receiver-contact" aria-describedby="receiver_contact_status">
                   Receiver contact information
                 </a>
               </span>
-              <strong class="govuk-tag {{ receiver_contact_status_class }} app-task-list__tag" id="receiver_contact_status">{{ receiver_contact_status }}</strong>
+              <strong class="govuk-tag {{ data['receiver_contact_status_class'] }} app-task-list__tag" id="receiver_contact_status">{{ data['receiver_contact_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
@@ -78,7 +75,7 @@
                   Transportation information
                 </a>
               </span>
-              <strong class="govuk-tag {{ transportation_info_status_class }} app-task-list__tag" id="transportation_info_status">{{ transportation_info_status }}</strong>
+              <strong class="govuk-tag {{ data['transportation_info_status_class'] }} app-task-list__tag" id="transportation_info_status">{{ data['transportation_info_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
@@ -86,23 +83,23 @@
                   Describe the waste
                 </a>
               </span>
-              <strong class="govuk-tag {{ waste_status_class }} app-task-list__tag" id="waste_status">{{ waste_status }}</strong>
+              <strong class="govuk-tag {{ data['waste_status_class'] }} app-task-list__tag" id="waste_status">{{ data['waste_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="waste" aria-describedby="hazard_status">
+                <a href="hazard" aria-describedby="hazard_status">
                   Describe the hazard
                 </a>
               </span>
-              <strong class="govuk-tag {{ hazard_status_class }} app-task-list__tag" id="hazard_status">{{ hazard_status }}</strong>
+              <strong class="govuk-tag {{ data['hazard_status_class'] }} app-task-list__tag" id="hazard_status">{{ data['hazard_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="hazard" aria-describedby="waste_stored_status">
+                <a href="waste-storage" aria-describedby="waste_stored_status">
                   Describe how the waste is stored
                 </a>
               </span>
-              <strong class="govuk-tag {{ waste_stored_status_class }} app-task-list__tag" id="waste_stored_status">{{ waste_stored_status }}</strong>
+              <strong class="govuk-tag {{ data['waste_stored_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_stored_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
@@ -110,15 +107,19 @@
                   Waste management
                 </a>
               </span>
-              <strong class="govuk-tag {{ waste_management_status_class }} app-task-list__tag" id="waste_stored_status">{{ waste_management_status }}</strong>
+              <strong class="govuk-tag {{ data['waste_management_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_management_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
+                {% if data['payment_status'] == 'Completed' %}
                 <a href="payment" aria-describedby="payment_status">
                   Payment
                 </a>
+                {% else %}
+                Payment
+                {% endif %}
               </span>
-              <strong class="govuk-tag {{ payment_status_class }} app-task-list__tag" id="payment_status">{{ payment_status }}</strong>
+              <strong class="govuk-tag {{ data['payment_status_class'] }} app-task-list__tag" id="payment_status">{{ data['payment_status'] }}</strong>
             </li>
           </ul>
         </li>

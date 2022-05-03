@@ -1,0 +1,32 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Describe the hazard - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: data['win_type']
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Describe the hazard</h1>
+
+      <form method="post" {{ novalidateVal }}>
+
+        <input type="hidden" name="hazard-description-confirmed" value="true">
+
+        {{ govukButton({
+          text: "Confirm hazard description"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

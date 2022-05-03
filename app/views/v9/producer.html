@@ -1,9 +1,13 @@
 {% extends "../layout.html" %}
 
+{% block pageTitle %}
+  Producer information - New waste movement - {{serviceName}}
+{% endblock %}
+
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
-    href: "win"
+    href: data['win_type']
   }) }}
 {% endblock %}
 
@@ -72,12 +76,12 @@
               text: "SIC code"
             },
             value: {
-              html: '<p class="govuk-body">41201</p><p class="govuk-body">Construction of commercial buildings</p>'
+              html: '<p class="govuk-body">' + sic_code + '</p><p class="govuk-body">' + sic_description + '</p>'
             },
             actions: {
               items: [
                 {
-                  href: "#",
+                  href: "sic-code",
                   text: "Change",
                   visuallyHiddenText: "SIC code"
                 }

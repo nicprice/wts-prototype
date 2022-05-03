@@ -39,6 +39,8 @@ router.get('/new-new', function (req, res) {
   req.session.data['producer_info_status'] = 'Review'
   req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
 
+  req.session.data['sic_info'] = '41201 Construction of commercial buildings'
+
   req.session.data['pick_up_status'] = 'Not started'
   req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
 
@@ -73,31 +75,51 @@ router.get('/new-new', function (req, res) {
 
 router.get('/new', function (req, res) {
 
-  res.render( './' + req.originalUrl, {
+    var count = 0;
 
-    cover_note: req.session.data['cover_note'],
-    total_sections: req.session.data['total_sections'],
-    completed_sections: req.session.data['completed_sections'],
-    producer_info_status: req.session.data['producer_info_status'],
-    producer_info_status_class: req.session.data['producer_info_status_class'],
-    pick_up_status: req.session.data['pick_up_status'],
-    pick_up_status_class: req.session.data['pick_up_status_class'],
-    carrier_contact_status: req.session.data['carrier_contact_status'],
-    carrier_contact_status_class: req.session.data['carrier_contact_status_class'],
-    receiver_contact_status: req.session.data['receiver_contact_status'],
-    receiver_contact_status_class: req.session.data['receiver_contact_status_class'],
-    transportation_info_status: req.session.data['transportation_info_status'],
-    transportation_info_status_class: req.session.data['transportation_info_status_class'],
-    waste_status: req.session.data['waste_status'],
-    waste_status_class: req.session.data['waste_status_class'],
-    hazard_status: req.session.data['hazard_status'],
-    hazard_status_class: req.session.data['hazard_status_class'],
-    waste_stored_status: req.session.data['waste_stored_status'],
-    waste_stored_status_class: req.session.data['waste_stored_status_class'],
-    waste_management_status: req.session.data['waste_management_status'],
-    waste_management_status_class: req.session.data['waste_management_status_class'],
-    payment_status: req.session.data['payment_status'],
-    payment_status_class: req.session.data['payment_status_class']
+    if(req.session.data['producer_info_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['pick_up_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['carrier_contact_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['receiver_contact_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['transportation_info_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['waste_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['hazard_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['waste_stored_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['waste_management_status'] == "Completed"){
+			count++;
+		}
+
+    if(req.session.data['payment_status'] == "Completed"){
+			count++;
+		}
+
+    res.render( './' + req.originalUrl, {
+
+      'completed_sections' : count
 
   })
 })
@@ -127,6 +149,8 @@ router.get('/new-win', function (req, res) {
 
   req.session.data['producer_info_status'] = 'Review'
   req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
+
+  req.session.data['sic_info'] = '41201 Construction of commercial buildings'
 
   req.session.data['pick_up_status'] = 'Not started'
   req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
@@ -160,52 +184,213 @@ router.get('/new-win', function (req, res) {
 
 })
 
+
+
+
 router.get('/win', function (req, res) {
+
+  var count = 0;
+
+  if(req.session.data['producer_info_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['pick_up_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['carrier_contact_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['receiver_contact_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['transportation_info_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['waste_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['hazard_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['waste_stored_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['waste_management_status'] == "Completed"){
+    count++;
+  }
+
+  if(req.session.data['payment_status'] == "Completed"){
+    count++;
+  }
 
   res.render( './' + req.originalUrl, {
 
-    cover_note: req.session.data['cover_note'],
-    total_sections: req.session.data['total_sections'],
-    completed_sections: req.session.data['completed_sections'],
-    producer_info_status: req.session.data['producer_info_status'],
-    producer_info_status_class: req.session.data['producer_info_status_class'],
-    pick_up_status: req.session.data['pick_up_status'],
-    pick_up_status_class: req.session.data['pick_up_status_class'],
-    carrier_contact_status: req.session.data['carrier_contact_status'],
-    carrier_contact_status_class: req.session.data['carrier_contact_status_class'],
-    receiver_contact_status: req.session.data['receiver_contact_status'],
-    receiver_contact_status_class: req.session.data['receiver_contact_status_class'],
-    transportation_info_status: req.session.data['transportation_info_status'],
-    transportation_info_status_class: req.session.data['transportation_info_status_class'],
-    waste_status: req.session.data['waste_status'],
-    waste_status_class: req.session.data['waste_status_class'],
-    hazard_status: req.session.data['hazard_status'],
-    hazard_status_class: req.session.data['hazard_status_class'],
-    waste_stored_status: req.session.data['waste_stored_status'],
-    waste_stored_status_class: req.session.data['waste_stored_status_class'],
-    waste_management_status: req.session.data['waste_management_status'],
-    waste_management_status_class: req.session.data['waste_management_status_class'],
-    payment_status: req.session.data['payment_status'],
-    payment_status_class: req.session.data['payment_status_class']
+    'completed_sections' : count
 
   })
-})
 
+})
 
 
 
 // Producer information
 
 router.get('/producer', function (req, res) {
-  res.render( './' + req.originalUrl, {} )
+
+  sic_code = req.session.data['sic_info'].slice(0,5)
+
+  sic_description = req.session.data['sic_info'].slice(5)
+
+  res.render( './' + req.originalUrl, {
+
+    'sic_code' : sic_code,
+    'sic_description' : sic_description
+
+  } )
 })
 
 router.post('/producer', function(req, res) {
   req.session.data['producer_info_status'] = "Completed";
   req.session.data['producer_info_status_class'] = "";
-  req.session.data['completed_sections'] = '1'
   res.redirect( req.session.data['win_type'] );
 })
+
+
+
+// Pick up information
+
+router.get('/pick-up', function (req, res) {
+  // req.session.data['pick_up_status'] = "In progress";
+  // req.session.data['pick_up_status_class'] = "govuk-tag--blue";
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/pick-up', function(req, res) {
+  req.session.data['pick_up_status'] = "Completed";
+  req.session.data['pick_up_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// Carrier contact information
+
+router.get('/carrier-contact', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/carrier-contact', function(req, res) {
+  req.session.data['carrier_contact_status'] = "Completed";
+  req.session.data['carrier_contact_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// Receiver contact information
+
+router.get('/receiver-contact', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/receiver-contact', function(req, res) {
+  req.session.data['receiver_contact_status'] = "Completed";
+  req.session.data['receiver_contact_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// Transportation information
+
+router.get('/transportation', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/transportation', function(req, res) {
+  req.session.data['transportation_info_status'] = "Completed";
+  req.session.data['transportation_info_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// Waste information
+
+router.get('/waste', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/waste', function(req, res) {
+  req.session.data['waste_status'] = "Completed";
+  req.session.data['waste_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// hazard information
+
+router.get('/hazard', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/hazard', function(req, res) {
+  req.session.data['hazard_status'] = "Completed";
+  req.session.data['hazard_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// Waste stored information
+
+router.get('/waste-storage', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/waste-storage', function(req, res) {
+  req.session.data['waste_stored_status'] = "Completed";
+  req.session.data['waste_stored_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// Waste management information
+
+router.get('/waste-management', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/waste-management', function(req, res) {
+  req.session.data['waste_management_status'] = "Completed";
+  req.session.data['waste_management_status_class'] = "";
+  res.redirect( req.session.data['win_type'] );
+})
+
+
+
+// SIC code
+
+router.get('/sic-code', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/sic-code', function(req, res) {
+  res.redirect( 'producer' );
+})
+
+
+
 
 
 
