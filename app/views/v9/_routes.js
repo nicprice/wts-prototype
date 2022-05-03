@@ -36,7 +36,7 @@ router.get('/new-new', function (req, res) {
   req.session.data['total_sections'] = '10'
   req.session.data['completed_sections'] = '0'
 
-  req.session.data['producer_info_status'] = 'In progress'
+  req.session.data['producer_info_status'] = 'Review'
   req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
 
   req.session.data['pick_up_status'] = 'Not started'
@@ -125,7 +125,7 @@ router.get('/new-win', function (req, res) {
     // In progress = 'govuk-tag--blue'
     // Completed = ''
 
-  req.session.data['producer_info_status'] = 'In progress'
+  req.session.data['producer_info_status'] = 'Review'
   req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
 
   req.session.data['pick_up_status'] = 'Not started'
