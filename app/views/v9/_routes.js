@@ -3,6 +3,15 @@ const router = express.Router()
 
 
 
+
+router.get('*', function(req, res, next){
+  res.locals['serviceName'] = 'Move and track waste'
+  next()
+});
+
+
+
+
 router.get('/index', function (req, res) {
   res.render( './' + req.originalUrl, {} )
 })
