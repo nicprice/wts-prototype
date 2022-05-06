@@ -15,14 +15,39 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-l">Pick up information</h1>
-
       <form method="post" {{ novalidateVal }}>
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+        {{ govukRadios({
+          idPrefix: "pick-up-location",
+          name: "pick_up_location",
+          fieldset: {
+            legend: {
+              text: "Where will the waste be moved from?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              checked: "LU5 4AX",
+              value: "LU5 4AX",
+              html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX<br />England"
+            },
+            {
+              checked: "LU2 9NZ",
+              value: "LU2 9NZ",
+              html: "1 Dean Street<br />Luton<br />LU2 9NZ<br />England"
+            }
+          ]
+        }) }}
+
 
         <input type="hidden" name="pick-up-information-confirmed" value="true">
 
         {{ govukButton({
-          text: "Confirm pick up information"
+          text: "Continue"
         }) }}
 
       </form>

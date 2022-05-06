@@ -104,6 +104,12 @@
                 </a>
               </span>
               <strong class="govuk-tag {{ data['pick_up_status_class'] }} app-task-list__tag" id="pick_up_status">{{ data['pick_up_status'] }}</strong>
+              {% if data['pick_up_status'] == 'Completed' %}
+              <br />
+              <span class="cover-note">
+                {{ data['pick_up_location'] }}
+              </span>
+              {% endif %}
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
