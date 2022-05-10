@@ -4,6 +4,7 @@ const router = express.Router()
 
 
 
+
 router.get('*', function(req, res, next){
   res.locals['serviceName'] = 'Move and track waste'
   next()
@@ -20,6 +21,8 @@ router.get('/index', function (req, res) {
 
 
 // Option 1 - As per V8 in Figma, but only using task list__tag
+
+// NJP 20220510 - need to merge the variable resets for these options
 
 
 router.get('/new-new', function (req, res) {
@@ -55,6 +58,8 @@ router.get('/new-new', function (req, res) {
 
   req.session.data['waste_status'] = 'Not started'
   req.session.data['waste_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['have_waste'] = 'false'
 
   req.session.data['hazard_status'] = 'Not started'
   req.session.data['hazard_status_class'] = 'govuk-tag--grey'
@@ -166,6 +171,8 @@ router.get('/new-win', function (req, res) {
 
   req.session.data['waste_status'] = 'Not started'
   req.session.data['waste_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['have_waste'] = 'false'
 
   req.session.data['hazard_status'] = 'Not started'
   req.session.data['hazard_status_class'] = 'govuk-tag--grey'
@@ -323,19 +330,89 @@ router.post('/transportation', function(req, res) {
 
 
 
-// Waste information
+// Waste
 
 router.get('/waste', function (req, res) {
   res.render( './' + req.originalUrl, {} )
 })
 
 router.post('/waste', function(req, res) {
-  req.session.data['waste_status'] = "Completed";
-  req.session.data['waste_status_class'] = "";
+  if( req.session.data['have_waste'] == "true" ){
+    res.redirect( req.session.data['win_type'])
+  } else {
+    res.redirect( 'confirm-ewc' );
+  }
+})
+
+
+
+
+
+// Confirm EWC code
+
+router.get('/confirm-ewc', function (req, res) {
+
+  var wcn = req.session.data['ewc']
+
+  console.log(wcn)
+
+  if( wcn != '' ){
+
+    var ewc_list = require('./ewc-codes.json')
+
+    ewc_list = JSON.parse(JSON.stringify( ewc_list ))
+
+    var ewc_description = "Not found"
+
+    for (let i = 0; i < ewc_list.length; i++ ){
+    // for (let i = 0; i < 500; i++ ){
+
+      if ( ewc_list[i].Waste_Code_Normalised.trim() == wcn ){
+        console.log('found it');
+        ewc_description = ewc_list[i].EWC_Waste_Desc;
+        break;
+      }
+
+    }
+
+    console.log(ewc_description)
+
+    //remove the EWC code from the description string
+    ewc_description = ewc_description.substring(ewc_description.indexOf(' ') +1)
+
+    // capitalise first letter in description
+    ewc_description = ewc_description.charAt(0).toUpperCase() + ewc_description.slice(1)
+
+    req.session.data['ewc_description'] = ewc_description;
+
+    console.log(ewc_description)
+
+
+
+  } else {
+    // not a valid EWC code, need to think about error handling
+    res.redirect('waste');
+  }
+
+  res.render( './' + req.originalUrl, {
+    ewc_description: ewc_description
+  } )
+})
+
+router.post('/confirm-ewc', function(req, res) {
+  req.session.data['waste_status'] = "In progress"
+  req.session.data['waste_status_class'] = "govuk-tag--blue"
+  req.session.data['have_waste'] = "true"
   res.redirect( req.session.data['win_type'] );
 })
 
 
+// reset EWC code - quick hack for now
+
+router.get('/reset-ewc', function (req, res){
+  req.session.data['have_waste'] = "false"
+  res.redirect('waste')
+})
 
 // hazard information
 

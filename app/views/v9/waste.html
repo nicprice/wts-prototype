@@ -17,20 +17,43 @@
 
       <h1 class="govuk-heading-l">Describe the waste</h1>
 
-      <form method="post" {{ novalidateVal }}>
+        {% if data['have_waste'] == "true" %}
 
+        <p class="govuk-body">EWC code: {{ data['ewc'] }}</p>
 
+        <p class="govuk-body">Description: {{ data['ewc_description'] }}</p>
 
+        <form method="post" {{ novalidateVal }}>
 
+          {{ govukButton({
+            classes: "govuk-!-margin-top-5",
+            text: "Continue"
+          }) }}
 
+        </form>
 
-        <input type="hidden" name="waste-description-confirmed" value="true">
+        <p class="govuk-body govuk-!-margin-top-9"><a href="reset-ewc">Provide a different code</a></p>
+
+        {% else %}
+
+        <form method="post" {{ novalidateVal }}>
+
+        {{ govukInput({
+          label: {
+            text: "What is the EWC code for the waste"
+          },
+          classes: "govuk-input--width-10",
+          id: "ewc",
+          name: "ewc"
+        }) }}
 
         {{ govukButton({
           text: "Continue"
         }) }}
 
-      </form>
+        </form>
+
+        {% endif %}
 
     </div>
   </div>

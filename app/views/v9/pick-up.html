@@ -17,8 +17,6 @@
 
       <form method="post" {{ novalidateVal }}>
 
-        {% from "govuk/components/radios/macro.njk" import govukRadios %}
-
         {{ govukRadios({
           idPrefix: "pick-up-location",
           name: "pick_up_location",
