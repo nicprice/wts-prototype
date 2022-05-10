@@ -1,13 +1,13 @@
 [
   {
-    "Waste_Code_Normalised": "10101",
+    "Waste_Code_Normalised": "010101",
     "Waste_Code": "01 01 01",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Mineral excavation",
     "EWC_Waste_Desc": "010101 wastes from mineral metalliferous excavation"
   },
   {
-    "Waste_Code_Normalised": "10102",
+    "Waste_Code_Normalised": "010102",
     "Waste_Code": "01 01 02",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Mineral excavation",
@@ -28,7 +28,7 @@
     "EWC_Waste_Desc": "010305 other tailings containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "10306",
+    "Waste_Code_Normalised": "010306",
     "Waste_Code": "01 03 06",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of metalliferous minerals",
@@ -42,14 +42,14 @@
     "EWC_Waste_Desc": "010307 other wastes containing dangerous substances from physical and chemical processing of metalliferous minerals"
   },
   {
-    "Waste_Code_Normalised": "10308",
+    "Waste_Code_Normalised": "010308",
     "Waste_Code": "01 03 08",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of metalliferous minerals",
     "EWC_Waste_Desc": "010308 dusty and powdery wastes other than those mentioned in 01 03 07"
   },
   {
-    "Waste_Code_Normalised": "10399",
+    "Waste_Code_Normalised": "010399",
     "Waste_Code": "01 03 99",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of metalliferous minerals",
@@ -63,56 +63,56 @@
     "EWC_Waste_Desc": "010407 wastes containing dangerous substances from physical and chemical processing of non-metalliferous minerals"
   },
   {
-    "Waste_Code_Normalised": "10408",
+    "Waste_Code_Normalised": "010408",
     "Waste_Code": "01 04 08",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010408 waste gravel and crushed rocks other than those mentioned in 01 04 07"
   },
   {
-    "Waste_Code_Normalised": "10409",
+    "Waste_Code_Normalised": "010409",
     "Waste_Code": "01 04 09",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010409 waste sand and clays"
   },
   {
-    "Waste_Code_Normalised": "10410",
+    "Waste_Code_Normalised": "010410",
     "Waste_Code": "01 04 10",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010410 dusty and powdery wastes other than those mentioned in 01 04 07"
   },
   {
-    "Waste_Code_Normalised": "10411",
+    "Waste_Code_Normalised": "010411",
     "Waste_Code": "01 04 11",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010411 wastes from potash and rock salt processing other than those mentioned in 01 04 07"
   },
   {
-    "Waste_Code_Normalised": "10412",
+    "Waste_Code_Normalised": "010412",
     "Waste_Code": "01 04 12",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010412 tailings and other wastes from washing and cleaning of minerals other than those mentioned in 01 04 07 and 01 04 11"
   },
   {
-    "Waste_Code_Normalised": "10413",
+    "Waste_Code_Normalised": "010413",
     "Waste_Code": "01 04 13",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010413 wastes from stone cutting and sawing other than those mentioned in 01 04 07"
   },
   {
-    "Waste_Code_Normalised": "10499",
+    "Waste_Code_Normalised": "010499",
     "Waste_Code": "01 04 99",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "Physical and chemical processing of non-metalliferous minerals",
     "EWC_Waste_Desc": "010499 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "10504",
+    "Waste_Code_Normalised": "010504",
     "Waste_Code": "01 05 04",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "drilling muds and other drilling wastes",
@@ -133,56 +133,56 @@
     "EWC_Waste_Desc": "010506 drilling muds and other drilling wastes containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "10507",
+    "Waste_Code_Normalised": "010507",
     "Waste_Code": "01 05 07",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "drilling muds and other drilling wastes",
     "EWC_Waste_Desc": "010507 barite-containing drilling muds and wastes other than those mentioned in 01 05 05 and 01 05 06"
   },
   {
-    "Waste_Code_Normalised": "10508",
+    "Waste_Code_Normalised": "010508",
     "Waste_Code": "01 05 08",
     "EWC_Chapter": "01 - MINE AND QUARRY WASTES",
     "EWC_Sub_Chapter": "drilling muds and other drilling wastes",
     "EWC_Waste_Desc": "010508 chloride-containing drilling muds and wastes other than those mentioned in 01 05 05 and 01 05 06"
   },
   {
-    "Waste_Code_Normalised": "20101",
+    "Waste_Code_Normalised": "020101",
     "Waste_Code": "02 01 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020101 sludges from washing and cleaning"
   },
   {
-    "Waste_Code_Normalised": "20102",
+    "Waste_Code_Normalised": "020102",
     "Waste_Code": "02 01 02",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020102 animal-tissue waste"
   },
   {
-    "Waste_Code_Normalised": "20103",
+    "Waste_Code_Normalised": "020103",
     "Waste_Code": "02 01 03",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020103 plant-tissue waste"
   },
   {
-    "Waste_Code_Normalised": "20104",
+    "Waste_Code_Normalised": "020104",
     "Waste_Code": "02 01 04",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020104 waste plastics (except packaging)"
   },
   {
-    "Waste_Code_Normalised": "20106",
+    "Waste_Code_Normalised": "020106",
     "Waste_Code": "02 01 06",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020106 animal faeces, urine and manure (including spoiled straw), effluent, collected separately and treated off-site"
   },
   {
-    "Waste_Code_Normalised": "20107",
+    "Waste_Code_Normalised": "020107",
     "Waste_Code": "02 01 07",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
@@ -196,154 +196,154 @@
     "EWC_Waste_Desc": "020108 agrochemical waste containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "20109",
+    "Waste_Code_Normalised": "020109",
     "Waste_Code": "02 01 09",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020109 agrochemical waste other than those mentioned in 02 01 08"
   },
   {
-    "Waste_Code_Normalised": "20110",
+    "Waste_Code_Normalised": "020110",
     "Waste_Code": "02 01 10",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020110 waste metal"
   },
   {
-    "Waste_Code_Normalised": "20199",
+    "Waste_Code_Normalised": "020199",
     "Waste_Code": "02 01 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Agriculture - horticulture - aquaculture - forestry - hunting and fishing",
     "EWC_Waste_Desc": "020199 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "20201",
+    "Waste_Code_Normalised": "020201",
     "Waste_Code": "02 02 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Preparation and processing of meat - fish and other foods of animal origin",
     "EWC_Waste_Desc": "020201 sludges from washing and cleaning"
   },
   {
-    "Waste_Code_Normalised": "20202",
+    "Waste_Code_Normalised": "020202",
     "Waste_Code": "02 02 02",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Preparation and processing of meat - fish and other foods of animal origin",
     "EWC_Waste_Desc": "020202 animal-tissue waste"
   },
   {
-    "Waste_Code_Normalised": "20203",
+    "Waste_Code_Normalised": "020203",
     "Waste_Code": "02 02 03",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Preparation and processing of meat - fish and other foods of animal origin",
     "EWC_Waste_Desc": "020203 materials unsuitable for consumption or processing"
   },
   {
-    "Waste_Code_Normalised": "20204",
+    "Waste_Code_Normalised": "020204",
     "Waste_Code": "02 02 04",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Preparation and processing of meat - fish and other foods of animal origin",
     "EWC_Waste_Desc": "020204 sludges from on-site effluent treatment"
   },
   {
-    "Waste_Code_Normalised": "20299",
+    "Waste_Code_Normalised": "020299",
     "Waste_Code": "02 02 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Preparation and processing of meat - fish and other foods of animal origin",
     "EWC_Waste_Desc": "020299 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "20301",
+    "Waste_Code_Normalised": "020301",
     "Waste_Code": "02 03 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Fruit - vegetables - cereals - edible oils - cocoa - coffee - tea and tobacco preparation and processing; conserve production; yeast and yeast extract production - molasses preparation and fermentation",
     "EWC_Waste_Desc": "020301 sludges from washing, cleaning, peeling, centrifuging and separation"
   },
   {
-    "Waste_Code_Normalised": "20302",
+    "Waste_Code_Normalised": "020302",
     "Waste_Code": "02 03 02",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Fruit - vegetables - cereals - edible oils - cocoa - coffee - tea and tobacco preparation and processing; conserve production; yeast and yeast extract production - molasses preparation and fermentation",
     "EWC_Waste_Desc": "020302 wastes from preserving agents"
   },
   {
-    "Waste_Code_Normalised": "20303",
+    "Waste_Code_Normalised": "020303",
     "Waste_Code": "02 03 03",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Fruit - vegetables - cereals - edible oils - cocoa - coffee - tea and tobacco preparation and processing; conserve production; yeast and yeast extract production - molasses preparation and fermentation",
     "EWC_Waste_Desc": "020303 wastes from solvent extraction"
   },
   {
-    "Waste_Code_Normalised": "20304",
+    "Waste_Code_Normalised": "020304",
     "Waste_Code": "02 03 04",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Fruit - vegetables - cereals - edible oils - cocoa - coffee - tea and tobacco preparation and processing; conserve production; yeast and yeast extract production - molasses preparation and fermentation",
     "EWC_Waste_Desc": "020304 materials unsuitable for consumption or processing"
   },
   {
-    "Waste_Code_Normalised": "20305",
+    "Waste_Code_Normalised": "020305",
     "Waste_Code": "02 03 05",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Fruit - vegetables - cereals - edible oils - cocoa - coffee - tea and tobacco preparation and processing; conserve production; yeast and yeast extract production - molasses preparation and fermentation",
     "EWC_Waste_Desc": "020305 sludges from on-site effluent treatment"
   },
   {
-    "Waste_Code_Normalised": "20399",
+    "Waste_Code_Normalised": "020399",
     "Waste_Code": "02 03 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Fruit - vegetables - cereals - edible oils - cocoa - coffee - tea and tobacco preparation and processing; conserve production; yeast and yeast extract production - molasses preparation and fermentation",
     "EWC_Waste_Desc": "020399 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "20401",
+    "Waste_Code_Normalised": "020401",
     "Waste_Code": "02 04 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Sugar processing",
     "EWC_Waste_Desc": "020401 soil from cleaning and washing beet"
   },
   {
-    "Waste_Code_Normalised": "20402",
+    "Waste_Code_Normalised": "020402",
     "Waste_Code": "02 04 02",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Sugar processing",
     "EWC_Waste_Desc": "020402 off-specification calcium carbonate"
   },
   {
-    "Waste_Code_Normalised": "20403",
+    "Waste_Code_Normalised": "020403",
     "Waste_Code": "02 04 03",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Sugar processing",
     "EWC_Waste_Desc": "020403 sludges from on-site effluent treatment"
   },
   {
-    "Waste_Code_Normalised": "20499",
+    "Waste_Code_Normalised": "020499",
     "Waste_Code": "02 04 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Sugar processing",
     "EWC_Waste_Desc": "020499 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "20501",
+    "Waste_Code_Normalised": "020501",
     "Waste_Code": "02 05 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Dairy products industry",
     "EWC_Waste_Desc": "020501 materials unsuitable for consumption or processing"
   },
   {
-    "Waste_Code_Normalised": "20502",
+    "Waste_Code_Normalised": "020502",
     "Waste_Code": "02 05 02",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Dairy products industry",
     "EWC_Waste_Desc": "020502 sludges from on-site effluent treatment"
   },
   {
-    "Waste_Code_Normalised": "20599",
+    "Waste_Code_Normalised": "020599",
     "Waste_Code": "02 05 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Dairy products industry",
     "EWC_Waste_Desc": "020599 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "20601",
+    "Waste_Code_Normalised": "020601",
     "Waste_Code": "02 06 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Baking and confectionery industry",
@@ -357,63 +357,63 @@
     "EWC_Waste_Desc": "020602 wastes from preserving agents"
   },
   {
-    "Waste_Code_Normalised": "20603",
+    "Waste_Code_Normalised": "020603",
     "Waste_Code": "02 06 03",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Baking and confectionery industry",
     "EWC_Waste_Desc": "020603 sludges from on-site effluent treatment"
   },
   {
-    "Waste_Code_Normalised": "20699",
+    "Waste_Code_Normalised": "020699",
     "Waste_Code": "02 06 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Baking and confectionery industry",
     "EWC_Waste_Desc": "020699 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "20701",
+    "Waste_Code_Normalised": "020701",
     "Waste_Code": "02 07 01",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Production of alcoholic and non-alcoholic beverages (except coffee - tea and cocoa)",
     "EWC_Waste_Desc": "020701 wastes from washing, cleaning and mechanical reduction of raw materials"
   },
   {
-    "Waste_Code_Normalised": "20702",
+    "Waste_Code_Normalised": "020702",
     "Waste_Code": "02 07 02",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Production of alcoholic and non-alcoholic beverages (except coffee - tea and cocoa)",
     "EWC_Waste_Desc": "020702 wastes from spirits distillation"
   },
   {
-    "Waste_Code_Normalised": "20703",
+    "Waste_Code_Normalised": "020703",
     "Waste_Code": "02 07 03",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Production of alcoholic and non-alcoholic beverages (except coffee - tea and cocoa)",
     "EWC_Waste_Desc": "020703 wastes from chemical treatment"
   },
   {
-    "Waste_Code_Normalised": "20704",
+    "Waste_Code_Normalised": "020704",
     "Waste_Code": "02 07 04",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Production of alcoholic and non-alcoholic beverages (except coffee - tea and cocoa)",
     "EWC_Waste_Desc": "020704 materials unsuitable for consumption or processing"
   },
   {
-    "Waste_Code_Normalised": "20705",
+    "Waste_Code_Normalised": "020705",
     "Waste_Code": "02 07 05",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Production of alcoholic and non-alcoholic beverages (except coffee - tea and cocoa)",
     "EWC_Waste_Desc": "020705 sludges from on-site effluent treatment"
   },
   {
-    "Waste_Code_Normalised": "20799",
+    "Waste_Code_Normalised": "020799",
     "Waste_Code": "02 07 99",
     "EWC_Chapter": "02 - AGRICULTURE AND FOOD PROCESSING WASTES",
     "EWC_Sub_Chapter": "Production of alcoholic and non-alcoholic beverages (except coffee - tea and cocoa)",
     "EWC_Waste_Desc": "020799 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "30101",
+    "Waste_Code_Normalised": "030101",
     "Waste_Code": "03 01 01",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Wood processing and the production of panels and furniture",
@@ -427,14 +427,14 @@
     "EWC_Waste_Desc": "030104 sawdust, shavings, cuttings, wood, particle board and veneer containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "30105",
+    "Waste_Code_Normalised": "030105",
     "Waste_Code": "03 01 05",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Wood processing and the production of panels and furniture",
     "EWC_Waste_Desc": "030105 sawdust, shavings, cuttings, wood, particle board and veneer other than those mentioned in 03 01 04"
   },
   {
-    "Waste_Code_Normalised": "30199",
+    "Waste_Code_Normalised": "030199",
     "Waste_Code": "03 01 99",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Wood processing and the production of panels and furniture",
@@ -469,63 +469,63 @@
     "EWC_Waste_Desc": "030205 other wood preservatives containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "30301",
+    "Waste_Code_Normalised": "030301",
     "Waste_Code": "03 03 01",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030301 waste bark and wood"
   },
   {
-    "Waste_Code_Normalised": "30305",
+    "Waste_Code_Normalised": "030305",
     "Waste_Code": "03 03 05",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030305 de-inking sludges from paper recycling"
   },
   {
-    "Waste_Code_Normalised": "30307",
+    "Waste_Code_Normalised": "030307",
     "Waste_Code": "03 03 07",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030307 mechanically separated rejects from pulping of waste paper and cardboard"
   },
   {
-    "Waste_Code_Normalised": "30308",
+    "Waste_Code_Normalised": "030308",
     "Waste_Code": "03 03 08",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030308 wastes from sorting of paper and cardboard destined for recycling"
   },
   {
-    "Waste_Code_Normalised": "30309",
+    "Waste_Code_Normalised": "030309",
     "Waste_Code": "03 03 09",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030309 lime mud waste"
   },
   {
-    "Waste_Code_Normalised": "30310",
+    "Waste_Code_Normalised": "030310",
     "Waste_Code": "03 03 10",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030310 fibre rejects, fibre-, filler- and coating-sludges from mechanical separation"
   },
   {
-    "Waste_Code_Normalised": "30311",
+    "Waste_Code_Normalised": "030311",
     "Waste_Code": "03 03 11",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030311 sludges from on-site effluent treatment other than those mentioned in 03 03 10"
   },
   {
-    "Waste_Code_Normalised": "30399",
+    "Waste_Code_Normalised": "030399",
     "Waste_Code": "03 03 99",
     "EWC_Chapter": "03 - FURNITURE, PAPER AND CARDBOARD MANUFACTURING WASTES",
     "EWC_Sub_Chapter": "Pulp - paper and cardboard production and processing",
     "EWC_Waste_Desc": "030399 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "40101",
+    "Waste_Code_Normalised": "040101",
     "Waste_Code": "04 01 01",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
@@ -539,56 +539,56 @@
     "EWC_Waste_Desc": "040103 degreasing wastes containing solvents without a liquid phase"
   },
   {
-    "Waste_Code_Normalised": "40105",
+    "Waste_Code_Normalised": "040105",
     "Waste_Code": "04 01 05",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
     "EWC_Waste_Desc": "040105 tanning liquor free of chromium"
   },
   {
-    "Waste_Code_Normalised": "40106",
+    "Waste_Code_Normalised": "040106",
     "Waste_Code": "04 01 06",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
     "EWC_Waste_Desc": "040106 sludges, in particular from on-site effluent treatment containing chromium"
   },
   {
-    "Waste_Code_Normalised": "40107",
+    "Waste_Code_Normalised": "040107",
     "Waste_Code": "04 01 07",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
     "EWC_Waste_Desc": "040107 sludges, in particular from on-site effluent treatment free of chromium"
   },
   {
-    "Waste_Code_Normalised": "40108",
+    "Waste_Code_Normalised": "040108",
     "Waste_Code": "04 01 08",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
     "EWC_Waste_Desc": "040108 waste tanned leather (blue sheetings, shavings, cuttings, buffing dust) containing chromium"
   },
   {
-    "Waste_Code_Normalised": "40109",
+    "Waste_Code_Normalised": "040109",
     "Waste_Code": "04 01 09",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
     "EWC_Waste_Desc": "040109 wastes from dressing and finishing"
   },
   {
-    "Waste_Code_Normalised": "40199",
+    "Waste_Code_Normalised": "040199",
     "Waste_Code": "04 01 99",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Leather and fur industry",
     "EWC_Waste_Desc": "040199 wastes not otherwise specified."
   },
   {
-    "Waste_Code_Normalised": "40209",
+    "Waste_Code_Normalised": "040209",
     "Waste_Code": "04 02 09",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Textile industry",
     "EWC_Waste_Desc": "040209 wastes from composite materials (impregnated textile, elastomer, plastomer)"
   },
   {
-    "Waste_Code_Normalised": "40210",
+    "Waste_Code_Normalised": "040210",
     "Waste_Code": "04 02 10",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Textile industry",
@@ -602,7 +602,7 @@
     "EWC_Waste_Desc": "040214 wastes from finishing containing organic solvents"
   },
   {
-    "Waste_Code_Normalised": "40215",
+    "Waste_Code_Normalised": "040215",
     "Waste_Code": "04 02 15",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Textile industry",
@@ -616,7 +616,7 @@
     "EWC_Waste_Desc": "040216 dyestuffs and pigments containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "40217",
+    "Waste_Code_Normalised": "040217",
     "Waste_Code": "04 02 17",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Textile industry",
@@ -630,14 +630,14 @@
     "EWC_Waste_Desc": "040219 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "40220",
+    "Waste_Code_Normalised": "040220",
     "Waste_Code": "04 02 20",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Textile industry",
     "EWC_Waste_Desc": "040220 sludges from on-site effluent treatment other than those mentioned in 04 02 19"
   },
   {
-    "Waste_Code_Normalised": "40222",
+    "Waste_Code_Normalised": "040222",
     "Waste_Code": "04 02 22",
     "EWC_Chapter": "04 - LEATHER, FUR AND TEXTILE INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Textile industry",
@@ -693,7 +693,7 @@
     "EWC_Waste_Desc": "050109 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "50110",
+    "Waste_Code_Normalised": "050110",
     "Waste_Code": "05 01 10",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Petroleum refining",
@@ -714,14 +714,14 @@
     "EWC_Waste_Desc": "050112 oil containing acids"
   },
   {
-    "Waste_Code_Normalised": "50113",
+    "Waste_Code_Normalised": "050113",
     "Waste_Code": "05 01 13",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Petroleum refining",
     "EWC_Waste_Desc": "050113 boiler feedwater sludges"
   },
   {
-    "Waste_Code_Normalised": "50114",
+    "Waste_Code_Normalised": "050114",
     "Waste_Code": "05 01 14",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Petroleum refining",
@@ -735,14 +735,14 @@
     "EWC_Waste_Desc": "050115 spent filter clays"
   },
   {
-    "Waste_Code_Normalised": "50116",
+    "Waste_Code_Normalised": "050116",
     "Waste_Code": "05 01 16",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Petroleum refining",
     "EWC_Waste_Desc": "050116 sulphur-containing wastes from petroleum desulphurisation"
   },
   {
-    "Waste_Code_Normalised": "50117",
+    "Waste_Code_Normalised": "050117",
     "Waste_Code": "05 01 17",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Petroleum refining",
@@ -770,14 +770,14 @@
     "EWC_Waste_Desc": "050701 wastes containing mercury"
   },
   {
-    "Waste_Code_Normalised": "50702",
+    "Waste_Code_Normalised": "050702",
     "Waste_Code": "05 07 02",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Natural gas purification and transportation",
     "EWC_Waste_Desc": "050702 wastes containing sulphur"
   },
   {
-    "Waste_Code_Normalised": "50799",
+    "Waste_Code_Normalised": "050799",
     "Waste_Code": "05 07 99",
     "EWC_Chapter": "05 - PETROLEUM, GAS AND COAL PROCESSING WASTES",
     "EWC_Sub_Chapter": "Natural gas purification and transportation",
@@ -854,7 +854,7 @@
     "EWC_Waste_Desc": "060205 other bases"
   },
   {
-    "Waste_Code_Normalised": "60299",
+    "Waste_Code_Normalised": "060299",
     "Waste_Code": "06 02 99",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of bases",
@@ -875,7 +875,7 @@
     "EWC_Waste_Desc": "060313 solid salts and solutions containing heavy metals"
   },
   {
-    "Waste_Code_Normalised": "60314",
+    "Waste_Code_Normalised": "060314",
     "Waste_Code": "06 03 14",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of salts and their solutions and metallic oxides",
@@ -889,7 +889,7 @@
     "EWC_Waste_Desc": "060315 metallic oxides containing heavy metals"
   },
   {
-    "Waste_Code_Normalised": "60316",
+    "Waste_Code_Normalised": "060316",
     "Waste_Code": "06 03 16",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of salts and their solutions and metallic oxides",
@@ -924,7 +924,7 @@
     "EWC_Waste_Desc": "060502 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "60503",
+    "Waste_Code_Normalised": "060503",
     "Waste_Code": "06 05 03",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "sludges from on-site effluent treatment",
@@ -938,7 +938,7 @@
     "EWC_Waste_Desc": "060602 wastes containing dangerous sulphides"
   },
   {
-    "Waste_Code_Normalised": "60603",
+    "Waste_Code_Normalised": "060603",
     "Waste_Code": "06 06 03",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of sulphur chemicals - sulphur chemical processes and desulphurisation processes",
@@ -966,7 +966,7 @@
     "EWC_Waste_Desc": "060802 wastes containing chlorosilanes"
   },
   {
-    "Waste_Code_Normalised": "60899",
+    "Waste_Code_Normalised": "060899",
     "Waste_Code": "06 08 99",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of silicon and silicon derivatives",
@@ -980,7 +980,7 @@
     "EWC_Waste_Desc": "060903 calcium-based reaction wastes containing or contaminated with dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "60904",
+    "Waste_Code_Normalised": "060904",
     "Waste_Code": "06 09 04",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of phosphorous chemicals and phosphorous chemical processes",
@@ -994,14 +994,14 @@
     "EWC_Waste_Desc": "061002 wastes containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "61099",
+    "Waste_Code_Normalised": "061099",
     "Waste_Code": "06 10 99",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of nitrogen chemicals - nitrogen chemical processes and fertiliser manufacture",
     "EWC_Waste_Desc": "061099 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "61101",
+    "Waste_Code_Normalised": "061101",
     "Waste_Code": "06 11 01",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture of inorganic pigments and opacificiers",
@@ -1022,7 +1022,7 @@
     "EWC_Waste_Desc": "061302 spent activated carbon (except 06 07 02)"
   },
   {
-    "Waste_Code_Normalised": "61303",
+    "Waste_Code_Normalised": "061303",
     "Waste_Code": "06 13 03",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Inorganic chemical processes not otherwise specified",
@@ -1043,7 +1043,7 @@
     "EWC_Waste_Desc": "061305 soot"
   },
   {
-    "Waste_Code_Normalised": "61399",
+    "Waste_Code_Normalised": "061399",
     "Waste_Code": "06 13 99",
     "EWC_Chapter": "06 - INORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Inorganic chemical processes not otherwise specified",
@@ -1106,14 +1106,14 @@
     "EWC_Waste_Desc": "070111 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70112",
+    "Waste_Code_Normalised": "070112",
     "Waste_Code": "07 01 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of basic organic chemicals",
     "EWC_Waste_Desc": "070112 sludges from on-site effluent treatment other than those mentioned in 07 01 11"
   },
   {
-    "Waste_Code_Normalised": "70199",
+    "Waste_Code_Normalised": "070199",
     "Waste_Code": "07 01 99",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of basic organic chemicals",
@@ -1169,14 +1169,14 @@
     "EWC_Waste_Desc": "070211 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70212",
+    "Waste_Code_Normalised": "070212",
     "Waste_Code": "07 02 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of plastics - synthetic rubber and man-made fibres",
     "EWC_Waste_Desc": "070212 sludges from on-site effluent treatment other than those mentioned in 07 02 11"
   },
   {
-    "Waste_Code_Normalised": "70213",
+    "Waste_Code_Normalised": "070213",
     "Waste_Code": "07 02 13",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of plastics - synthetic rubber and man-made fibres",
@@ -1190,7 +1190,7 @@
     "EWC_Waste_Desc": "070214 wastes from additives containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70215",
+    "Waste_Code_Normalised": "070215",
     "Waste_Code": "07 02 15",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of plastics - synthetic rubber and man-made fibres",
@@ -1204,14 +1204,14 @@
     "EWC_Waste_Desc": "070216 wastes containing dangerous silicones"
   },
   {
-    "Waste_Code_Normalised": "70217",
+    "Waste_Code_Normalised": "070217",
     "Waste_Code": "07 02 17",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of plastics - synthetic rubber and man-made fibres",
     "EWC_Waste_Desc": "070217 wastes containing silicones other than those mentioned in 07 02 16"
   },
   {
-    "Waste_Code_Normalised": "70299",
+    "Waste_Code_Normalised": "070299",
     "Waste_Code": "07 02 99",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of plastics - synthetic rubber and man-made fibres",
@@ -1267,7 +1267,7 @@
     "EWC_Waste_Desc": "070311 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70312",
+    "Waste_Code_Normalised": "070312",
     "Waste_Code": "07 03 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of organic dyes and pigments (except 06 11)",
@@ -1330,7 +1330,7 @@
     "EWC_Waste_Desc": "070411 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70412",
+    "Waste_Code_Normalised": "070412",
     "Waste_Code": "07 04 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of organic plant protection products (except 02 01 08 and 02 01 09) - wood preserving agents (except 03 02) and other biocides",
@@ -1344,7 +1344,7 @@
     "EWC_Waste_Desc": "070413 solid wastes containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70499",
+    "Waste_Code_Normalised": "070499",
     "Waste_Code": "07 04 99",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of organic plant protection products (except 02 01 08 and 02 01 09) - wood preserving agents (except 03 02) and other biocides",
@@ -1407,7 +1407,7 @@
     "EWC_Waste_Desc": "070511 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70512",
+    "Waste_Code_Normalised": "070512",
     "Waste_Code": "07 05 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of pharmaceuticals",
@@ -1421,7 +1421,7 @@
     "EWC_Waste_Desc": "070513 solid wastes containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70514",
+    "Waste_Code_Normalised": "070514",
     "Waste_Code": "07 05 14",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of pharmaceuticals",
@@ -1470,7 +1470,7 @@
     "EWC_Waste_Desc": "070611 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70612",
+    "Waste_Code_Normalised": "070612",
     "Waste_Code": "07 06 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of fats - grease - soaps - detergents - disinfectants and cosmetics",
@@ -1533,14 +1533,14 @@
     "EWC_Waste_Desc": "070711 sludges from on-site effluent treatment containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "70712",
+    "Waste_Code_Normalised": "070712",
     "Waste_Code": "07 07 12",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of fine chemicals and chemical products not otherwise specified",
     "EWC_Waste_Desc": "070712 sludges from on-site effluent treatment other than those mentioned in 07 07 11"
   },
   {
-    "Waste_Code_Normalised": "70799",
+    "Waste_Code_Normalised": "070799",
     "Waste_Code": "07 07 99",
     "EWC_Chapter": "07 - ORGANIC CHEMICAL PROCESS WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of fine chemicals and chemical products not otherwise specified",
@@ -1554,7 +1554,7 @@
     "EWC_Waste_Desc": "080111 waste paint and varnish containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80112",
+    "Waste_Code_Normalised": "080112",
     "Waste_Code": "08 01 12",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use and removal of paint and varnish",
@@ -1568,7 +1568,7 @@
     "EWC_Waste_Desc": "080113 sludges from paint or varnish containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80114",
+    "Waste_Code_Normalised": "080114",
     "Waste_Code": "08 01 14",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use and removal of paint and varnish",
@@ -1582,7 +1582,7 @@
     "EWC_Waste_Desc": "080115 aqueous sludges containing paint or varnish containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80116",
+    "Waste_Code_Normalised": "080116",
     "Waste_Code": "08 01 16",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use and removal of paint and varnish",
@@ -1596,7 +1596,7 @@
     "EWC_Waste_Desc": "080117 wastes from paint or varnish removal containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80118",
+    "Waste_Code_Normalised": "080118",
     "Waste_Code": "08 01 18",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use and removal of paint and varnish",
@@ -1610,7 +1610,7 @@
     "EWC_Waste_Desc": "080119 aqueous suspensions containing paint or varnish containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80120",
+    "Waste_Code_Normalised": "080120",
     "Waste_Code": "08 01 20",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use and removal of paint and varnish",
@@ -1624,42 +1624,42 @@
     "EWC_Waste_Desc": "080121 waste paint or varnish remover"
   },
   {
-    "Waste_Code_Normalised": "80199",
+    "Waste_Code_Normalised": "080199",
     "Waste_Code": "08 01 99",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use and removal of paint and varnish",
     "EWC_Waste_Desc": "080199 wastes not otherwise specified"
   },
   {
-    "Waste_Code_Normalised": "80201",
+    "Waste_Code_Normalised": "080201",
     "Waste_Code": "08 02 01",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of other coatings (including ceramic materials)",
     "EWC_Waste_Desc": "080201 waste coating powders"
   },
   {
-    "Waste_Code_Normalised": "80202",
+    "Waste_Code_Normalised": "080202",
     "Waste_Code": "08 02 02",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of other coatings (including ceramic materials)",
     "EWC_Waste_Desc": "080202 aqueous sludges containing ceramic materials"
   },
   {
-    "Waste_Code_Normalised": "80203",
+    "Waste_Code_Normalised": "080203",
     "Waste_Code": "08 02 03",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of other coatings (including ceramic materials)",
     "EWC_Waste_Desc": "080203 aqueous suspensions containing ceramic materials"
   },
   {
-    "Waste_Code_Normalised": "80307",
+    "Waste_Code_Normalised": "080307",
     "Waste_Code": "08 03 07",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of printing inks",
     "EWC_Waste_Desc": "080307 aqueous sludges containing ink"
   },
   {
-    "Waste_Code_Normalised": "80308",
+    "Waste_Code_Normalised": "080308",
     "Waste_Code": "08 03 08",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of printing inks",
@@ -1673,7 +1673,7 @@
     "EWC_Waste_Desc": "080312 waste ink containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80313",
+    "Waste_Code_Normalised": "080313",
     "Waste_Code": "08 03 13",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of printing inks",
@@ -1687,7 +1687,7 @@
     "EWC_Waste_Desc": "080314 ink sludges containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80315",
+    "Waste_Code_Normalised": "080315",
     "Waste_Code": "08 03 15",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of printing inks",
@@ -1708,7 +1708,7 @@
     "EWC_Waste_Desc": "080317 waste printing toner containing dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80318",
+    "Waste_Code_Normalised": "080318",
     "Waste_Code": "08 03 18",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of printing inks",
@@ -1722,7 +1722,7 @@
     "EWC_Waste_Desc": "080319 disperse oil"
   },
   {
-    "Waste_Code_Normalised": "80399",
+    "Waste_Code_Normalised": "080399",
     "Waste_Code": "08 03 99",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of printing inks",
@@ -1736,7 +1736,7 @@
     "EWC_Waste_Desc": "080409 waste adhesives and sealants containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80410",
+    "Waste_Code_Normalised": "080410",
     "Waste_Code": "08 04 10",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of adhesives and sealants (including waterproofing products)",
@@ -1750,7 +1750,7 @@
     "EWC_Waste_Desc": "080411 adhesive and sealant sludges containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80412",
+    "Waste_Code_Normalised": "080412",
     "Waste_Code": "08 04 12",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of adhesives and sealants (including waterproofing products)",
@@ -1764,7 +1764,7 @@
     "EWC_Waste_Desc": "080413 aqueous sludges containing adhesives or sealants containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80414",
+    "Waste_Code_Normalised": "080414",
     "Waste_Code": "08 04 14",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of adhesives and sealants (including waterproofing products)",
@@ -1778,7 +1778,7 @@
     "EWC_Waste_Desc": "080415 aqueous liquid waste containing adhesives or sealants containing organic solvents or other dangerous substances"
   },
   {
-    "Waste_Code_Normalised": "80416",
+    "Waste_Code_Normalised": "080416",
     "Waste_Code": "08 04 16",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of adhesives and sealants (including waterproofing products)",
@@ -1792,7 +1792,7 @@
     "EWC_Waste_Desc": "080417 rosin oil"
   },
   {
-    "Waste_Code_Normalised": "80499",
+    "Waste_Code_Normalised": "080499",
     "Waste_Code": "08 04 99",
     "EWC_Chapter": "08 - PAINT, ADHESIVE, SEALANT AND INK MANUFACTURING WASTE",
     "EWC_Sub_Chapter": "Manufacture - formulation - supply and use of adhesives and sealants (including waterproofing products)",
@@ -1848,14 +1848,14 @@
     "EWC_Waste_Desc": "090106 wastes containing silver from on-site treatment of photographic wastes"
   },
   {
-    "Waste_Code_Normalised": "90107",
+    "Waste_Code_Normalised": "090107",
     "Waste_Code": "09 01 07",
     "EWC_Chapter": "09 - PHOTOGRAPHIC INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Photographic industry",
     "EWC_Waste_Desc": "090107 photographic film and paper containing silver or silver compounds"
   },
   {
-    "Waste_Code_Normalised": "90108",
+    "Waste_Code_Normalised": "090108",
     "Waste_Code": "09 01 08",
     "EWC_Chapter": "09 - PHOTOGRAPHIC INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Photographic industry",
@@ -1869,7 +1869,7 @@
     "EWC_Waste_Desc": "090111 single-use cameras containing batteries included in 16 06 01, 16 06 02 or 16 06 03"
   },
   {
-    "Waste_Code_Normalised": "90112",
+    "Waste_Code_Normalised": "090112",
     "Waste_Code": "09 01 12",
     "EWC_Chapter": "09 - PHOTOGRAPHIC INDUSTRY WASTES",
     "EWC_Sub_Chapter": "Photographic industry",
