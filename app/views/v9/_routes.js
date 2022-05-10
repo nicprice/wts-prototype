@@ -356,6 +356,18 @@ router.get('/confirm-ewc', function (req, res) {
 
   console.log(wcn)
 
+  // Apply Postel's law
+  // "be conservative in what you do, be liberal in what you accept from others"
+
+  // Remove the asterisk
+  wcn = wcn.replace('*','')
+
+  // Remove any spaces - this is using a regex to catch all whitespace
+  wcn = wcn.replace(/\s/g,'')
+
+  console.log(wcn)
+
+
   if( wcn != '' ){
 
     var ewc_list = require('./ewc-codes.json')
@@ -367,7 +379,7 @@ router.get('/confirm-ewc', function (req, res) {
     for (let i = 0; i < ewc_list.length; i++ ){
     // for (let i = 0; i < 500; i++ ){
 
-      if ( ewc_list[i].Waste_Code_Normalised.trim() == wcn ){
+      if ( ewc_list[i].Waste_Code_Normalised.trim().replace('*','') == wcn ){
         console.log('found it');
         ewc_description = ewc_list[i].EWC_Waste_Desc;
         break;

@@ -47,6 +47,12 @@
                 </a>
               </span>
               <strong class="govuk-tag {{ data['waste_status_class'] }} app-task-list__tag" id="waste_status">{{ data['waste_status'] }}</strong>
+              {% if data['have_waste'] == 'true' %}
+              <br />
+              <span class="cover-note">
+                {{ data['ewc'] }}
+              </span>
+              {% endif %}
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
