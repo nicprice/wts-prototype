@@ -174,6 +174,7 @@ router.post('/producer', function(req, res) {
 // Pick up information
 
 router.get('/pick-up', function (req, res) {
+  console.log('Pick up: '+req.session.data['pick_up_location'])
   // req.session.data['pick_up_status'] = "In progress";
   // req.session.data['pick_up_status_class'] = "govuk-tag--blue";
   res.render( './' + req.originalUrl, {} )
