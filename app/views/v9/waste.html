@@ -13,6 +13,7 @@
 
 {% block content %}
   <div class="govuk-grid-row">
+    
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
       <h1 class="govuk-heading-l">Describe the waste</h1>
@@ -38,7 +39,21 @@
 
         <form method="post" {{ novalidateVal }}>
 
-          <!-- NJP 20220510 - Need to add error handling -->
+        {% if data['ewc_not_found'] == "true" %}
+
+        {{ govukInput({
+          label: {
+            text: "What is the EWC code for the waste"
+          },
+          errorMessage: {
+            text: "Enter a valid EWC code"
+          },
+          classes: "govuk-input--width-10",
+          id: "ewc",
+          name: "ewc"
+        }) }}
+
+        {% else %}
 
         {{ govukInput({
           label: {
@@ -48,6 +63,9 @@
           id: "ewc",
           name: "ewc"
         }) }}
+
+        {% endif %}
+
 
         {{ govukDetails({
           summaryText: "Help with EWC codes",

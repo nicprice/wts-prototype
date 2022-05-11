@@ -72,6 +72,8 @@ router.get('/reset-win', function (req, res) {
   req.session.data['waste_status'] = 'Not started'
   req.session.data['waste_status_class'] = 'govuk-tag--grey'
 
+  req.session.data['ewc_not_found'] = 'false'
+
   req.session.data['have_waste'] = 'false'
 
   req.session.data['hazard_status'] = 'Not started'
@@ -250,6 +252,7 @@ router.post('/waste', function(req, res) {
 router.get('/confirm-ewc', function (req, res) {
 
   var wcn = req.session.data['ewc']
+  var ewc_not_found
 
   console.log('EWC code entered: '+wcn)
 
@@ -273,19 +276,16 @@ router.get('/confirm-ewc', function (req, res) {
     var ewc_description = "Not found"
 
         for (let i = 0; i < ewc_list.length; i++ ){
-        // for (let i = 0; i < 500; i++ ){
 
                 if ( ewc_list[i].Waste_Code_Normalised.trim().replace('*','') == wcn ){
-                  console.log('found it');
+                  console.log('Found it');
                   ewc_description = ewc_list[i].EWC_Waste_Desc;
                   break;
-                } else {
-                  req.session.data['ewc_not_found'] == "true"
                 }
 
         }
 
-        console.log(ewc_description)
+        console.log('EWC description: '+ewc_description)
 
         if( ewc_description != "Not found" ){
 
@@ -304,12 +304,17 @@ router.get('/confirm-ewc', function (req, res) {
                 })
 
         } else {
+
             // not a valid EWC code, need to think about error handling
+            req.session.data['ewc_not_found'] = "true"
+            console.log('ewc_not_found: '+ewc_not_found)
             res.redirect('waste');
+
         }
 
 
   } else {
+    req.session.data['ewc_not_found'] = "true"
     // not a valid EWC code, need to think about error handling
     res.redirect('waste');
   }
