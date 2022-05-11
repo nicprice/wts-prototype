@@ -20,14 +20,30 @@ router.get('/index', function (req, res) {
 
 
 
-// Option 1 - As per V8 in Figma, but only using task list__tag
 
-// NJP 20220510 - need to merge the variable resets for these options
+// Combining the options
+
+router.get('/new-option-1', function (req, res) {
+
+  req.session.data['win_type'] = 'option-1'
+  res.redirect( 'reset-win' )
+
+})
 
 
-router.get('/new-new', function (req, res) {
+router.get('/new-option-2', function (req, res) {
 
-  req.session.data['win_type'] = 'new'
+  req.session.data['win_type'] = 'option-2'
+  req.session.data['cover_note'] = 'true'
+  res.redirect( 'reset-win' )
+
+})
+
+
+router.get('/reset-win', function (req, res) {
+
+  req.session.data['total_sections'] = '10'
+  req.session.data['completed_sections'] = '0'
 
   // Set up all the section statuses
 
@@ -35,9 +51,6 @@ router.get('/new-new', function (req, res) {
     // Not started = 'govuk-tag--grey'
     // In progress = 'govuk-tag--blue'
     // Completed = ''
-
-  req.session.data['total_sections'] = '10'
-  req.session.data['completed_sections'] = '0'
 
   req.session.data['producer_info_status'] = 'Review'
   req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
@@ -73,12 +86,13 @@ router.get('/new-new', function (req, res) {
   req.session.data['payment_status'] = 'Cannot start yet'
   req.session.data['payment_status_class'] = 'govuk-tag--grey'
 
-  res.redirect('new');
+  res.redirect('new-win');
 
-});
+})
 
 
-router.get('/new', function (req, res) {
+
+router.get('/new-win', function (req, res) {
 
     var count = 0;
 
@@ -131,123 +145,6 @@ router.get('/new', function (req, res) {
 
 
 
-
-
-// Option 2 - Grouping tasks into total_sections
-
-
-router.get('/new-win', function (req, res) {
-
-  req.session.data['win_type'] = 'win'
-
-  req.session.data['cover_note'] = 'true'
-
-  req.session.data['total_sections'] = '10'
-  req.session.data['completed_sections'] = '0'
-
-  // Set up all the section statuses
-
-    // Cannot start yet = 'govuk-tag--grey'
-    // Not started = 'govuk-tag--grey'
-    // In progress = 'govuk-tag--blue'
-    // Completed = ''
-
-  req.session.data['producer_info_status'] = 'Review'
-  req.session.data['producer_info_status_class'] = 'govuk-tag--blue'
-
-  req.session.data['sic_info'] = '41201 Construction of commercial buildings'
-
-  req.session.data['pick_up_status'] = 'Not started'
-  req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['carrier_contact_status'] = 'Not started'
-  req.session.data['carrier_contact_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['receiver_contact_status'] = 'Not started'
-  req.session.data['receiver_contact_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['transportation_info_status'] = 'Not started'
-  req.session.data['transportation_info_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['waste_status'] = 'Not started'
-  req.session.data['waste_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['have_waste'] = 'false'
-
-  req.session.data['hazard_status'] = 'Not started'
-  req.session.data['hazard_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['waste_stored_status'] = 'Not started'
-  req.session.data['waste_stored_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['waste_management_status'] = 'Not started'
-  req.session.data['waste_management_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['payment_status'] = 'Cannot start yet'
-  req.session.data['payment_status_class'] = 'govuk-tag--grey'
-
-
-  res.redirect('win');
-
-})
-
-
-
-
-router.get('/win', function (req, res) {
-
-  var count = 0;
-
-  if(req.session.data['producer_info_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['pick_up_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['carrier_contact_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['receiver_contact_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['transportation_info_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['waste_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['hazard_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['waste_stored_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['waste_management_status'] == "Completed"){
-    count++;
-  }
-
-  if(req.session.data['payment_status'] == "Completed"){
-    count++;
-  }
-
-  res.render( './' + req.originalUrl, {
-
-    'completed_sections' : count
-
-  })
-
-})
-
-
-
 // Producer information
 
 router.get('/producer', function (req, res) {
@@ -267,7 +164,7 @@ router.get('/producer', function (req, res) {
 router.post('/producer', function(req, res) {
   req.session.data['producer_info_status'] = "Completed";
   req.session.data['producer_info_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -283,7 +180,7 @@ router.get('/pick-up', function (req, res) {
 router.post('/pick-up', function(req, res) {
   req.session.data['pick_up_status'] = "Completed";
   req.session.data['pick_up_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -297,7 +194,7 @@ router.get('/carrier-contact', function (req, res) {
 router.post('/carrier-contact', function(req, res) {
   req.session.data['carrier_contact_status'] = "Completed";
   req.session.data['carrier_contact_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -311,7 +208,7 @@ router.get('/receiver-contact', function (req, res) {
 router.post('/receiver-contact', function(req, res) {
   req.session.data['receiver_contact_status'] = "Completed";
   req.session.data['receiver_contact_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -325,7 +222,7 @@ router.get('/transportation', function (req, res) {
 router.post('/transportation', function(req, res) {
   req.session.data['transportation_info_status'] = "Completed";
   req.session.data['transportation_info_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -338,7 +235,7 @@ router.get('/waste', function (req, res) {
 
 router.post('/waste', function(req, res) {
   if( req.session.data['have_waste'] == "true" ){
-    res.redirect( req.session.data['win_type'])
+    res.redirect( 'new-win' )
   } else {
     res.redirect( 'confirm-ewc' );
   }
@@ -354,21 +251,20 @@ router.get('/confirm-ewc', function (req, res) {
 
   var wcn = req.session.data['ewc']
 
-  console.log(wcn)
-
-  // Apply Postel's law
-  // "be conservative in what you do, be liberal in what you accept from others"
-
-  // Remove the asterisk
-  wcn = wcn.replace('*','')
-
-  // Remove any spaces - this is using a regex to catch all whitespace
-  wcn = wcn.replace(/\s/g,'')
-
-  console.log(wcn)
-
+  console.log('EWC code entered: '+wcn)
 
   if( wcn != '' ){
+
+    // Apply Postel's law
+    // "be conservative in what you do, be liberal in what you accept from others"
+
+    // Remove the asterisk
+    wcn = wcn.replace('*','')
+
+    // Remove any spaces - this is using a regex to catch all whitespace
+    wcn = wcn.replace(/\s/g,'')
+
+    console.log('Postel applied: '+wcn)
 
     var ewc_list = require('./ewc-codes.json')
 
@@ -376,29 +272,41 @@ router.get('/confirm-ewc', function (req, res) {
 
     var ewc_description = "Not found"
 
-    for (let i = 0; i < ewc_list.length; i++ ){
-    // for (let i = 0; i < 500; i++ ){
+        for (let i = 0; i < ewc_list.length; i++ ){
+        // for (let i = 0; i < 500; i++ ){
 
-      if ( ewc_list[i].Waste_Code_Normalised.trim().replace('*','') == wcn ){
-        console.log('found it');
-        ewc_description = ewc_list[i].EWC_Waste_Desc;
-        break;
-      }
+                if ( ewc_list[i].Waste_Code_Normalised.trim().replace('*','') == wcn ){
+                  console.log('found it');
+                  ewc_description = ewc_list[i].EWC_Waste_Desc;
+                  break;
+                } else {
+                  req.session.data['ewc_not_found'] == "true"
+                }
 
-    }
+        }
 
-    console.log(ewc_description)
+        console.log(ewc_description)
 
-    //remove the EWC code from the description string
-    ewc_description = ewc_description.substring(ewc_description.indexOf(' ') +1)
+        if( ewc_description != "Not found" ){
 
-    // capitalise first letter in description
-    ewc_description = ewc_description.charAt(0).toUpperCase() + ewc_description.slice(1)
+                //remove the EWC code from the description string
+                ewc_description = ewc_description.substring(ewc_description.indexOf(' ') +1)
 
-    req.session.data['ewc_description'] = ewc_description;
+                // capitalise first letter in description
+                ewc_description = ewc_description.charAt(0).toUpperCase() + ewc_description.slice(1)
 
-    console.log(ewc_description)
+                req.session.data['ewc_description'] = ewc_description;
 
+                console.log(ewc_description)
+
+                res.render( './' + req.originalUrl, {
+                  ewc_description: ewc_description
+                })
+
+        } else {
+            // not a valid EWC code, need to think about error handling
+            res.redirect('waste');
+        }
 
 
   } else {
@@ -406,16 +314,15 @@ router.get('/confirm-ewc', function (req, res) {
     res.redirect('waste');
   }
 
-  res.render( './' + req.originalUrl, {
-    ewc_description: ewc_description
-  } )
 })
+
+
 
 router.post('/confirm-ewc', function(req, res) {
   req.session.data['waste_status'] = "In progress"
   req.session.data['waste_status_class'] = "govuk-tag--blue"
   req.session.data['have_waste'] = "true"
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -435,7 +342,7 @@ router.get('/hazard', function (req, res) {
 router.post('/hazard', function(req, res) {
   req.session.data['hazard_status'] = "Completed";
   req.session.data['hazard_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -449,7 +356,7 @@ router.get('/waste-storage', function (req, res) {
 router.post('/waste-storage', function(req, res) {
   req.session.data['waste_stored_status'] = "Completed";
   req.session.data['waste_stored_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 
@@ -463,7 +370,7 @@ router.get('/waste-management', function (req, res) {
 router.post('/waste-management', function(req, res) {
   req.session.data['waste_management_status'] = "Completed";
   req.session.data['waste_management_status_class'] = "";
-  res.redirect( req.session.data['win_type'] );
+  res.redirect( 'new-win' );
 })
 
 

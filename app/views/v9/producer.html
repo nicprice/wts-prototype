@@ -7,7 +7,7 @@
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
-    href: data['win_type']
+    href: "new-win"
   }) }}
 {% endblock %}
 
@@ -74,7 +74,7 @@
         ]
       }) }}
 
-      {% if data['win_type'] == "new" %}
+      {% if data['win_type'] == "option-1" %}
 
       {{ govukSummaryList({
         classes: "govuk-!-margin-bottom-1",

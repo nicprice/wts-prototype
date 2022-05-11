@@ -7,7 +7,7 @@
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
-    href: data['win_type']
+    href: "new-win"
   }) }}
 {% endblock %}
 
@@ -37,6 +37,8 @@
         {% else %}
 
         <form method="post" {{ novalidateVal }}>
+
+          <!-- NJP 20220510 - Need to add error handling -->
 
         {{ govukInput({
           label: {
