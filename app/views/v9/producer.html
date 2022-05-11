@@ -18,7 +18,7 @@
       <h1 class="govuk-heading-l">Producer information</h1>
 
       {{ govukSummaryList({
-        classes: 'govuk-!-margin-bottom-1',
+        classes: "govuk-!-margin-bottom-1",
         rows: [
           {
             key: {
@@ -77,7 +77,7 @@
       {% if data['win_type'] == "new" %}
 
       {{ govukSummaryList({
-        classes: 'govuk-!-margin-bottom-9',
+        classes: "govuk-!-margin-bottom-1",
         rows: [
           {
             key: {
@@ -107,6 +107,7 @@
         <input type="hidden" name="producer-details-confirmed" value="true">
 
         {{ govukButton({
+          classes: "govuk-!-margin-top-4",
           text: "Confirm producer details"
         }) }}
 
