@@ -60,6 +60,8 @@ router.get('/reset-win', function (req, res) {
   req.session.data['pick_up_status'] = 'Not started'
   req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
 
+  req.session.data['pick_up_location'] = ''
+
   req.session.data['carrier_contact_status'] = 'Not started'
   req.session.data['carrier_contact_status_class'] = 'govuk-tag--grey'
 
