@@ -1,0 +1,32 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Carrier contact information - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "new-win"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Carrier contact information</h1>
+
+      <form method="post" {{ novalidateVal }}>
+
+        <input type="hidden" name="carrier-contact-information-confirmed" value="true">
+
+        {{ govukButton({
+          text: "Confirm carrier contact information"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "../layout.html" %}
+
+
+
+{% block pageTitle %}
+ Dashboard - {{serviceName}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+
+<div id="profile">
+  <div class="login-nav">
+    <span class="login-nav__org-name">
+      <strong>Big Company Ltd</strong>
+    </span>
+    <ul class="login-nav__list">
+      <li class="login-nav__list-item">
+        Roger |
+        </li>
+        <li class="login-nav__list-item">
+          <a href="#" class="govuk-link login-hav__link govuk-link--no-visited-state">Sign out</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-l">
+  {{serviceName}}
+</h1>
+
+<h2 class="govuk-heading-s">Option 1 (based on Figma, but using Task List)</h2>
+
+<ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+  <li>
+    <a href="./new-option-1">Record a new hazardous waste movement</a>
+  </li>
+</ul>
+
+<h2 class="govuk-heading-s">Option 2 (grouping tasks)</h2>
+
+<ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+  <li>
+    <a href="./new-option-2">Record a new hazardous waste movement</a>
+  </li>
+</ul>
+
+{% endblock %}

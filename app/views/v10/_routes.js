@@ -42,7 +42,7 @@ router.get('/new-option-2', function (req, res) {
 
 router.get('/reset-win', function (req, res) {
 
-  req.session.data['total_sections'] = '10'
+  req.session.data['total_sections'] = '8'
   req.session.data['completed_sections'] = '0'
 
   // Set up all the section statuses
@@ -126,13 +126,13 @@ router.get('/new-win', function (req, res) {
 			count++;
 		}
 
-    if(req.session.data['hazard_status'] == "Completed"){
-			count++;
-		}
-
-    if(req.session.data['waste_stored_status'] == "Completed"){
-			count++;
-		}
+    // if(req.session.data['hazard_status'] == "Completed"){
+		// 	count++;
+		// }
+    //
+    // if(req.session.data['waste_stored_status'] == "Completed"){
+		// 	count++;
+		// }
 
     if(req.session.data['waste_management_status'] == "Completed"){
 			count++;

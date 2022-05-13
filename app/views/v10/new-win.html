@@ -57,30 +57,6 @@
               </span>
               {% endif %}
             </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="hazard" aria-describedby="hazard_status">
-                  Describe the hazard
-                </a>
-              </span>
-              <strong class="govuk-tag {{ data['hazard_status_class'] }} app-task-list__tag" id="hazard_status">{{ data['hazard_status'] }}</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="waste-storage" aria-describedby="waste_stored_status">
-                  Describe how the waste is stored
-                </a>
-              </span>
-              <strong class="govuk-tag {{ data['waste_stored_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_stored_status'] }}</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="waste-management" aria-describedby="waste_management_status">
-                  Waste management
-                </a>
-              </span>
-              <strong class="govuk-tag {{ data['waste_management_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_management_status'] }}</strong>
-            </li>
           </ul>
         </li>
 
@@ -144,7 +120,14 @@
               </span>
               <strong class="govuk-tag {{ data['transportation_info_status_class'] }} app-task-list__tag" id="transportation_info_status">{{ data['transportation_info_status'] }}</strong>
             </li>
-
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="waste-management" aria-describedby="waste_management_status">
+                  Waste management
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['waste_management_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_management_status'] }}</strong>
+            </li>
           </ul>
         </li>
 
@@ -225,22 +208,6 @@
                 </a>
               </span>
               <strong class="govuk-tag {{ data['waste_status_class'] }} app-task-list__tag" id="waste_status">{{ data['waste_status'] }}</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="hazard" aria-describedby="hazard_status">
-                  Describe the hazard
-                </a>
-              </span>
-              <strong class="govuk-tag {{ data['hazard_status_class'] }} app-task-list__tag" id="hazard_status">{{ data['hazard_status'] }}</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="waste-storage" aria-describedby="waste_stored_status">
-                  Describe how the waste is stored
-                </a>
-              </span>
-              <strong class="govuk-tag {{ data['waste_stored_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_stored_status'] }}</strong>
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">

@@ -22,6 +22,7 @@ router.get('/', function (req, res) {
 });
 
 router.use('/v9', require('./views/v9/_routes'))
+router.use('/v10', require('./views/v10/_routes'))
 
 
 module.exports = router
