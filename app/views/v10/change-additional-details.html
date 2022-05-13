@@ -1,13 +1,13 @@
 {% extends "../layout.html" %}
 
 {% block pageTitle %}
-  Confirm the EWC code - New waste movement - {{serviceName}}
+  Additional details - New waste movement - {{serviceName}}
 {% endblock %}
 
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
-    href: "new-win"
+    href: "waste"
   }) }}
 {% endblock %}
 
@@ -15,22 +15,13 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-l">Confirm the EWC code</h1>
-
-
-      <!-- <dl class="govuk-list">
-        <dt>EWC code</dt>
-        <dd>{{ data['ewc'] }}</dd>
-        <dt>Description</dt>
-        <dd>{{ ewc_description }}</dd>
-      </dl> -->
-
+      <h1 class="govuk-heading-l">Change additional details</h1>
 
       <!-- content/usability challenge here - do we play back what the user enters, or to play back the 'correct' variant -->
 
       <p class="govuk-body">EWC code: {{ data['ewc'] }}</p>
 
-      <p class="govuk-body">Description: {{ ewc_description }}</p>
+      <p class="govuk-body">Description: {{ data['ewc_description'] }}</p>
 
 
       <form method="post" {{ novalidateVal }}>
@@ -38,7 +29,6 @@
         {{ govukTextarea({
             name: "waste_additional_info",
             id: "waste-additional-info",
-            value: data['waste_additional_info'],
             label: {
               text: "Additional details (optional)"
             }

@@ -78,7 +78,15 @@ router.get('/reset-win', function (req, res) {
 
   req.session.data['ewc_not_found'] = 'false'
 
+  req.session.data['waste_additional_info'] = ''
+  req.session.data['component'] = ''
+  req.session.data['concentration'] = ''
+  req.session.data['hazard_codes'] = ''
+  req.session.data['hazard_codes_cya'] = ''
+
+
   req.session.data['have_waste'] = 'false'
+  req.session.data['have_hazard'] = 'false'
 
   req.session.data['hazard_status'] = 'Not started'
   req.session.data['hazard_status_class'] = 'govuk-tag--grey'
@@ -279,12 +287,22 @@ router.get('/confirm-ewc', function (req, res) {
     ewc_list = JSON.parse(JSON.stringify( ewc_list ))
 
     var ewc_description = "Not found"
+    var is_hazardous_waste = "false"
 
         for (let i = 0; i < ewc_list.length; i++ ){
 
-                if ( ewc_list[i].Waste_Code_Normalised.trim().replace('*','') == wcn ){
+                this_wcn = ewc_list[i].Waste_Code_Normalised.trim()
+
+                if( this_wcn.replace('*','') == wcn ){
                   console.log('Found it');
                   ewc_description = ewc_list[i].EWC_Waste_Desc;
+                  if( this_wcn.charAt(this_wcn.length-1) == "*" ){
+                    req.session.data['is_hazardous_waste'] = "true"
+                    console.log("Hazardous waste")
+                  } else {
+                    req.session.data['is_hazardous_waste'] = "false"
+                    console.log("Non-hazardous waste")
+                  }
                   break;
                 }
 
@@ -329,11 +347,52 @@ router.get('/confirm-ewc', function (req, res) {
 
 
 router.post('/confirm-ewc', function(req, res) {
+
+  if( req.session.data['waste_additional_info'] == '' ){
+    req.session.data['waste_additional_info'] = 'Not provided'
+  }
+
   req.session.data['waste_status'] = "In progress"
   req.session.data['waste_status_class'] = "govuk-tag--blue"
   req.session.data['have_waste'] = "true"
-  res.redirect( 'new-win' );
+
+  if( req.session.data['is_hazardous_waste'] == "true" ){
+    res.redirect('hazard')
+  } else {
+    res.redirect( 'new-win' );
+  }
+
 })
+
+
+// change additional details
+
+router.get('/change-additional-details', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/change-additional-details', function(req, res) {
+
+  if( req.session.data['waste_additional_info'] == '' ){
+    req.session.data['waste_additional_info'] = 'Not provided'
+  }
+
+  res.redirect( 'waste' );
+})
+
+
+// change additional details
+
+router.get('/change-ewc-code', function (req, res) {
+  res.render( './' + req.originalUrl, {} )
+})
+
+router.post('/change-ewc-code', function(req, res) {
+  res.redirect( 'confirm-ewc' );
+})
+
+
+
 
 
 // reset EWC code - quick hack for now
@@ -343,16 +402,45 @@ router.get('/reset-ewc', function (req, res){
   res.redirect('waste')
 })
 
+
+
 // hazard information
 
 router.get('/hazard', function (req, res) {
-  res.render( './' + req.originalUrl, {} )
+
+  if( req.session.data['have_hazard'] == "true" ){
+    back_link = 'waste'
+  } else {
+    back_link = 'confirm-ewc'
+  }
+
+  res.render( './' + req.originalUrl, {
+    back_link: back_link
+  } )
 })
 
 router.post('/hazard', function(req, res) {
-  req.session.data['hazard_status'] = "Completed";
-  req.session.data['hazard_status_class'] = "";
-  res.redirect( 'new-win' );
+
+    req.session.data['have_hazard'] = "true"
+
+    // get the hazard codes the user has entered and put them in an unordered list
+
+    var hazard_codes_cya = ''
+
+    hazard_codes_cya = '<ul class="govuk-list">'
+
+    for (let i = 0; i < req.session.data['hazard_codes'].length; i++ ){
+      hazard_codes_cya = hazard_codes_cya + '<li>' + req.session.data['hazard_codes'][i] + '</li>'
+    }
+
+    hazard_codes_cya = hazard_codes_cya + '</ul>'
+
+    console.log( hazard_codes_cya )
+
+    req.session.data['hazard_codes_cya'] = hazard_codes_cya
+
+  res.redirect( 'waste' );
+
 })
 
 

@@ -20,15 +20,93 @@
 
         {% if data['have_waste'] == "true" %}
 
-        <p class="govuk-body">EWC code: {{ data['ewc'] }}</p>
 
-        <p class="govuk-body">Description: {{ data['ewc_description'] }}</p>
+        <h2 class="govuk-heading-m">Waste details</h2>
 
-        {% if data['waste-additional-info'] %}
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+            {
+              key: {
+                text: "EWC code"
+              },
+              value: {
+                html: data['ewc'] + '<br />' + data['ewc_description']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "change-ewc-code",
+                    text: "Change",
+                    visuallyHiddenText: "EWC code"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Additional details"
+              },
+              value: {
+                text: data['waste_additional_info']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "change-additional-details",
+                    text: "Change",
+                    visuallyHiddenText: "additional details"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
 
-        <p class="govuk-body">Additional details: {{ data['waste-additional-info'] }}</p>
+        {% if( data['is_hazardous_waste']) == "true" %}
+
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+            {
+              key: {
+                text: "Chemical or biological component"
+              },
+              value: {
+                html: data['concentration'] + '% ' + data['component']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "hazard",
+                    text: "Change",
+                    visuallyHiddenText: "chemical or biological component"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Hazard codes"
+              },
+              value: {
+                html: data['hazard_codes_cya']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "hazard",
+                    text: "Change",
+                    visuallyHiddenText: "hazard codes"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
 
         {% endif %}
+
 
         <form method="post" {{ novalidateVal }}>
 
@@ -39,7 +117,6 @@
 
         </form>
 
-        <p class="govuk-body govuk-!-margin-top-9"><a href="reset-ewc">Change the EWC code</a></p>
 
         {% else %}
 
