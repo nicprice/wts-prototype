@@ -464,9 +464,46 @@ router.post('/hazard', function(req, res) {
 
       req.session.data['hazard_codes_cya'] = hazard_codes_cya
 
-  res.redirect( 'waste' );
+      if( req.session.data['have_physical_form'] == "true" ){
+
+        res.redirect( 'waste' );
+
+      } else {
+
+        res.redirect( 'physical-form' )
+
+      }
 
 })
+
+
+
+
+// physical-form
+
+router.get('/physical-form', function (req, res) {
+
+  if( req.session.data['have_physical_form'] == "true" ){
+    back_link = 'waste'
+  } else {
+    back_link = 'hazard'
+  }
+
+  res.render( './' + req.originalUrl, {
+    back_link: back_link
+  } )
+})
+
+
+router.post('/physical-form', function(req, res) {
+  req.session.data['physical_form_cya'] = "Not provided" // could be tidier!
+  if( req.session.data['physical_form'] != "" ){
+    req.session.data['physical_form_cya'] = req.session.data['physical_form']
+    req.session.data['have_physical_form'] = "true";
+  }
+  res.redirect( 'waste' );
+})
+
 
 
 
