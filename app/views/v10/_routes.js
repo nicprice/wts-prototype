@@ -245,8 +245,14 @@ router.post('/transportation', function(req, res) {
 // Waste
 
 router.get('/waste', function (req, res) {
+
+  if( req.session.data['is_hazardous_waste'] == "true" ){
+  }
+
   res.render( './' + req.originalUrl, {} )
+
 })
+
 
 router.post('/waste', function(req, res) {
   if( req.session.data['have_waste'] == "true" ){
@@ -423,21 +429,40 @@ router.post('/hazard', function(req, res) {
 
     req.session.data['have_hazard'] = "true"
 
-    // get the hazard codes the user has entered and put them in an unordered list
+    var concentration_component = "Not provided"
 
-    var hazard_codes_cya = ''
-
-    hazard_codes_cya = '<ul class="govuk-list">'
-
-    for (let i = 0; i < req.session.data['hazard_codes'].length; i++ ){
-      hazard_codes_cya = hazard_codes_cya + '<li>' + req.session.data['hazard_codes'][i] + '</li>'
+    if( req.session.data['component'] != "" ){
+      concentration_component = req.session.data['component']
     }
 
-    hazard_codes_cya = hazard_codes_cya + '</ul>'
+    if( req.session.data['concentration'] != "" ){
+      concentration_component = req.session.data['concentration'] + '% ' + concentration_component
+    }
 
-    console.log( hazard_codes_cya )
+    req.session.data['concentration_component'] = concentration_component
 
-    req.session.data['hazard_codes_cya'] = hazard_codes_cya
+
+    // get the hazard codes the user has entered and put them in an unordered list
+
+      var hazard_codes_cya = 'Not provided'
+
+      console.log( 'Hazard codes: '+req.session.data['hazard_codes'] )
+
+      if( req.session.data['hazard_codes'] != undefined ){
+
+        hazard_codes_cya = '<ul class="govuk-list">'
+
+        for (let i = 0; i < req.session.data['hazard_codes'].length; i++ ){
+          hazard_codes_cya = hazard_codes_cya + '<li>' + req.session.data['hazard_codes'][i] + '</li>'
+        }
+
+        hazard_codes_cya = hazard_codes_cya + '</ul>'
+
+      }
+
+      console.log( hazard_codes_cya )
+
+      req.session.data['hazard_codes_cya'] = hazard_codes_cya
 
   res.redirect( 'waste' );
 
