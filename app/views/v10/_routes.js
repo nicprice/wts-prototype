@@ -78,15 +78,19 @@ router.get('/reset-win', function (req, res) {
 
   req.session.data['ewc_not_found'] = 'false'
 
+  req.session.data['have_waste'] = 'false'
+  req.session.data['have_hazard'] = 'false'
+  req.session.data['have_physical_form'] = 'false'
+  req.session.data['have_weight'] = 'false'
+
   req.session.data['waste_additional_info'] = ''
   req.session.data['component'] = ''
   req.session.data['concentration'] = ''
   req.session.data['hazard_codes'] = ''
   req.session.data['hazard_codes_cya'] = ''
-
-
-  req.session.data['have_waste'] = 'false'
-  req.session.data['have_hazard'] = 'false'
+  req.session.data['physical_form'] = ''
+  req.session.data['physical_form_cya'] = ''
+  req.session.data['weight_cya'] = ''
 
   req.session.data['hazard_status'] = 'Not started'
   req.session.data['hazard_status_class'] = 'govuk-tag--grey'
@@ -500,6 +504,37 @@ router.post('/physical-form', function(req, res) {
   if( req.session.data['physical_form'] != "" ){
     req.session.data['physical_form_cya'] = req.session.data['physical_form']
     req.session.data['have_physical_form'] = "true";
+  }
+  if( req.session.data['have_weight'] == "true "){
+    res.redirect( 'waste' )
+  } else {
+    res.redirect( 'weight' )
+  }
+})
+
+
+
+// weight
+
+router.get('/weight', function (req, res) {
+
+  if( req.session.data['have_weight'] == "true" ){
+    back_link = 'waste'
+  } else {
+    back_link = 'physical-form'
+  }
+
+  res.render( './' + req.originalUrl, {
+    back_link: back_link
+  } )
+})
+
+
+router.post('/weight', function(req, res) {
+  req.session.data['weight_cya'] = "Not provided" // could be tidier!
+  if( req.session.data['weight'] != "" ){
+    req.session.data['weight_cya'] = req.session.data['weight'] + ' kg'
+    req.session.data['have_weight'] = "true";
   }
   res.redirect( 'waste' );
 })

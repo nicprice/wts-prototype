@@ -21,7 +21,7 @@
         {% if data['have_waste'] == "true" %}
 
 
-        <h2 class="govuk-heading-m">Waste details</h2>
+        <!-- <h2 class="govuk-heading-m">Waste details</h2> -->
 
         {{ govukSummaryList({
           classes: "govuk-!-margin-bottom-1",
@@ -118,6 +118,23 @@
                   }
                 ]
               }
+            },
+            {
+              key: {
+                text: "Weight"
+              },
+              value: {
+                html: data['weight_cya']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "weight",
+                    text: "Change",
+                    visuallyHiddenText: "weight"
+                  }
+                ]
+              }
             }
           ]
         }) }}
@@ -144,7 +161,7 @@
 
         {{ govukInput({
           label: {
-            text: "What is the EWC code for the waste"
+            text: "Give the European Waste Catalogue (EWC) code for the waste"
           },
           hint: {
             text: "Six digit code e.g. 08 03 12"
@@ -161,7 +178,7 @@
 
         {{ govukInput({
           label: {
-            text: "What is the EWC code for the waste"
+            text: "Give the European Waste Catalogue (EWC) code for the waste"
           },
           hint: {
             text: "Six digit code e.g. 08 03 12"
