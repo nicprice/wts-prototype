@@ -82,6 +82,7 @@ router.get('/reset-win', function (req, res) {
   req.session.data['have_hazard'] = 'false'
   req.session.data['have_physical_form'] = 'false'
   req.session.data['have_weight'] = 'false'
+  req.session.data['container_asked_for'] = 'false'
 
   req.session.data['waste_additional_info'] = ''
   req.session.data['component'] = ''
@@ -91,12 +92,13 @@ router.get('/reset-win', function (req, res) {
   req.session.data['physical_form'] = ''
   req.session.data['physical_form_cya'] = ''
   req.session.data['weight_cya'] = ''
+  req.session.data['container_cya'] = ''
 
-  req.session.data['hazard_status'] = 'Not started'
-  req.session.data['hazard_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['waste_stored_status'] = 'Not started'
-  req.session.data['waste_stored_status_class'] = 'govuk-tag--grey'
+  // req.session.data['hazard_status'] = 'Not started'
+  // req.session.data['hazard_status_class'] = 'govuk-tag--grey'
+  //
+  // req.session.data['waste_stored_status'] = 'Not started'
+  // req.session.data['waste_stored_status_class'] = 'govuk-tag--grey'
 
   req.session.data['waste_management_status'] = 'Not started'
   req.session.data['waste_management_status_class'] = 'govuk-tag--grey'
@@ -536,8 +538,59 @@ router.post('/weight', function(req, res) {
     req.session.data['weight_cya'] = req.session.data['weight'] + ' kg'
     req.session.data['have_weight'] = "true";
   }
+  if( req.session.data['container_asked_for'] == "true "){
+    res.redirect( 'waste' )
+  } else {
+    res.redirect( 'container' )
+  }
+})
+
+
+// container
+
+router.get('/container', function (req, res) {
+
+  if( req.session.data['container_asked_for'] == "true" ){
+    back_link = 'waste'
+  } else {
+    back_link = 'weight'
+  }
+
+  res.render( './' + req.originalUrl, {
+    back_link: back_link
+  } )
+})
+
+
+router.post('/container', function(req, res) {
+  req.session.data['container_asked_for'] = "true"
+  req.session.data['container_cya'] = "Not provided" // could be tidier!
+  if( req.session.data['container-type'] != "" ){
+    req.session.data['container_cya'] = req.session.data['container-type']
+  } else {
+    req.session.data['container_cya'] = 'Container type not provided'
+  }
+  if( req.session.data['container-capacity'] != "" ){
+    req.session.data['container_cya'] = req.session.data['container-capacity'] + ' capacity ' + req.session.data['container_cya']
+  }
+  if( req.session.data['container-quantity'] != "" ){
+    req.session.data['container_cya'] = req.session.data['container-quantity'] + ' X ' + req.session.data['container_cya']
+  }
   res.redirect( 'waste' );
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
