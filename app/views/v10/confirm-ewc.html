@@ -35,15 +35,16 @@
 
       <form method="post" {{ novalidateVal }}>
 
-        {{ govukTextarea({
-            name: "waste_additional_info",
-            id: "waste-additional-info",
-            value: data['waste_additional_info'],
-            label: {
-              text: "Additional details (optional)"
-            }
-          })
-        }}
+        {{ govukInput({
+          label: {
+            text: "More information"
+          },
+          classes: "govuk-input--width-15",
+          id: "waste-additional-info",
+          name: "waste_additional_info",
+          value: data['waste_additional_info']
+        }) }}
+
 
         {{ govukButton({
           classes: "govuk-!-margin-top-5",
