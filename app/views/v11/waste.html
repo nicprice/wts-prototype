@@ -1,0 +1,226 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Describe the waste - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "new-win"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Describe the waste</h1>
+
+        {% if data['have_waste'] == "true" %}
+
+
+        <!-- <h2 class="govuk-heading-m">Waste details</h2> -->
+
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+            {
+              key: {
+                text: "EWC code"
+              },
+              value: {
+                html: data['ewc'] + '<br />' + data['ewc_description']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "change-ewc-code",
+                    text: "Change",
+                    visuallyHiddenText: "EWC code"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "More information"
+              },
+              value: {
+                text: data['waste_additional_info']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "change-additional-details",
+                    text: "Change",
+                    visuallyHiddenText: "more information"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
+
+        {% if( data['is_hazardous_waste']) == "true" %}
+
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+            {
+              key: {
+                text: "Chemical or biological component"
+              },
+              value: {
+                html: data['concentration_component']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "hazard",
+                    text: "Change",
+                    visuallyHiddenText: "chemical or biological component"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Hazard codes"
+              },
+              value: {
+                html: data['hazard_codes_cya']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "hazard",
+                    text: "Change",
+                    visuallyHiddenText: "hazard codes"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Physical form"
+              },
+              value: {
+                html: data['physical_form_cya']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "physical-form",
+                    text: "Change",
+                    visuallyHiddenText: "physical form"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Weight"
+              },
+              value: {
+                html: data['weight_cya']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "weight",
+                    text: "Change",
+                    visuallyHiddenText: "weight"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Container"
+              },
+              value: {
+                html: data['container_cya']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "container",
+                    text: "Change",
+                    visuallyHiddenText: "container details"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
+
+
+        {% endif %}
+
+
+        <form method="post" {{ novalidateVal }}>
+
+          {{ govukButton({
+            classes: "govuk-!-margin-top-5",
+            text: "Continue"
+          }) }}
+
+        </form>
+
+
+        {% else %}
+
+        <form method="post" {{ novalidateVal }}>
+
+        {% if data['ewc_not_found'] == "true" %}
+
+        {{ govukInput({
+          label: {
+            text: "Give the European Waste Catalogue (EWC) code for the waste"
+          },
+          hint: {
+            text: "Six digit code e.g. 08 03 12"
+          },
+          errorMessage: {
+            text: "Enter a valid EWC code"
+          },
+          classes: "govuk-input--width-10",
+          id: "ewc",
+          name: "ewc"
+        }) }}
+
+        {% else %}
+
+        {{ govukInput({
+          label: {
+            text: "Give the European Waste Catalogue (EWC) code for the waste"
+          },
+          hint: {
+            text: "Six digit code e.g. 08 03 12"
+          },
+          classes: "govuk-input--width-10",
+          id: "ewc",
+          name: "ewc"
+        }) }}
+
+        {% endif %}
+
+
+        {{ govukDetails({
+          summaryText: "Help with EWC codes",
+          text: "Before you tell us about a waste movement, you must..."
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+        </form>
+
+        {% endif %}
+
+    </div>
+  </div>
+{% endblock %}

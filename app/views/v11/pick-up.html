@@ -1,0 +1,55 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Pick up information - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "new-win"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <form method="post" {{ novalidateVal }}>
+
+        {{ govukRadios({
+          idPrefix: "pick-up-location",
+          name: "pick_up_location",
+          fieldset: {
+            legend: {
+              text: "Where will the waste be moved from?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              value: "LU5 4AX",
+              html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX<br />England",
+              checked: data['pick_up_location'] == "LU5 4AX"
+            },
+            {
+              value: "LU2 9NZ",
+              html: "1 Dean Street<br />Luton<br />LU2 9NZ<br />England",
+              checked: data['pick_up_location'] == "LU2 9NZ"
+            }
+          ]
+        }) }}
+
+
+        <input type="hidden" name="pick-up-information-confirmed" value="true">
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
