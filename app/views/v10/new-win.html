@@ -57,6 +57,14 @@
               </span>
               {% endif %}
             </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="waste-produced" aria-describedby="waste_status">
+                  How the waste was produced
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['waste_produced_status_class'] }} app-task-list__tag" id="waste_produced_status">{{ data['waste_produced_status'] }}</strong>
+            </li>
           </ul>
         </li>
 

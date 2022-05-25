@@ -42,7 +42,7 @@ router.get('/new-option-2', function (req, res) {
 
 router.get('/reset-win', function (req, res) {
 
-  req.session.data['total_sections'] = '8'
+  req.session.data['total_sections'] = '9'
   req.session.data['completed_sections'] = '0'
 
   // Set up all the section statuses
@@ -75,6 +75,9 @@ router.get('/reset-win', function (req, res) {
 
   req.session.data['waste_status'] = 'Not started'
   req.session.data['waste_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['waste_produced_status'] = 'Not started'
+  req.session.data['waste_produced_status_class'] = 'govuk-tag--grey'
 
   req.session.data['ewc_not_found'] = 'false'
 
@@ -140,13 +143,9 @@ router.get('/new-win', function (req, res) {
 			count++;
 		}
 
-    // if(req.session.data['hazard_status'] == "Completed"){
-		// 	count++;
-		// }
-    //
-    // if(req.session.data['waste_stored_status'] == "Completed"){
-		// 	count++;
-		// }
+    if(req.session.data['waste_produced_status'] == "Completed"){
+			count++;
+		}
 
     if(req.session.data['waste_management_status'] == "Completed"){
 			count++;
@@ -266,6 +265,29 @@ router.post('/waste', function(req, res) {
   } else {
     res.redirect( 'confirm-ewc' );
   }
+})
+
+
+
+// Waste produced
+
+router.get('/waste-produced', function (req, res) {
+
+  res.render( './' + req.originalUrl, {
+    back_link: 'new-win'
+  } )
+
+})
+
+
+router.post('/waste-produced', function(req, res) {
+  if( req.session.data['waste-produced'] != "" ){
+    req.session.data['waste_produced_status'] = "Comleted"
+    req.session.data['waste_produced_status_class'] = ""
+  }
+
+  res.redirect( 'new-win' );
+
 })
 
 
