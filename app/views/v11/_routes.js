@@ -42,7 +42,7 @@ router.get('/new-option-2', function (req, res) {
 
 router.get('/reset-win', function (req, res) {
 
-  req.session.data['total_sections'] = '9'
+  req.session.data['total_sections'] = '11'
   req.session.data['completed_sections'] = '0'
 
   // Set up all the section statuses
@@ -64,8 +64,14 @@ router.get('/reset-win', function (req, res) {
 
   req.session.data['pick_up_location'] = ''
 
-  req.session.data['carrier_contact_status'] = 'Not started'
-  req.session.data['carrier_contact_status_class'] = 'govuk-tag--grey'
+  req.session.data['carrier_details_status'] = 'Not started'
+  req.session.data['carrier_details_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['carrier_confirmation_status'] = 'Locked'
+  req.session.data['carrier_confirmation_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['producer_confirmation_status'] = 'Cannot start yet'
+  req.session.data['producer_confirmation_status_class'] = 'govuk-tag--grey'
 
   req.session.data['receiver_contact_status'] = 'Not started'
   req.session.data['receiver_contact_status_class'] = 'govuk-tag--grey'
@@ -78,6 +84,16 @@ router.get('/reset-win', function (req, res) {
 
   req.session.data['waste_produced_status'] = 'Not started'
   req.session.data['waste_produced_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['receiver_confirmation_status'] = 'Cannot start yet'
+  req.session.data['receiver_confirmation_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['waste_management_status'] = 'Cannot start yet'
+  req.session.data['waste_management_status_class'] = 'govuk-tag--grey'
+
+  req.session.data['payment_status'] = 'Cannot start yet'
+  req.session.data['payment_status_class'] = 'govuk-tag--grey'
+
 
   req.session.data['ewc_not_found'] = 'false'
 
@@ -96,18 +112,6 @@ router.get('/reset-win', function (req, res) {
   req.session.data['physical_form_cya'] = ''
   req.session.data['weight_cya'] = ''
   req.session.data['container_cya'] = ''
-
-  // req.session.data['hazard_status'] = 'Not started'
-  // req.session.data['hazard_status_class'] = 'govuk-tag--grey'
-  //
-  // req.session.data['waste_stored_status'] = 'Not started'
-  // req.session.data['waste_stored_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['waste_management_status'] = 'Not started'
-  req.session.data['waste_management_status_class'] = 'govuk-tag--grey'
-
-  req.session.data['payment_status'] = 'Cannot start yet'
-  req.session.data['payment_status_class'] = 'govuk-tag--grey'
 
   res.redirect('new-win');
 
