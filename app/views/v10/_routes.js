@@ -282,7 +282,7 @@ router.get('/waste-produced', function (req, res) {
 
 router.post('/waste-produced', function(req, res) {
   if( req.session.data['waste-produced'] != "" ){
-    req.session.data['waste_produced_status'] = "Comleted"
+    req.session.data['waste_produced_status'] = "Completed"
     req.session.data['waste_produced_status_class'] = ""
   }
 
