@@ -85,10 +85,10 @@ router.get('/reset-win', function (req, res) {
   req.session.data['waste_produced_status'] = 'Not started'
   req.session.data['waste_produced_status_class'] = 'govuk-tag--grey'
 
-  req.session.data['receiver_confirmation_status'] = 'Cannot start yet'
+  req.session.data['receiver_confirmation_status'] = 'Locked'
   req.session.data['receiver_confirmation_status_class'] = 'govuk-tag--grey'
 
-  req.session.data['waste_management_status'] = 'Cannot start yet'
+  req.session.data['waste_management_status'] = 'Locked'
   req.session.data['waste_management_status_class'] = 'govuk-tag--grey'
 
   req.session.data['payment_status'] = 'Cannot start yet'
