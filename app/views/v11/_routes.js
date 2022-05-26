@@ -222,13 +222,13 @@ router.post('/pick-up', function(req, res) {
 
 // Carrier contact information
 
-router.get('/carrier-contact', function (req, res) {
+router.get('/carrier-details', function (req, res) {
   res.render( './' + req.originalUrl, {} )
 })
 
-router.post('/carrier-contact', function(req, res) {
-  req.session.data['carrier_contact_status'] = "Completed";
-  req.session.data['carrier_contact_status_class'] = "";
+router.post('/carrier-details', function(req, res) {
+  req.session.data['carrier_details_status'] = "Completed";
+  req.session.data['carrier_details_status_class'] = "";
   res.redirect( 'new-win' );
 })
 
