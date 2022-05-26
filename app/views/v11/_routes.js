@@ -97,6 +97,8 @@ router.get('/reset-win', function (req, res) {
 
   req.session.data['ewc_not_found'] = 'false'
 
+  req.session.data['have_how_waste_produced'] = 'false'
+  req.session.data['have_sic_code'] = 'false'
   req.session.data['have_waste'] = 'false'
   req.session.data['have_hazard'] = 'false'
   req.session.data['have_physical_form'] = 'false'
@@ -296,14 +298,49 @@ router.get('/waste-produced', function (req, res) {
 
 
 router.post('/waste-produced', function(req, res) {
-  if( req.session.data['waste-produced'] != "" ){
-    req.session.data['waste_produced_status'] = "Completed"
-    req.session.data['waste_produced_status_class'] = ""
+  if( req.session.data['waste_produced'] != "" ){
+    req.session.data['have_how_waste_produced'] = "true"
+    if( req.session.data['have_sic_code'] == "true" ){
+      req.session.data['waste_produced_status'] = "Completed"
+      req.session.data['waste_produced_status_class'] = ""
+    } else {
+      req.session.data['waste_produced_status'] = "In progress"
+      req.session.data['waste_produced_status_class'] = "govuk-tag--blue"
+    }
+  }
+
+  res.redirect( 'sic-code');
+
+})
+
+
+
+
+// SIC code
+
+router.get('/sic-code', function (req, res) {
+  res.render( './' + req.originalUrl, {
+  } )
+})
+
+router.post('/sic-code', function(req, res) {
+
+  if( req.session.data['sic_code'] != "" ){
+    req.session.data['have_sic_code'] = "true"
+    if( req.session.data['have_how_waste_produced'] == "true" ){
+      req.session.data['waste_produced_status'] = "Completed"
+      req.session.data['waste_produced_status_class'] = ""
+    } else {
+      req.session.data['waste_produced_status'] = "In progress"
+      req.session.data['waste_produced_status_class'] = "govuk-tag--blue"
+    }
+
   }
 
   res.redirect( 'new-win' );
-
 })
+
+
 
 
 
@@ -658,17 +695,6 @@ router.post('/waste-management', function(req, res) {
   res.redirect( 'new-win' );
 })
 
-
-
-// SIC code
-
-router.get('/sic-code', function (req, res) {
-  res.render( './' + req.originalUrl, {} )
-})
-
-router.post('/sic-code', function(req, res) {
-  res.redirect( 'producer' );
-})
 
 
 
