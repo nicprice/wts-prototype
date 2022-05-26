@@ -42,7 +42,7 @@ router.get('/new-option-2', function (req, res) {
 
 router.get('/reset-win', function (req, res) {
 
-  req.session.data['total_sections'] = '11'
+  req.session.data['total_sections'] = '12'
   req.session.data['completed_sections'] = '0'
 
   // Set up all the section statuses

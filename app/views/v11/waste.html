@@ -16,12 +16,10 @@
 
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-l">Describe the waste</h1>
 
         {% if data['have_waste'] == "true" %}
 
-
-        <!-- <h2 class="govuk-heading-m">Waste details</h2> -->
+        <h1 class="govuk-heading-l">Waste details</h1>
 
         {{ govukSummaryList({
           classes: "govuk-!-margin-bottom-1",
@@ -178,10 +176,12 @@
 
         {{ govukInput({
           label: {
-            text: "Give the European Waste Catalogue (EWC) code for the waste"
+            text: "Give the European Waste Catalogue (EWC) code for the waste",
+            classes: "govuk-label--l",
+            isPageHeading: true
           },
           hint: {
-            text: "Six digit code e.g. 08 03 12"
+            text: "Six digit code, for example 08 03 12"
           },
           errorMessage: {
             text: "Enter a valid EWC code"
@@ -195,10 +195,13 @@
 
         {{ govukInput({
           label: {
-            text: "Give the European Waste Catalogue (EWC) code for the waste"
+            text: "Give the European Waste Catalogue (EWC) code for the waste",
+            text: "Give the European Waste Catalogue (EWC) code for the waste",
+            classes: "govuk-label--l",
+            isPageHeading: true
           },
           hint: {
-            text: "Six digit code e.g. 08 03 12"
+            text: "Six digit code, for example 08 03 12"
           },
           classes: "govuk-input--width-10",
           id: "ewc",

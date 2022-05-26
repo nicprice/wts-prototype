@@ -68,7 +68,7 @@
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <a href="producer" aria-describedby="producer_info_status">
-                  Producer details
+                  Producer contact details
                 </a>
               </span>
               <strong class="govuk-tag {{ data['producer_info_status_class'] }} app-task-list__tag" id="producer_info_status">{{ data['producer_info_status'] }}</strong>
@@ -76,20 +76,6 @@
               <br />
               <span class="cover-note">
                 {{ data['producer_business_name'] }}
-              </span>
-              {% endif %}
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="pick-up" aria-describedby="pick_up_status">
-                  Pick up location
-                </a>
-              </span>
-              <strong class="govuk-tag {{ data['pick_up_status_class'] }} app-task-list__tag" id="pick_up_status">{{ data['pick_up_status'] }}</strong>
-              {% if data['pick_up_status'] == 'Completed' %}
-              <br />
-              <span class="cover-note">
-                {{ data['pick_up_location'] }}
               </span>
               {% endif %}
             </li>
@@ -123,14 +109,27 @@
         <li>
           <h2 class="app-task-list__section">
             <span class="app-task-list__section-number">3. </span>
-            Waste collection
+            Collection
           </h2>
           <ul class="app-task-list__items">
-
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="pick-up" aria-describedby="pick_up_status">
+                  Pick up location
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['pick_up_status_class'] }} app-task-list__tag" id="pick_up_status">{{ data['pick_up_status'] }}</strong>
+              {% if data['pick_up_status'] == 'Completed' %}
+              <br />
+              <span class="cover-note">
+                {{ data['pick_up_location'] }}
+              </span>
+              {% endif %}
+            </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <a href="carrier-details" aria-describedby="carrier_details_status">
-                  Carrier details
+                  Carrier contact details
                 </a>
               </span>
               <strong class="govuk-tag {{ data['carrier_details_status_class'] }} app-task-list__tag" id="carrier_details_status">{{ data['carrier_details_status'] }}</strong>
@@ -138,7 +137,7 @@
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <a href="transportation" aria-describedby="transportation_info_status">
-                  Transportation information
+                  Transportation
                 </a>
               </span>
               <strong class="govuk-tag {{ data['transportation_info_status_class'] }} app-task-list__tag" id="transportation_info_status">{{ data['transportation_info_status'] }}</strong>
@@ -167,9 +166,17 @@
         <li>
           <h2 class="app-task-list__section">
             <span class="app-task-list__section-number">4. </span>
-            Waste delivery
+            Delivery
           </h2>
           <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="receiver-contact" aria-describedby="receiver_contact_status">
+                  Receiver contact details
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['receiver_contact_status_class'] }} app-task-list__tag" id="receiver_contact_status">{{ data['receiver_contact_status'] }}</strong>
+            </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <!-- <a href="receiver-contact" aria-describedby="receiver_confirmation_status">
