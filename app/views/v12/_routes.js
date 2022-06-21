@@ -109,13 +109,22 @@ router.get('/reset-win', function (req, res) {
   req.session.data['container_asked_for'] = 'false'
 
   req.session.data['waste_additional_info'] = ''
+  req.session.data['waste_additional_info_cya'] = ''
+
   req.session.data['component'] = ''
   req.session.data['concentration'] = ''
   req.session.data['hazard_codes'] = ''
   req.session.data['hazard_codes_cya'] = ''
+
   req.session.data['physical_form'] = ''
   req.session.data['physical_form_cya'] = ''
+
+  req.session.data['weight'] = ''
   req.session.data['weight_cya'] = ''
+
+  req.session.data['container-type'] = ''
+  req.session.data['container-capacity'] = ''
+  req.session.data['container-quantity'] = ''
   req.session.data['container_cya'] = ''
 
   res.redirect('new-win');
@@ -211,8 +220,8 @@ router.get('/new-win', function (req, res) {
 
 router.get('/waste', function (req, res) {
 
-  if( req.session.data['is_hazardous_waste'] == "true" ){
-  }
+  // if( req.session.data['is_hazardous_waste'] == "true" ){
+  // }
 
   res.render( './' + req.originalUrl, {} )
 
@@ -317,7 +326,7 @@ router.get('/confirm-ewc', function (req, res) {
 router.post('/confirm-ewc', function(req, res) {
 
   if( req.session.data['waste_additional_info'] == '' ){
-    req.session.data['waste_additional_info'] = 'Not provided'
+    req.session.data['waste_additional_info_cya'] = 'Not provided'
   }
 
   req.session.data['waste_status'] = "In progress"
@@ -345,7 +354,7 @@ router.get('/change-additional-details', function (req, res) {
 router.post('/change-additional-details', function(req, res) {
 
   if( req.session.data['waste_additional_info'] == '' ){
-    req.session.data['waste_additional_info'] = 'Not provided'
+    req.session.data['waste_additional_info_cya'] = 'Not provided'
   }
 
   res.redirect( 'waste' );
