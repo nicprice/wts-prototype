@@ -31,10 +31,10 @@
       <p class="govuk-body govuk-!-margin-bottom-7">
         You have completed {{ completed_sections }} of {{ data['total_sections'] }} sections.
       </p>
-
-
-
-
+      {#
+        The 'You' in the above line might suggest to the user that they *can* or they *must*
+        complete all sections, which might be misleading - one to watch NJP
+      #}
 
       <ol class="app-task-list">
         <li>
