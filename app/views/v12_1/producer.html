@@ -1,0 +1,118 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Producer information - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "new-win"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Producer contact details</h1>
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "Business name"
+            },
+            value: {
+              text: data['producer_business_name']
+            },
+            actions: {
+              items: [
+                {
+                  href: "producer-business-name",
+                  text: "Change",
+                  visuallyHiddenText: "business name"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: '<p class="govuk-body">Unit 15<br>Berryedge Park<br>Dunstable<br>LU5 4AX<br>England</p>'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Contact details"
+            },
+            value: {
+              html: '<p class="govuk-body">roger@euromovement.com</p><p class="govuk-body">07123 456789</p>'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "contact details"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+      {% if data['win_type'] == "option-1" %}
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "SIC code"
+            },
+            value: {
+              html: '<p class="govuk-body">' + sic_code + '</p><p class="govuk-body">' + sic_description + '</p>'
+            },
+            actions: {
+              items: [
+                {
+                  href: "sic-code",
+                  text: "Change",
+                  visuallyHiddenText: "SIC code"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+      {% endif %}
+
+
+      <form method="post" {{ novalidateVal }}>
+
+        <input type="hidden" name="producer-details-confirmed" value="true">
+
+        {{ govukButton({
+          classes: "govuk-!-margin-top-4",
+          text: "Confirm producer details"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

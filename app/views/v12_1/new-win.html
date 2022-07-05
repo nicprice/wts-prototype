@@ -1,0 +1,204 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+ Record a new waste movement - {{serviceName}}
+{% endblock %}
+
+
+{% block beforeContent %}
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Record a new waste movement
+      </li>
+    </ol>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Waste movement ID: <span class="win-id">AAAA-4712</span>
+      </h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-7">
+        You have completed {{ completed_sections }} of {{ data['total_sections'] }} sections.
+      </p>
+      {#
+        The 'You' in the above line might suggest to the user that they *can* or they *must*
+        complete all sections, which might be misleading - one to watch NJP
+      #}
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span>
+            About the waste
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="waste" aria-describedby="waste_status">
+                  Waste details
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['waste_status_class'] }} app-task-list__tag" id="waste_status">{{ data['waste_status'] }}</strong>
+              {% if data['have_waste'] == 'true' %}
+              <br />
+              <span class="cover-note">
+                {{ data['ewc'] }}
+              </span>
+              {% endif %}
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="waste-produced" aria-describedby="waste_status">
+                  How the waste was produced
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['waste_produced_status_class'] }} app-task-list__tag" id="waste_produced_status">{{ data['waste_produced_status'] }}</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="producer" aria-describedby="producer_info_status">
+                  Producer contact details
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['producer_info_status_class'] }} app-task-list__tag" id="producer_info_status">{{ data['producer_info_status'] }}</strong>
+              {% if data['cover_note'] == 'true' %}
+              <br />
+              <span class="cover-note">
+                {{ data['producer_business_name'] }}
+              </span>
+              {% endif %}
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="pick-up" aria-describedby="pick_up_status">
+                  Pick up location
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['pick_up_status_class'] }} app-task-list__tag" id="pick_up_status">{{ data['pick_up_status'] }}</strong>
+              {% if data['pick_up_status'] == 'Completed' %}
+              <br />
+              <span class="cover-note">
+                {{ data['pick_up_location'] }}
+              </span>
+              {% endif %}
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="receiver-contact" aria-describedby="receiver_contact_status">
+                  Receiver contact details
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['receiver_contact_status_class'] }} app-task-list__tag" id="receiver_contact_status">{{ data['receiver_contact_status'] }}</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span>
+            Fees
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if data['payment_status'] == 'Completed' %}
+                <a href="payment" aria-describedby="payment_status">
+                  Payment
+                </a>
+                {% else %}
+                Payment
+                {% endif %}
+              </span>
+              <strong class="govuk-tag {{ data['payment_status_class'] }} app-task-list__tag" id="payment_status">{{ data['payment_status'] }}</strong>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span>
+            Collection
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="carrier-details" aria-describedby="carrier_details_status">
+                  Carrier contact details
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['carrier_details_status_class'] }} app-task-list__tag" id="carrier_details_status">{{ data['carrier_details_status'] }}</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="transportation" aria-describedby="transportation_info_status">
+                  Transportation
+                </a>
+              </span>
+              <strong class="govuk-tag {{ data['transportation_info_status_class'] }} app-task-list__tag" id="transportation_info_status">{{ data['transportation_info_status'] }}</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <!-- <a href="carrier-confirmation" aria-describedby="carrier_confirmation_status">
+                  Carrier confirmation
+                </a> -->
+                Carrier confirmation
+              </span>
+              <strong class="govuk-tag {{ data['carrier_confirmation_status_class'] }} app-task-list__tag" id="carrier_confirmation_status">{{ data['carrier_confirmation_status'] }}</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <!-- <a href="producer-confirmation" aria-describedby="producer_confirmation_status">
+                  Producer confirmation
+                </a> -->
+                Producer confirmation
+              </span>
+              <strong class="govuk-tag {{ data['producer_confirmation_status_class'] }} app-task-list__tag" id="producer_confirmation_status">{{ data['producer_confirmation_status'] }}</strong>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">4. </span>
+            Delivery
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <!-- <a href="receiver-contact" aria-describedby="receiver_confirmation_status">
+                  Receiver confirmation
+                </a> -->
+                Receiver confirmation
+              </span>
+              <strong class="govuk-tag {{ data['receiver_confirmation_status_class'] }} app-task-list__tag" id="receiver_confirmation_status">{{ data['receiver_confirmation_status'] }}</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <!-- <a href="waste-management" aria-describedby="waste_management_status">
+                  Recovery or disposal code
+                </a> -->
+                Recovery or disposal code
+              </span>
+              <strong class="govuk-tag {{ data['waste_management_status_class'] }} app-task-list__tag" id="waste_stored_status">{{ data['waste_management_status'] }}</strong>
+            </li>
+          </ul>
+        </li>
+
+      </ol>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
