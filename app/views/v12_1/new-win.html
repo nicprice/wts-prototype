@@ -100,6 +100,12 @@
                 </a>
               </span>
               <strong class="govuk-tag {{ data['receiver_contact_status_class'] }} app-task-list__tag" id="receiver_contact_status">{{ data['receiver_contact_status'] }}</strong>
+              {% if data['receiver_contact_status'] == 'Completed' %}
+              <br />
+              <span class="cover-note">
+                {{ data['receiver_business_name'] }}
+              </span>
+              {% endif %}
             </li>
           </ul>
         </li>

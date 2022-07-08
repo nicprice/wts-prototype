@@ -678,6 +678,33 @@ router.get('/receiver-contact', function (req, res) {
 router.post('/receiver-contact', function(req, res) {
   req.session.data['receiver_contact_status'] = "Completed";
   req.session.data['receiver_contact_status_class'] = "";
+
+  // go to page to select the address
+  res.redirect( 'receiver-address' );
+ // res.redirect( 'new-win' );
+})
+
+router.post('/receiver-address', function(req, res) {
+  req.session.data['receiver_contact_status'] = "Completed";
+  req.session.data['receiver_contact_status_class'] = "";
+
+  // go to the page to continue adding details
+  res.redirect( 'receiver-details' );
+})
+
+router.post('/receiver-address-manual', function(req, res) {
+  req.session.data['receiver_contact_status'] = "Completed";
+  req.session.data['receiver_contact_status_class'] = "";
+
+  // go to the page to continue adding details
+  res.redirect( 'receiver-details' );
+})
+
+router.post('/receiver-details', function(req, res) {
+  req.session.data['receiver_contact_status'] = "Completed";
+  req.session.data['receiver_contact_status_class'] = "";
+
+  // return to the win
   res.redirect( 'new-win' );
 })
 
