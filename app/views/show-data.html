@@ -1,0 +1,46 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Session data - {{serviceName}}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+        All session data
+      </h1>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+      <dl class="govuk-list data-list">
+
+        {% for key, value in data %}
+
+        <dt>
+          {{ key }}
+        </dt>
+        <dd>
+          {{ value }}
+        </dd>
+        {% else %}
+
+        <dt>
+          Session data
+        </dt>
+        <dd>
+          None
+        </dd>
+
+        {% endfor %}
+
+      </dl>
+
+
+    </div>
+
+  </div>
+
+{% endblock %}
