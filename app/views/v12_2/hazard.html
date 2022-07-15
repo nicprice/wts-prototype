@@ -1,0 +1,146 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Describe the hazard - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: back_link
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Describe the chemical or biological component of the waste</h1>
+
+      <form method="post" {{ novalidateVal }}>
+
+
+
+        {{ govukInput({
+          label: {
+            text: "Component"
+          },
+          id: "component",
+          name: "component",
+          value: data['component']
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Concentration"
+          },
+          classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+          id: "concentration",
+          name: "concentration",
+          value: data['concentration'],
+          suffix: {
+            text: "%"
+          }
+        }) }}
+
+        {{ govukCheckboxes({
+          idPrefix: "hazard_codes",
+          name: "hazard_codes",
+          fieldset: {
+            legend: {
+              text: "Select which hazard codes apply",
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          hint: {
+            text: "Select all codes that apply to the component"
+          },
+          items: [
+            {
+              value: "HP1: Explosive",
+              text: "HP1: Explosive",
+              checked: checked("hazard_codes", "HP1: Explosive")
+            },
+            {
+              value: "HP2: Oxidising",
+              text: "HP2: Oxidising",
+              checked: checked("hazard_codes", "HP2: Oxidising")
+            },
+            {
+              value: "HP3: Flammable",
+              text: "HP3: Flammable",
+              checked: checked("hazard_codes", "HP3: Flammable")
+            },
+            {
+              value: "HP4: Irritant",
+              text: "HP4: Irritant",
+              checked: checked("hazard_codes", "HP4: Irritant")
+            },
+            {
+              value: "HP5: Harmful",
+              text: "HP5: Harmful",
+              checked: checked("hazard_codes", "HP5: Harmful")
+            },
+            {
+              value: "HP6: Toxic",
+              text: "HP6: Toxic",
+              checked: checked("hazard_codes", "HP6: Toxic")
+            },
+            {
+              value: "HP7: Carcinogenic",
+              text: "HP7: Carcinogenic",
+              checked: checked("hazard_codes", "HP7: Carcinogenic")
+            },
+            {
+              value: "HP8: Corrosive",
+              text: "HP8: Corrosive",
+              checked: checked("hazard_codes", "HP8: Corrosive")
+            },
+            {
+              value: "HP9: Infectious",
+              text: "HP9: Infectious",
+              checked: checked("hazard_codes", "HP9: Infectious")
+            } ,
+            {
+              value: "HP10: Toxic for reproduction",
+              text: "HP10: Toxic for reproduction",
+              checked: checked("hazard_codes", "HP10: Toxic for reproduction")
+            },
+            {
+              value: "HP11: Mutagenic",
+              text: "HP11: Mutagenic",
+              checked: checked("hazard_codes", "HP11: Mutagenic")
+            },
+            {
+              value: "HP12: Release of an acute toxic gas",
+              text: "HP12: Release of an acute toxic gas",
+              checked: checked("hazard_codes", "HP12: Release of an acute toxic gas")
+            },
+            {
+              value: "HP13: Sensitizing",
+              text: "HP13: Sensitizing",
+              checked: checked("hazard_codes", "HP13: Sensitizing")
+            },
+            {
+              value: "HP14: Ecotoxic",
+              text: "HP14: Ecotoxic",
+              checked: checked("hazard_codes", "HP14: Ecotoxic")
+            },
+            {
+              value: "HP15",
+              text: "HP15",
+              checked: checked("hazard_codes", "HP15")
+            }
+          ]
+        }) }}
+
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

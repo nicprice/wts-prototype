@@ -1,0 +1,66 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  What is the waste contained in? - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: back_link
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <form method="post" {{ novalidateVal }}>
+
+        <h1 class="govuk-heading-l">Describe the container the waste will be transported in</h1>
+
+
+        {{ govukInput({
+          label: {
+            text: "Container type"
+          },
+          classes: "govuk-input--width-15",
+          id: "container-type",
+          name: "container-type",
+          value: data['container-type'],
+          spellcheck: false
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Capacity of container"
+          },
+          id: "container-capacity",
+          name: "container-capacity",
+          value: data['container-capacity'],
+          spellcheck: false
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Number of containers"
+          },
+          classes: "govuk-input--width-2",
+          id: "container-quantity",
+          name: "container-quantity",
+          value: data['container-quantity']
+        }) }}
+
+
+
+
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

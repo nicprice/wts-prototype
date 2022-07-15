@@ -11,7 +11,7 @@ router.use('/', (req, res, next) => {
   res.locals.folder = req.folder; // what folder the url is
   res.locals.subfolder = req.subfolder; // what subfolder the URL is in
   console.log('folder : ' + res.locals.folder + ', subfolder : ' + res.locals.subfolder  );
-  console.log('previous page is: ' + res.locals.prevURL + " and current page is " + req.url + " " + res.locals.currentURL );
+  console.log('previous page is: ' + res.locals.prevURL + " and current page is " + res.locals.currentURL );
   next();
 });
 
@@ -26,6 +26,7 @@ router.use('/v10', require('./views/v10/_routes'))
 router.use('/v11', require('./views/v11/_routes'))
 router.use('/v12', require('./views/v12/_routes'))
 router.use('/v12_1', require('./views/v12_1/_routes'))
+router.use('/v12_2', require('./views/v12_2/_routes'))
 
 
 module.exports = router
