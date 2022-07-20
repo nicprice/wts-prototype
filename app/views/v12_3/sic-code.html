@@ -1,0 +1,62 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Provide the SIC code - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: 'waste-produced'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        SIC code and description
+      </h1>
+
+      <form method="post">
+
+        {% from "govuk/components/select/macro.njk" import govukSelect %}
+
+        {{ govukSelect({
+          id: "sic-info",
+          name: "sic_info",
+          items: [
+            {
+              value: "",
+              text: "",
+              selected: true
+            },
+            {
+              value: "01110 Growing of cereals (except rice), leguminous crops and oil seeds",
+              text: "01110 Growing of cereals (except rice), leguminous crops and oil seeds"
+            },
+            {
+              value: "41201 Construction of commercial buildings",
+              text: "41201 Construction of commercial buildings"
+            },
+            {
+              value: "41202 Another one",
+              text: "41202 Another one"
+            },
+            {
+              value: "41203 And another one",
+              text: "41203 And another one"
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
