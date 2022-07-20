@@ -1,0 +1,78 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Waste management - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+
+      <form method="post">
+
+        {% from "govuk/components/table/macro.njk" import govukTable %}
+
+        {{ govukTable({
+          caption: "Give the R or D code for the waste",
+          captionClasses: "govuk-table__caption--l",
+          firstCellIsHeader: true,
+          head: [
+            {
+              text: "EWC Code",
+              classes: 'app-custom-class'
+            },
+            {
+              text: "Component",
+              classes: 'app-custom-class'
+            },
+            {
+              text: "Hazard codes",
+              classes: 'app-custom-class'
+            }
+          ],
+          rows: [
+            [
+              {
+                text: data['ewc']
+              },
+              {
+                text: data['concentration_component']
+              },
+              {
+                html: data['hazard_codes_cya']
+              }
+            ]
+          ]
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "R or D code"
+          },
+          classes: "govuk-input--width-10",
+          id: "recovery-code",
+          name: "recovery_code",
+          value: data['recovery_code'],
+          spellcheck: false
+        }) }}
+
+        <input type="hidden" name="waste_storage_confirmed" value="true">
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
