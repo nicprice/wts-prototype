@@ -10,8 +10,8 @@ router.use('/', (req, res, next) => {
   req.subfolder = req.originalUrl.split('/')[2]; //sub-folder e.g. 'service'
   res.locals.folder = req.folder; // what folder the url is
   res.locals.subfolder = req.subfolder; // what subfolder the URL is in
-  console.log('folder : ' + res.locals.folder + ', subfolder : ' + res.locals.subfolder  );
-  console.log('previous page is: ' + res.locals.prevURL + " and current page is " + res.locals.currentURL );
+ // console.log('folder : ' + res.locals.folder + ', subfolder : ' + res.locals.subfolder  );
+  //console.log('previous page is: ' + res.locals.prevURL + " and current page is " + res.locals.currentURL );
   next();
 });
 
@@ -29,6 +29,7 @@ router.use('/v12_1', require('./views/v12_1/_routes'))
 router.use('/v12_2', require('./views/v12_2/_routes'))
 router.use('/v12_3', require('./views/v12_3/_routes'))
 router.use('/v12_4', require('./views/v12_4/_routes'))
+router.use('/v12_5', require('./views/v12_5/_routes'))
 
 
 module.exports = router
