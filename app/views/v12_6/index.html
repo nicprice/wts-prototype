@@ -1,0 +1,30 @@
+
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Dashboard - {{serviceName}}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      {{serviceName}}
+    </h1>
+
+    <dl class="govuk-list">
+      <dt class="govuk-!-font-weight-bold">Producer</dt>
+      <dd><a href="./setup-producer">Record a new waste movement</a></dd>
+
+      <dt class="govuk-!-font-weight-bold">Carrier</dt>
+      <dd><a href="./setup-carrier">Continue a waste movement</a></dd>
+
+      <dt class="govuk-!-font-weight-bold">Receiver</dt>
+      <dd><a href="./setup-receiver">Continue a waste movement</a></dd>
+    </dl>
+  </div>
+</div>
+
+{% endblock %}
