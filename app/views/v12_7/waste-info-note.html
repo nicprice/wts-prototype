@@ -1,0 +1,319 @@
+{% extends "../layout.html" %}
+
+<meta http-equiv="refresh" content="5"/>
+
+{% block pageTitle %}
+  Record a new waste movement - {{serviceName}}
+{% endblock %}
+
+
+{% block beforeContent %}
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Record a waste movement
+      </li>
+    </ol>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Waste movement ID: <span class="win-id">AAAA-4712</span>
+      </h1>
+
+<!-- The 'You' in this might suggest that they *can* or *must* complete all sections, which is be misleading - one to watch -->
+      <p class="govuk-body govuk-!-margin-bottom-7">
+        You have completed {{ completed_sections }} of {{ data['total_sections'] }} sections.
+      </p>
+
+      <ol class="app-task-list">
+        <li>
+          <!-- section 1 -->
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span>
+            About the waste
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="waste" aria-describedby="waste_details_status">
+                  Waste details
+                </a>
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['waste_details_status_class'] }} app-task-list__tag" id="waste_details_status">
+                {{ data['waste_details_status'] }}
+              </strong>
+
+              {% if data['have_waste'] == 'true' %}
+                <br />
+                <span class="cover-note">
+                  {{ data['ewc'] }}
+                </span>
+              {% endif %}
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="waste-produced" aria-describedby="how_waste_produced_status">
+                  How the waste was produced
+                </a>
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['how_waste_produced_status_class'] }} app-task-list__tag" id="how_waste_produced_status">
+                {{ data['how_waste_produced_status'] }}
+              </strong>
+
+              {% if data['have_sic_code'] == 'true' %}
+                <br />
+                <span class="cover-note">
+                    {{ data['sic_code'] }}
+                  </span>
+              {% endif %}
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="producer" aria-describedby="producer_details_status">
+                  Producer contact details
+                </a>
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['producer_details_status_class'] }} app-task-list__tag" id="producer_details_status">
+                {{ data['producer_details_status'] }}
+              </strong>
+
+              {% if data['producer_business_name'] != '' %}
+                <br />
+                <span class="cover-note">
+                  {{ data['producer_business_name'] }}
+                </span>
+              {% endif %}
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="pick-up" aria-describedby="pick_up_status">
+                  Pick up location
+                </a>
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['pick_up_status_class'] }} app-task-list__tag" id="pick_up_status">
+                {{ data['pick_up_status'] }}
+              </strong>
+
+              {% if data['pick_up_location'] != '' %}
+                <br />
+                <span class="cover-note">
+                  {{ data['pick_up_location'] }}
+                </span>
+              {% endif %}
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="receiver-contact" aria-describedby="receiver_details_status">
+                  Receiver contact details
+                </a>
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['receiver_details_status_class'] }} app-task-list__tag" id="receiver_details_status">
+                {{ data['receiver_details_status'] }}
+              </strong>
+
+              {% if data['receiver_business_name'] != '' %}
+                <br />
+                <span class="cover-note">
+                  {{ data['receiver_business_name'] }}
+                </span>
+              {% endif %}
+            </li>
+          </ul>
+        </li>
+
+        <!-- section 2 -->
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span>
+            Fees
+          </h2>
+
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Payment
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['payment_status_class'] }} app-task-list__tag" id="payment_status">
+                {{ data['payment_status'] }}
+              </strong>
+            </li>
+          </ul>
+        </li>
+
+        <!-- section 3 -->
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span>
+            Collection
+          </h2>
+
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if ((data['carrier_details_status'] == 'Completed') or (data['carrier_details_status'] =='Review')) %}
+                  <a href="carrier-details" aria-describedby="carrier_details_status">
+                    Carrier contact details
+                  </a>
+                {% else %}
+                  Carrier contact details
+                {% endif %}
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['carrier_details_status_class'] }} app-task-list__tag" id="carrier_details_status">
+                {{ data['carrier_details_status'] }}
+              </strong>
+
+              {% if data['carrier_business_name'] != '' %}
+                <br />
+                <span class="cover-note">
+                  {{ data['carrier_business_name'] }}
+                </span>
+              {% endif %}
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if ((data['transportation_info_status'] == 'Completed') or (data['transportation_info_status'] == 'Review')) %}
+                  <a href="transportation-check-answers" aria-describedby="transportation_info_status">
+                    Transportation
+                  </a>
+
+                {% else %}
+                  {% if data['carrier_signed_in'] == 'true' %}
+                    <a href="transportation" aria-describedby="transportation_info_status">
+                      Transportation
+                    </a>
+                  {% else %}
+                    Transportation
+                  {% endif %}
+                {% endif %}
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['transportation_info_status_class'] }} app-task-list__tag" id="transportation_info_status">
+                {{ data['transportation_info_status'] }}
+              </strong>
+
+              {% if data['transport_type'] != '' %}
+                <br />
+                <span class="cover-note">
+                  {% if data['transport_type'] == 'Road' %}
+                    {{ data['vehicle_reg_number'] }}
+                  {% else %}
+                    {{ data['transport_type'] }}
+                  {% endif %}
+                </span>
+              {% endif %}
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if ((data['carrier_signed_in'] == 'true') and (data['carrier_confirmation_status'] == 'Not started')) %}
+                  <a href="carrier-confirmation" aria-describedby="carrier_confirmation_status">
+                    Carrier confirmation
+                  </a>
+                {% else %}
+                  Carrier confirmation
+                {% endif %}
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['carrier_confirmation_status_class'] }} app-task-list__tag" id="carrier_confirmation_status">
+                {{ data['carrier_confirmation_status'] }}
+              </strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if ((data['producer_signed_in'] == 'true') and (data['producer_confirmation_status'] == 'Not started')) %}
+                  <a href="producer-confirmation" aria-describedby="producer_confirmation_status">
+                    Producer confirmation
+                  </a>
+                {% else %}
+                  Producer confirmation
+                {% endif %}
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['producer_confirmation_status_class'] }} app-task-list__tag" id="producer_confirmation_status">
+                {{ data['producer_confirmation_status'] }}
+              </strong>
+            </li>
+          </ul>
+        </li>
+
+        <!-- section 4 -->
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">4. </span>
+            Delivery
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if ((data['receiver_signed_in'] == 'true') and (data['receiver_confirmation_status'] == 'Not started')) %}
+                  <a href="receiver-confirmation" aria-describedby="receiver_confirmation_status">
+                    Receiver confirmation
+                  </a>
+                {% else %}
+                  Receiver confirmation
+                {% endif %}
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['receiver_confirmation_status_class'] }} app-task-list__tag" id="receiver_confirmation_status">
+                {{ data['receiver_confirmation_status'] }}
+              </strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                {% if ((data['recovery_code_status'] == 'Completed') or (data['recovery_code_status'] == 'Review')) %}
+                  <a href="waste-management-check-answers" aria-describedby="recovery_code_status">
+                    Recovery or disposal code
+                  </a>
+                {% else %} <!-- if it's not completed -->
+                  {% if data['receiver_signed_in'] == 'true' %}
+                    <a href="waste-management" aria-describedby="recovery_code_status">
+                      Recovery or disposal code
+                    </a>
+                  {% else %}
+                    Recovery or disposal code
+                  {% endif %}
+                {% endif %}
+              </span>
+              <!-- tag -->
+              <strong class="govuk-tag {{ data['recovery_code_status_class'] }} app-task-list__tag" id="waste_stored_status">
+                {{ data['recovery_code_status'] }}
+              </strong>
+
+              {% if data['recovery_code_status'] == 'Completed' %}
+                <br />
+                <span class="cover-note">
+                  {{ data['recovery_code'] }}
+                </span>
+              {% endif %}
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+{% endblock %}
