@@ -1,0 +1,41 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  What is the waste contained in? - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: 'javascript:history.go(-1)'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <form method="post">
+        {{ govukInput({
+          label: {
+            text: "Give the permit number for the receiving site",
+            classes: "govuk-label--l",
+            isPageHeading: true
+          },
+          hint: {
+            text: "For example: CBDU000111"
+          },
+          classes: "govuk-input--width-10",
+          id: "receiver-permit",
+          name: "receiver_permit",
+          value: data['receiver_permit']
+        }) }}
+
+        {{ govukButton({
+          text: "Save and continue"
+        }) }}
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

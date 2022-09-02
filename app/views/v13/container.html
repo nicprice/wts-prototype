@@ -1,0 +1,143 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  What is the waste contained in? - New waste movement - {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: back_link
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <form method="post">
+
+        <h1 class="govuk-heading-l">Describe the container the waste will be transported in</h1>
+        {% set otherType %}
+          {{ govukInput({
+            label: {
+              text: "Describe the container"
+            },
+            classes: "govuk-input--width-15",
+            id: "other-container-type",
+            name: "other_container-type",
+            value: data['other_container-type'],
+            spellcheck: false
+          }) }}
+        {% endset -%}
+
+        {{ govukSelect({
+          id: "container-type",
+          name: "container-type",
+          label: {
+            text: "Container type"
+          },
+          items: [
+            {
+              value: "",
+              text: ""
+            },
+            {
+              value: "2 wheeled bin",
+              text: "2 wheeled bin",
+              selected: data['container-type'] == '2 wheeled bin'
+            },
+            {
+              value: "4 wheeled bin",
+              text: "4 wheeled bin",
+              selected: data['container-type'] == '4 wheeled bin'
+            },
+            {
+              value: "baled waste from a baler or compactor",
+              text: "baled waste from a baler or compactor",
+              selected: data['container-type'] == 'baled waste from a baler or compactor'
+            },
+            {
+              value: "bin or box drum (metal or plastic)",
+              text: "bin or box drum (metal or plastic)",
+              selected: data['container-type'] == 'bin or box drum (metal or plastic)'
+            },
+            {
+              value: "intermediate bulk container (IBC)",
+              text: "intermediate bulk container (IBC)",
+              selected: data['container-type'] == 'intermediate bulk container (IBC)'
+            },
+            {
+              value: "loose (no container)",
+              text: "loose (no container)",
+              selected: data['container-type'] == 'loose (no container)'
+            },
+            {
+              value: "sack or bag",
+              text: "sack or bag",
+              selected: data['container-type'] == 'sack or bag'
+            },
+            {
+              value: "sharps box or container",
+              text: "sharps box or container",
+              selected: data['container-type'] == 'sharps box or container'
+            },
+            {
+              value: "skip with compactor",
+              text: "skip with compactor",
+              selected: data['container-type'] == 'skip with compactor'
+            },
+            {
+              value: "skip without compactor",
+              text: "skip without compactor",
+              selected: data['container-type'] == 'skip without compactor'
+            },
+            {
+              value: "tanker",
+              text: "tanker",
+              selected: data['container-type'] == 'tanker'
+            },
+            {
+              value: "other",
+              text: "other",
+              selected: data['container-type'] == 'other',
+              conditional: {
+                html: otherType
+              }
+            }
+          ]
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Size of container"
+          },
+          id: "container-capacity",
+          name: "container-capacity",
+          value: data['container-capacity'],
+          spellcheck: false
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Number of containers"
+          },
+          classes: "govuk-input--width-2",
+          id: "container-quantity",
+          name: "container-quantity",
+          value: data['container-quantity']
+        }) }}
+
+
+
+
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
