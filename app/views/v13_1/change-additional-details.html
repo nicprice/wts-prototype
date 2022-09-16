@@ -1,0 +1,50 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Change more information</h1>
+
+      {#
+        content/usability challenge here - do we play back what the user enters, or the 'correct' variant
+      #}
+      <p class="govuk-body">EWC code: {{ data['ewc'] }}</p>
+
+      <p class="govuk-body">Description: {{ data['ewc_description'] }}</p>
+
+
+      <form method="post">
+
+        {{ govukInput({
+          label: {
+            text: "More information"
+          },
+          classes: "govuk-input--width-15",
+          id: "waste-additional-info",
+          name: "waste_additional_info",
+          value: data['waste_additional_info']
+        }) }}
+
+        {{ govukButton({
+          classes: "govuk-!-margin-top-5",
+          text: "Continue"
+        }) }}
+
+      </form>
+
+
+    </div>
+  </div>
+{% endblock %}
