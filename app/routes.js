@@ -34,6 +34,7 @@ router.use('/v12_6', require('./views/v12_6/_routes'))
 router.use('/v12_7', require('./views/v12_7/_routes'))
 router.use('/v13', require('./views/v13/_routes'))
 router.use('/v13_1', require('./views/v13_1/_routes'))
+router.use('/v14', require('./views/v14/_routes'))
 
 
 module.exports = router
