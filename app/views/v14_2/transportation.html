@@ -1,0 +1,83 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form method="post">
+          {% set roadHtml %}
+            {{ govukInput({
+              id: "vehicle-reg-number",
+              name: "vehicle_reg_number",
+              value: data['vehicle_reg_number'],
+              spellcheck: false,
+              classes: "govuk-!-width-one-third",
+              label: {
+                text: "Vehicle registration number"
+              }
+            }) }}
+          {% endset -%}
+
+        {{ govukRadios({
+          idPrefix: "transport-type",
+          name: "transport_type",
+          fieldset: {
+            legend: {
+              text: "Select how the waste will be transported",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              value: "Road",
+              text: "Road",
+              checked: data['transport_type'] == "Road",
+              conditional: {
+                html: roadHtml
+              }
+            },
+            {
+              value: "Rail",
+              text: "Rail",
+              checked: data['transport_type'] == "Rail"
+            },
+            {
+              value: "Air",
+              text: "Air",
+              checked: data['transport_type'] == "Air"
+            },
+            {
+              value: "Water",
+              text: "Water",
+              checked: data['transport_type'] == "Water"
+            },
+            {
+              divider: "or"
+            },
+            {
+              value: "Postal",
+              text: "Postal",
+              checked: data['transport_type'] == "Postal"
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

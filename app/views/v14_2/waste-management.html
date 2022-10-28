@@ -1,0 +1,68 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Give the R or D code for the waste
+      </h1>
+
+      <!-- display the EWC code and component information --->
+      <dl class="govuk-list">
+        <dt class="govuk-!-font-weight-bold">{{ data['ewc'] }} - {{ data['ewc_description'] }}</dt>
+      </dl>
+
+      {{ data['table_html'] | safe }}
+
+      <form method="post">
+        <!-- if no, or an invalid, R or D code is entered show the error page -->
+        {% if data['recovery_code_provided'] == "false" %}
+          {{ govukInput({
+            label: {
+              text: "R or D code"
+            },
+            errorMessage: {
+              text: "Enter a valid R or D code"
+            },
+            classes: "govuk-input--width-10",
+            id: "recovery-code",
+            name: "recovery_code",
+            value: data['recovery_code']
+          }) }}
+
+        {% else %}
+          {{ govukInput({
+            label: {
+              text: "R or D code"
+            },
+            classes: "govuk-input--width-10",
+            id: "recovery-code",
+            name: "recovery_code",
+            value: data['recovery_code']
+          }) }}
+
+        {% endif %}
+
+        <input type="hidden" name="waste_storage_confirmed" value="true">
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
