@@ -1,0 +1,73 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "producer"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form method="post">
+
+          <h1 class="govuk-heading-l">Give the business address for the producer</h1>
+
+          <p>
+            {{ data['producer_postcode'] }} <br>
+            <a href="receiver-contact">Change postcode</a>
+          </p>
+
+          {{ govukSelect ({
+            id: "producer-full-address",
+            value: data['producer_full_address'],
+            name: "producer_full_address",
+            label: {
+              text: "Select an address:"
+            },
+            items: [
+              {
+                value: "",
+                text: "4 addresses found"
+              },
+              {
+                value: "1 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                text: "1 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                selected: data['receiver_full_address'] == "1 Cunnery Rd, MALVERN LINK, WR14 0UH"
+              },
+              {
+                value: "2 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                text: "2 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                selected: data['receiver_full_address'] == "2 Cunnery Rd, MALVERN LINK, WR14 0UH"
+              },
+              {
+                value: "3 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                text: "3 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                selected: data['receiver_full_address'] == "3 Cunnery Rd, MALVERN LINK, WR14 0UH"
+              },
+              {
+                value: "4 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                text: "4 Cunnery Rd, MALVERN LINK, WR14 0UH",
+                selected: data['receiver_full_address'] == "4 Cunnery Rd, MALVERN LINK, WR14 0UH"
+              }
+            ]
+          }) }}
+
+          <p>
+            <a href="receiver-address-manual">I cannot find my address in the list</a>
+          </p>
+
+          {{ govukButton({
+            text: "Save and continue"
+          }) }}
+
+        </form>
+    </div>
+  </div>
+{% endblock %}
