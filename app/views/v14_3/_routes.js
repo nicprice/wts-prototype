@@ -1007,7 +1007,7 @@ router.post('/sic-code', function(req, res) {
     req.session.data['how_waste_produced_status_class'] = "";
   }
 
-  if (req.session.data['how_waste_produced_status'] != 'Completed') {
+
     if (req.session.data['sic_info'] != ""){
       req.session.data['have_how_waste_produced'] = "true"
 
@@ -1039,7 +1039,7 @@ router.post('/sic-code', function(req, res) {
         req.session.data['how_waste_produced_status_class'] = "govuk-tag--blue"
       }
     }
-  }
+  
 
   res.redirect( 'waste-info-note' );
 })
