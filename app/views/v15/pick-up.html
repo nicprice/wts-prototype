@@ -15,61 +15,99 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <form method="post">
-        {% if data['carrier_signed_in'] == "true" %}
-          {{ govukRadios({
-            idPrefix: "pick-up-location",
-            name: "pick_up_location",
-            fieldset: {
-              legend: {
-                text: "Where will the waste be moved from?",
-                isPageHeading: true,
-                classes: "govuk-fieldset__legend--l"
-              }
+
+      {% if ((data['pick_up_status'] == 'Completed') or (data['pick_up_status'] == 'Review')) %}
+        <h1 class="govuk-heading-l">
+          Where will the waste be moved from?
+        </h1>
+
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+          {
+            key: {
+              text: "Pick up location"
             },
-            items: [
-              {
-                value: "CF24 4PH",
-                html: "29 Gwynnyth St<br />Cardiff<br />South Glamorgan<br />CF24 4PH",
-                checked: data['pick_up_location'] == "CF24 4PH"
-              }
-            ]
-          }) }}
-
-        {% else %}
-          {{ govukRadios({
-            idPrefix: "pick-up-location",
-            name: "pick_up_location",
-            fieldset: {
-              legend: {
-                text: "Where will the waste be moved from?",
-                isPageHeading: true,
-                classes: "govuk-fieldset__legend--l"
-              }
+            value: {
+              html: data['pick_up_cya']
             },
-            items: [
-              {
-                value: "LU5 4AX",
-                html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX<br />England",
-                checked: data['pick_up_location'] == "LU5 4AX"
-              },
-              {
-                value: "LU2 9NZ",
-                html: "1 Dean Street<br />Luton<br />LU2 9NZ<br />England",
-                checked: data['pick_up_location'] == "LU2 9NZ"
-              }
-            ]
-          }) }}
-
-        {% endif %}
-
-        <input type="hidden" name="pick_up_location_confirmed" value="true">
-
-        {{ govukButton({
-          text: "Continue"
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "pick up location"
+              } ]
+            }
+          } ]
         }) }}
 
-      </form>
+        <form method="post">
+          {{ govukButton({
+            classes: "govuk-!-margin-top-4",
+            text: "Confirm pick up location"
+          }) }}
+        </form>
+
+
+      {% else %} <!-- we don't have the details, ask for them -->
+
+        <form method="post">
+          {% if data['carrier_signed_in'] == "true" %}
+            {{ govukRadios({
+              idPrefix: "pick-up-location",
+              name: "pick_up_location",
+              fieldset: {
+                legend: {
+                  text: "Where will the waste be moved from?",
+                  isPageHeading: true,
+                  classes: "govuk-fieldset__legend--l"
+                }
+              },
+              items: [
+                {
+                  value: "CF24 4PH",
+                  html: "29 Gwynnyth St<br />Cardiff<br />South Glamorgan<br />CF24 4PH",
+                  checked: data['pick_up_location'] == "CF24 4PH"
+                }
+              ]
+            }) }}
+
+          {% else %}
+            {{ govukRadios({
+              idPrefix: "pick-up-location",
+              name: "pick_up_location",
+              fieldset: {
+                legend: {
+                  text: "Where will the waste be moved from?",
+                  isPageHeading: true,
+                  classes: "govuk-fieldset__legend--l"
+                }
+              },
+              items: [
+                {
+                  value: "LU5 4AX",
+                  html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX<br />England",
+                  checked: data['pick_up_location'] == "LU5 4AX"
+                },
+                {
+                  value: "LU2 9NZ",
+                  html: "1 Dean Street<br />Luton<br />LU2 9NZ<br />England",
+                  checked: data['pick_up_location'] == "LU2 9NZ"
+                }
+              ]
+            }) }}
+
+          {% endif %}
+
+          <input type="hidden" name="pick_up_location_confirmed" value="true">
+
+          {{ govukButton({
+            text: "Continue"
+          }) }}
+        </form>
+
+      {% endif %}
+
 
     </div>
   </div>

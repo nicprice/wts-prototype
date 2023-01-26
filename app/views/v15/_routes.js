@@ -132,6 +132,7 @@ router.get('/ut5receiver', function (req, res) {
   req.session.data['receiver_contact_cya'] = '<ul class="govuk-list"><li>Roger Anderson</li><li>randerson@sampsoms.org</li><li>079 4987 3028</li></ul>'
   req.session.data['receiver_permit'] = 'DN3796LP'
   req.session.data['pick_up_location_confirmed'] = 'true'
+  req.session.data['pick_up_cya'] = '<ul class="govuk-list"><li>Unit 15</li><li>Berryedge Park</li><li>Dunstable</li><li>LU5 4AX</li></ul>'
   req.session.data['vehicle_reg_number'] = 'JU71 TAF'
 
   res.redirect( 'setup-win' )
@@ -1174,7 +1175,7 @@ router.get('/pick-up', function (req, res) {
 })
 
 router.post('/pick-up', function(req, res) {
-  if (req.session.data['pic_up_location'] != ""){
+  if (req.session.data['pick_up_location'] != ""){
     req.session.data['pick_up_status'] = "Completed";
     req.session.data['pick_up_status_class'] = "";
   } else {
