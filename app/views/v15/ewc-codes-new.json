@@ -1,0 +1,2265 @@
+[{"ewc_code":"01",
+  "ewc_description":
+  "WASTES RESULTING FROM EXPLORATION, MINING, QUARRYING, AND PHYSICAL AND CHEMICAL TREATMENT OF MINERALS"},
+  {"ewc_code":"01 01",
+    "ewc_description":"wastes from mineral excavation"},
+  {"ewc_code":"01 01 01",
+    "ewc_description":"wastes from mineral metalliferous excavation"},
+  {"ewc_code":"01 01 02",
+    "ewc_description":
+    "wastes from mineral non-metalliferous excavation"},
+  {"ewc_code":"01 03",
+    "ewc_description":
+    "wastes from physical and chemical processing of metalliferous minerals"},
+  {"ewc_code":"01 03 04*",
+    "ewc_description":
+    "acid-generating tailings from processing of sulphide ore"},
+  {"ewc_code":"01 03 05*",
+    "ewc_description":"other tailings containing hazardous substances"},
+  {"ewc_code":"01 03 06",
+    "ewc_description":
+    "tailings other than those mentioned in 01 03 04 and 01 03 05"},
+  {"ewc_code":"01 03 07*",
+    "ewc_description":
+    "other wastes containing hazardous substances from physical and chemical processing of metalliferous minerals"},
+  {"ewc_code":"01 03 08",
+    "ewc_description":
+    "dusty and powdery wastes other than those mentioned in 01 03 07"},
+  {"ewc_code":"01 03 09",
+    "ewc_description":
+    "red mud from alumina production other than the wastes mentioned in 01 03 10"},
+  {"ewc_code":"01 03 10*",
+    "ewc_description":
+    "red mud from alumina production containing hazardous substances other than the wastes mentioned in 01 03 07"},
+  {"ewc_code":"01 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"01 04",
+    "ewc_description":
+    "wastes from physical and chemical processing of non-metalliferous minerals"},
+  {"ewc_code":"01 04 07*",
+    "ewc_description":
+    "wastes containing hazardous substances from physical and chemical processing of non-metalliferous minerals"},
+  {"ewc_code":"01 04 08",
+    "ewc_description":
+    "waste gravel and crushed rocks other than those mentioned in 01 04 07"},
+  {"ewc_code":"01 04 09", "ewc_description":"waste sand and clays"},
+  {"ewc_code":"01 04 10",
+    "ewc_description":
+    "dusty and powdery wastes other than those mentioned in 01 04 07"},
+  {"ewc_code":"01 04 11",
+    "ewc_description":
+    "wastes from potash and rock salt processing other than those mentioned in 01 04 07"},
+  {"ewc_code":"01 04 12",
+    "ewc_description":
+    "tailings and other wastes from washing and cleaning of minerals other than those mentioned in 01 04 07 and 01 04 11"},
+  {"ewc_code":"01 04 13",
+    "ewc_description":
+    "wastes from stone cutting and sawing other than those mentioned in 01 04 07"},
+  {"ewc_code":"01 04 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"01 05",
+    "ewc_description":"drilling muds and other drilling wastes"},
+  {"ewc_code":"01 05 04",
+    "ewc_description":"freshwater drilling muds and wastes"},
+  {"ewc_code":"01 05 05*",
+    "ewc_description":"oil-containing drilling muds and wastes"},
+  {"ewc_code":"01 05 06*",
+    "ewc_description":
+    "drilling muds and other drilling wastes containing hazardous substances"},
+  {"ewc_code":"01 05 07",
+    "ewc_description":
+    "barite-containing drilling muds and wastes other than those mentioned in 01 05 05 and 01 05 06"},
+  {"ewc_code":"01 05 08",
+    "ewc_description":
+    "chloride-containing drilling muds and wastes other than those mentioned in 01 05 05 and 01 05 06"},
+  {"ewc_code":"01 05 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02",
+    "ewc_description":
+    "WASTES FROM AGRICULTURE, HORTICULTURE, AQUACULTURE, FORESTRY, HUNTING AND FISHING, FOOD PREPARATION AND PROCESSING"},
+  {"ewc_code":"02 01",
+    "ewc_description":
+    "wastes from agriculture, horticulture, aquaculture, forestry, hunting and fishing"},
+  {"ewc_code":"02 01 01",
+    "ewc_description":"sludges from washing and cleaning"},
+  {"ewc_code":"02 01 02", "ewc_description":"animal-tissue waste"},
+  {"ewc_code":"02 01 03", "ewc_description":"plant-tissue waste"},
+  {"ewc_code":"02 01 04",
+    "ewc_description":"waste plastics (except packaging)"},
+  {"ewc_code":"02 01 06",
+    "ewc_description":
+    "animal faeces, urine and manure (including spoiled straw), effluent, collected separately and treated off-site"},
+  {"ewc_code":"02 01 07", "ewc_description":"wastes from forestry"},
+  {"ewc_code":"02 01 08*",
+    "ewc_description":
+    "agrochemical waste containing hazardous substances"},
+  {"ewc_code":"02 01 09",
+    "ewc_description":
+    "agrochemical waste other than those mentioned in 02 01 08"},
+  {"ewc_code":"02 01 10", "ewc_description":"waste metal"},
+  {"ewc_code":"02 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02 02",
+    "ewc_description":
+    "wastes from the preparation and processing of meat, fish and other foods of animal origin"},
+  {"ewc_code":"02 02 01",
+    "ewc_description":"sludges from washing and cleaning"},
+  {"ewc_code":"02 02 02", "ewc_description":"animal-tissue waste"},
+  {"ewc_code":"02 02 03",
+    "ewc_description":
+    "materials unsuitable for consumption or processing"},
+  {"ewc_code":"02 02 04",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"02 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02 03",
+    "ewc_description":
+    "wastes from fruit, vegetables, cereals, edible oils, cocoa, coffee, tea and tobacco preparation and processing; conserve production; yeast and yeast extract production, molasses preparation and fermentation"},
+  {"ewc_code":"02 03 01",
+    "ewc_description":
+    "sludges from washing, cleaning, peeling, centrifuging and separation"},
+  {"ewc_code":"02 03 02",
+    "ewc_description":"wastes from preserving agents"},
+  {"ewc_code":"02 03 03",
+    "ewc_description":"wastes from solvent extraction"},
+  {"ewc_code":"02 03 04",
+    "ewc_description":
+    "materials unsuitable for consumption or processing"},
+  {"ewc_code":"02 03 05",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"02 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02 04",
+    "ewc_description":"wastes from sugar processing"},
+  {"ewc_code":"02 04 01",
+    "ewc_description":"soil from cleaning and washing beet"},
+  {"ewc_code":"02 04 02",
+    "ewc_description":"off-specification calcium carbonate"},
+  {"ewc_code":"02 04 03",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"02 04 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02 05",
+    "ewc_description":"wastes from the dairy products industry"},
+  {"ewc_code":"02 05 01",
+    "ewc_description":
+    "materials unsuitable for consumption or processing"},
+  {"ewc_code":"02 05 02",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"02 05 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02 06",
+    "ewc_description":
+    "wastes from the baking and confectionery industry"},
+  {"ewc_code":"02 06 01",
+    "ewc_description":
+    "materials unsuitable for consumption or processing"},
+  {"ewc_code":"02 06 02",
+    "ewc_description":"wastes from preserving agents"},
+  {"ewc_code":"02 06 03",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"02 06 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"02 07",
+    "ewc_description":
+    "wastes from the production of alcoholic and non-alcoholic beverages (except coffee, tea and cocoa)"},
+  {"ewc_code":"02 07 01",
+    "ewc_description":
+    "wastes from washing, cleaning and mechanical reduction of raw materials"},
+  {"ewc_code":"02 07 02",
+    "ewc_description":"wastes from spirits distillation"},
+  {"ewc_code":"02 07 03",
+    "ewc_description":"wastes from chemical treatment"},
+  {"ewc_code":"02 07 04",
+    "ewc_description":
+    "materials unsuitable for consumption or processing"},
+  {"ewc_code":"02 07 05",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"02 07 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"03",
+    "ewc_description":
+    "WASTES FROM WOOD PROCESSING AND THE PRODUCTION OF PANELS AND FURNITURE, PULP, PAPER AND CARDBOARD"},
+  {"ewc_code":"03 01",
+    "ewc_description":
+    "wastes from wood processing and the production of panels and furniture"},
+  {"ewc_code":"03 01 01", "ewc_description":"waste bark and cork"},
+  {"ewc_code":"03 01 04*",
+    "ewc_description":
+    "sawdust, shavings, cuttings, wood, particle board and veneer containing hazardous substances"},
+  {"ewc_code":"03 01 05",
+    "ewc_description":
+    "sawdust, shavings, cuttings, wood, particle board and veneer other than those mentioned in 03 01 04"},
+  {"ewc_code":"03 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"03 02",
+    "ewc_description":"wastes from wood preservation"},
+  {"ewc_code":"03 02 01*",
+    "ewc_description":"non-halogenated organic wood preservatives"},
+  {"ewc_code":"03 02 02*",
+    "ewc_description":"organochlorinated wood preservatives"},
+  {"ewc_code":"03 02 03*",
+    "ewc_description":"organometallic wood preservatives"},
+  {"ewc_code":"03 02 04*",
+    "ewc_description":"inorganic wood preservatives"},
+  {"ewc_code":"03 02 05*",
+    "ewc_description":
+    "other wood preservatives containing hazardous substances"},
+  {"ewc_code":"03 02 99",
+    "ewc_description":"wood preservatives not otherwise specified"},
+  {"ewc_code":"03 03",
+    "ewc_description":
+    "wastes from pulp, paper and cardboard production and processing"},
+  {"ewc_code":"03 03 01", "ewc_description":"waste bark and wood"},
+  {"ewc_code":"03 03 02",
+    "ewc_description":
+    "green liquor sludge (from recovery of cooking liquor)"},
+  {"ewc_code":"03 03 05",
+    "ewc_description":"de-inking sludges from paper recycling"},
+  {"ewc_code":"03 03 07",
+    "ewc_description":
+    "mechanically separated rejects from pulping of waste paper and cardboard"},
+  {"ewc_code":"03 03 08",
+    "ewc_description":
+    "wastes from sorting of paper and cardboard destined for recycling"},
+  {"ewc_code":"03 03 09", "ewc_description":"lime mud waste"},
+  {"ewc_code":"03 03 10",
+    "ewc_description":
+    "fibre rejects, fibre-, filler- and coating-sludges from mechanical separation"},
+  {"ewc_code":"03 03 11",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 03 03 10"},
+  {"ewc_code":"03 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"04",
+    "ewc_description":
+    "WASTES FROM THE LEATHER, FUR AND TEXTILE INDUSTRIES"},
+  {"ewc_code":"04 01",
+    "ewc_description":"wastes from the leather and fur industry"},
+  {"ewc_code":"04 01 01",
+    "ewc_description":"fleshings and lime split wastes"},
+  {"ewc_code":"04 01 02", "ewc_description":"liming waste"},
+  {"ewc_code":"04 01 03*",
+    "ewc_description":
+    "degreasing wastes containing solvents without a liquid phase"},
+  {"ewc_code":"04 01 04",
+    "ewc_description":"tanning liquor containing chromium"},
+  {"ewc_code":"04 01 05",
+    "ewc_description":"tanning liquor free of chromium"},
+  {"ewc_code":"04 01 06",
+    "ewc_description":
+    "sludges, in particular from on-site effluent treatment containing chromium"},
+  {"ewc_code":"04 01 07",
+    "ewc_description":
+    "sludges, in particular from on-site effluent treatment free of chromium"},
+  {"ewc_code":"04 01 08",
+    "ewc_description":
+    "waste tanned leather (blue sheetings, shavings, cuttings, buffing dust) containing chromium"},
+  {"ewc_code":"04 01 09",
+    "ewc_description":"wastes from dressing and finishing"},
+  {"ewc_code":"04 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"04 02",
+    "ewc_description":"wastes from the textile industry"},
+  {"ewc_code":"04 02 09",
+    "ewc_description":
+    "wastes from composite materials (impregnated textile, elastomer, plastomer)"},
+  {"ewc_code":"04 02 10",
+    "ewc_description":
+    "organic matter from natural products (for example grease, wax)"},
+  {"ewc_code":"04 02 14*",
+    "ewc_description":
+    "wastes from finishing containing organic solvents"},
+  {"ewc_code":"04 02 15",
+    "ewc_description":
+    "wastes from finishing other than those mentioned in 04 02 14"},
+  {"ewc_code":"04 02 16*",
+    "ewc_description":
+    "dyestuffs and pigments containing hazardous substances"},
+  {"ewc_code":"04 02 17",
+    "ewc_description":
+    "dyestuffs and pigments other than those mentioned in 04 02 16"},
+  {"ewc_code":"04 02 19*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"04 02 20",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 04 02 19"},
+  {"ewc_code":"04 02 21",
+    "ewc_description":"wastes from unprocessed textile fibres"},
+  {"ewc_code":"04 02 22",
+    "ewc_description":"wastes from processed textile fibres"},
+  {"ewc_code":"04 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"05",
+    "ewc_description":
+    "WASTES FROM PETROLEUM REFINING, NATURAL GAS PURIFICATION AND PYROLYTIC TREATMENT OF COAL"},
+  {"ewc_code":"05 01",
+    "ewc_description":"wastes from petroleum refining"},
+  {"ewc_code":"05 01 02*", "ewc_description":"desalter sludges"},
+  {"ewc_code":"05 01 03*", "ewc_description":"tank bottom sludges"},
+  {"ewc_code":"05 01 04*", "ewc_description":"acid alkyl sludges"},
+  {"ewc_code":"05 01 05*", "ewc_description":"oil spills"},
+  {"ewc_code":"05 01 06*",
+    "ewc_description":
+    "oily sludges from maintenance operations of the plant or equipment"},
+  {"ewc_code":"05 01 07*", "ewc_description":"acid tars"},
+  {"ewc_code":"05 01 08*", "ewc_description":"other tars"},
+  {"ewc_code":"05 01 09*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"05 01 10",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 05 01 09"},
+  {"ewc_code":"05 01 11*",
+    "ewc_description":"wastes from cleaning of fuels with bases"},
+  {"ewc_code":"05 01 12*", "ewc_description":"oil containing acids"},
+  {"ewc_code":"05 01 13", "ewc_description":
+  "boiler feedwater sludges"},
+  {"ewc_code":"05 01 14",
+    "ewc_description":"wastes from cooling columns"},
+  {"ewc_code":"05 01 15*", "ewc_description":"spent filter clays"},
+  {"ewc_code":"05 01 16",
+    "ewc_description":
+    "sulphur-containing wastes from petroleum desulphurisation"},
+  {"ewc_code":"05 01 17", "ewc_description":"Bitumen"},
+  {"ewc_code":"05 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"05 06",
+    "ewc_description":"wastes from the pyrolytic treatment of coal"},
+  {"ewc_code":"05 06 01*", "ewc_description":"acid tars"},
+  {"ewc_code":"05 06 03*", "ewc_description":"other tars"},
+  {"ewc_code":"05 06 04",
+    "ewc_description":"waste from cooling columns"},
+  {"ewc_code":"05 06 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"05 07",
+    "ewc_description":
+    "wastes from natural gas purification and transportation"},
+  {"ewc_code":"05 07 01*",
+    "ewc_description":"wastes containing mercury"},
+  {"ewc_code":"05 07 02",
+    "ewc_description":"wastes containing sulphur"},
+  {"ewc_code":"05 07 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06",
+    "ewc_description":"WASTES FROM INORGANIC CHEMICAL PROCESSES"},
+  {"ewc_code":"06 01",
+    "ewc_description":
+    "wastes from the manufacture, formulation, supply and use (MFSU) of acids"},
+  {"ewc_code":"06 01 01*",
+    "ewc_description":"sulphuric acid and sulphurous acid"},
+  {"ewc_code":"06 01 02*", "ewc_description":"hydrochloric acid"},
+  {"ewc_code":"06 01 03*", "ewc_description":"hydrofluoric acid"},
+  {"ewc_code":"06 01 04*",
+    "ewc_description":"phosphoric and phosphorous acid"},
+  {"ewc_code":"06 01 05*",
+    "ewc_description":"nitric acid and nitrous acid"},
+  {"ewc_code":"06 01 06*", "ewc_description":"other acids"},
+  {"ewc_code":"06 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 02",
+    "ewc_description":"wastes from the MFSU of bases"},
+  {"ewc_code":"06 02 01*", "ewc_description":"calcium hydroxide"},
+  {"ewc_code":"06 02 03*", "ewc_description":"ammonium hydroxide"},
+  {"ewc_code":"06 02 04*",
+    "ewc_description":"sodium and potassium hydroxide"},
+  {"ewc_code":"06 02 05*", "ewc_description":"other bases"},
+  {"ewc_code":"06 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 03",
+    "ewc_description":
+    "wastes from the MFSU of salts and their solutions and metallic oxides"},
+  {"ewc_code":"06 03 11*",
+    "ewc_description":"solid salts and solutions containing cyanides"},
+  {"ewc_code":"06 03 13*",
+    "ewc_description":
+    "solid salts and solutions containing heavy metals"},
+  {"ewc_code":"06 03 14",
+    "ewc_description":
+    "solid salts and solutions other than those mentioned in 06 03 11 and 06 03 13"},
+  {"ewc_code":"06 03 15*",
+    "ewc_description":"metallic oxides containing heavy metals"},
+  {"ewc_code":"06 03 16",
+    "ewc_description":
+    "metallic oxides other than those mentioned in 06 03 15"},
+  {"ewc_code":"06 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 04",
+    "ewc_description":
+    "metal-containing wastes other than those mentioned in 06 03"},
+  {"ewc_code":"06 04 03*",
+    "ewc_description":"wastes containing arsenic"},
+  {"ewc_code":"06 04 04*",
+    "ewc_description":"wastes containing mercury"},
+  {"ewc_code":"06 04 05*",
+    "ewc_description":"wastes containing other heavy metals"},
+  {"ewc_code":"06 04 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 05",
+    "ewc_description":"sludges from on-site effluent treatment"},
+  {"ewc_code":"06 05 02*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"06 05 03",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 06 05 02"},
+  {"ewc_code":"06 06",
+    "ewc_description":
+    "wastes from the MFSU of sulphur chemicals, sulphur chemical processes and desulphurisation processes"},
+  {"ewc_code":"06 06 02*",
+    "ewc_description":"wastes containing hazardous sulphides"},
+  {"ewc_code":"06 06 03",
+    "ewc_description":
+    "wastes containing sulphides other than those mentioned in 06 06 02"},
+  {"ewc_code":"06 06 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 07",
+    "ewc_description":
+    "wastes from the MFSU of halogens and halogen chemical processes"},
+  {"ewc_code":"06 07 01*",
+    "ewc_description":"wastes containing asbestos from electrolysis"},
+  {"ewc_code":"06 07 02*",
+    "ewc_description":"activated carbon from chlorine production"},
+  {"ewc_code":"06 07 03*",
+    "ewc_description":"barium sulphate sludge containing mercury"},
+  {"ewc_code":"06 07 04*",
+    "ewc_description":"solutions and acids, for example contact acid"},
+  {"ewc_code":"06 07 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 08",
+    "ewc_description":
+    "wastes from the MFSU of silicon and silicon derivatives"},
+  {"ewc_code":"06 08 02*",
+    "ewc_description":"waste containing hazardous chlorosilanes"},
+  {"ewc_code":"06 08 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 09",
+    "ewc_description":
+    "wastes from the MSFU of phosphorous chemicals and phosphorous chemical processes"},
+  {"ewc_code":"06 09 02", "ewc_description":"phosphorous slag"},
+  {"ewc_code":"06 09 03*",
+    "ewc_description":
+    "calcium-based reaction wastes containing or contaminated with hazardous substances"},
+  {"ewc_code":"06 09 04",
+    "ewc_description":
+    "calcium-based reaction wastes other than those mentioned in 06 09 03"},
+  {"ewc_code":"06 09 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 10",
+    "ewc_description":
+    "wastes from the MFSU of nitrogen chemicals, nitrogen chemical processes and fertiliser manufacture"},
+  {"ewc_code":"06 10 02*",
+    "ewc_description":"wastes containing hazardous substances"},
+  {"ewc_code":"06 10 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 11",
+    "ewc_description":
+    "wastes from the manufacture of inorganic pigments and opacificiers"},
+  {"ewc_code":"06 11 01",
+    "ewc_description":
+    "calcium-based reaction wastes from titanium dioxide production"},
+  {"ewc_code":"06 11 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"06 13",
+    "ewc_description":
+    "wastes from inorganic chemical processes not otherwise specified"},
+  {"ewc_code":"06 13 01*",
+    "ewc_description":
+    "inorganic plant protection products, wood-preserving agents and other biocides."},
+  {"ewc_code":"06 13 02*",
+    "ewc_description":"spent activated carbon (except 06 07 02)"},
+  {"ewc_code":"06 13 03", "ewc_description":"carbon black"},
+  {"ewc_code":"06 13 04*",
+    "ewc_description":"wastes from asbestos processing"},
+  {"ewc_code":"06 13 05*", "ewc_description":"Soot"},
+  {"ewc_code":"06 13 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07",
+    "ewc_description":"WASTES FROM ORGANIC CHEMICAL PROCESSES"},
+  {"ewc_code":"07 01",
+    "ewc_description":
+    "wastes from the manufacture, formulation, supply and use (MFSU) of basic organic chemicals"},
+  {"ewc_code":"07 01 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 01 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 01 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 01 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 01 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 01 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 01 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 01 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 01 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 01 11"},
+  {"ewc_code":"07 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07 02",
+    "ewc_description":
+    "wastes from the MFSU of plastics, synthetic rubber and man-made fibres"},
+  {"ewc_code":"07 02 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 02 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 02 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 02 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 02 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 02 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 02 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 02 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 02 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 02 11"},
+  {"ewc_code":"07 02 13", "ewc_description":"waste plastic"},
+  {"ewc_code":"07 02 14*",
+    "ewc_description":
+    "wastes from additives containing hazardous substances"},
+  {"ewc_code":"07 02 15",
+    "ewc_description":
+    "wastes from additives other than those mentioned in 07 02 14"},
+  {"ewc_code":"07 02 16*",
+    "ewc_description":"waste containing hazardous silicones"},
+  {"ewc_code":"07 02 17",
+    "ewc_description":
+    "waste containing silicones other than those mentioned in 07 02 16"},
+  {"ewc_code":"07 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07 03",
+    "ewc_description":
+    "wastes from the MFSU of organic dyes and pigments (except 06 11)"},
+  {"ewc_code":"07 03 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 03 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 03 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 03 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 03 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 03 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 03 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 03 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 03 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 03 11"},
+  {"ewc_code":"07 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07 04",
+    "ewc_description":
+    "wastes from the MFSU of organic plant protection products (except 02 01 08 and 02 01 09), wood preserving agents (except 03 02) and other biocides"},
+  {"ewc_code":"07 04 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 04 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 04 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 04 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 04 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 04 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 04 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 04 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 04 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 04 11"},
+  {"ewc_code":"07 04 13*",
+    "ewc_description":"solid wastes containing hazardous substances"},
+  {"ewc_code":"07 04 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07 05",
+    "ewc_description":"wastes from the MFSU of pharmaceuticals"},
+  {"ewc_code":"07 05 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 05 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 05 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 05 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 05 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 05 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 05 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 05 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 05 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 05 11"},
+  {"ewc_code":"07 05 13*",
+    "ewc_description":"solid wastes containing hazardous substances"},
+  {"ewc_code":"07 05 14",
+    "ewc_description":
+    "solid wastes other than those mentioned in 07 05 13"},
+  {"ewc_code":"07 05 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07 06",
+    "ewc_description":
+    "wastes from the MFSU of fats, grease, soaps, detergents, disinfectants and cosmetics"},
+  {"ewc_code":"07 06 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 06 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 06 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 06 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 06 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 06 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 06 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 06 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 06 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 06 11"},
+  {"ewc_code":"07 06 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"07 07",
+    "ewc_description":
+    "wastes from the MFSU of fine chemicals and chemical products not otherwise specified"},
+  {"ewc_code":"07 07 01*",
+    "ewc_description":"aqueous washing liquids and mother liquors"},
+  {"ewc_code":"07 07 03*",
+    "ewc_description":
+    "organic halogenated solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 07 04*",
+    "ewc_description":
+    "other organic solvents, washing liquids and mother liquors"},
+  {"ewc_code":"07 07 07*",
+    "ewc_description":
+    "halogenated still bottoms and reaction residues"},
+  {"ewc_code":"07 07 08*",
+    "ewc_description":"other still bottoms and reaction residues"},
+  {"ewc_code":"07 07 09*",
+    "ewc_description":"halogenated filter cakes and spent absorbents"},
+  {"ewc_code":"07 07 10*",
+    "ewc_description":"other filter cakes and spent absorbents"},
+  {"ewc_code":"07 07 11*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"07 07 12",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 07 07 11"},
+  {"ewc_code":"07 07 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"08",
+    "ewc_description":
+    "WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS"},
+  {"ewc_code":"08 01",
+    "ewc_description":
+    "wastes from MFSU and removal of paint and varnish"},
+  {"ewc_code":"08 01 11*",
+    "ewc_description":
+    "waste paint and varnish containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 01 12",
+    "ewc_description":
+    "waste paint and varnish other than those mentioned in 08 01 11"},
+  {"ewc_code":"08 01 13*",
+    "ewc_description":
+    "sludges from paint or varnish containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 01 14",
+    "ewc_description":
+    "sludges from paint or varnish other than those mentioned in 08 01 13"},
+  {"ewc_code":"08 01 15*",
+    "ewc_description":
+    "aqueous sludges containing paint or varnish containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 01 16",
+    "ewc_description":
+    "aqueous sludges containing paint or varnish other than those mentioned in 08 01 15"},
+  {"ewc_code":"08 01 17*",
+    "ewc_description":
+    "wastes from paint or varnish removal containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 01 18",
+    "ewc_description":
+    "wastes from paint or varnish removal other than those mentioned in 08 01 17"},
+  {"ewc_code":"08 01 19*",
+    "ewc_description":
+    "aqueous suspensions containing paint or varnish containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 01 20",
+    "ewc_description":
+    "aqueous suspensions containing paint or varnish other than those mentioned in 08 01 19"},
+  {"ewc_code":"08 01 21*",
+    "ewc_description":"waste paint or varnish remover"},
+  {"ewc_code":"08 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"08 02",
+    "ewc_description":
+    "wastes from MFSU of other coatings (including ceramic materials)"},
+  {"ewc_code":"08 02 01", "ewc_description":"waste coating powders"},
+  {"ewc_code":"08 02 02",
+    "ewc_description":"aqueous sludges containing ceramic materials"},
+  {"ewc_code":"08 02 03",
+    "ewc_description":
+    "aqueous suspensions containing ceramic materials"},
+  {"ewc_code":"08 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"08 03",
+    "ewc_description":"wastes from MFSU of printing inks"},
+  {"ewc_code":"08 03 07",
+    "ewc_description":"aqueous sludges containing ink"},
+  {"ewc_code":"08 03 08",
+    "ewc_description":"aqueous liquid waste containing ink"},
+  {"ewc_code":"08 03 12*",
+    "ewc_description":"waste ink containing hazardous substances"},
+  {"ewc_code":"08 03 13",
+    "ewc_description":
+    "waste ink other than those mentioned in 08 03 12"},
+  {"ewc_code":"08 03 14*",
+    "ewc_description":"ink sludges containing hazardous substances"},
+  {"ewc_code":"08 03 15",
+    "ewc_description":
+    "ink sludges other than those mentioned in 08 03 14"},
+  {"ewc_code":"08 03 16*", "ewc_description":
+  "waste etching solutions"},
+  {"ewc_code":"08 03 17*",
+    "ewc_description":
+    "waste printing toner containing hazardous substances"},
+  {"ewc_code":"08 03 18",
+    "ewc_description":
+    "waste printing toner other than those mentioned in 08 03 17"},
+  {"ewc_code":"08 03 19*", "ewc_description":"disperse oil"},
+  {"ewc_code":"08 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"08 04",
+    "ewc_description":
+    "wastes from MFSU of adhesives and sealants (including waterproofing products)"},
+  {"ewc_code":"08 04 09*",
+    "ewc_description":
+    "waste adhesives and sealants containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 04 10",
+    "ewc_description":
+    "waste adhesives and sealants other than those mentioned in 08 04 09"},
+  {"ewc_code":"08 04 11*",
+    "ewc_description":
+    "adhesive and sealant sludges containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 04 12",
+    "ewc_description":
+    "adhesive and sealant sludges other than those mentioned in 08 04 11"},
+  {"ewc_code":"08 04 13*",
+    "ewc_description":
+    "aqueous sludges containing adhesives or sealants containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 04 14",
+    "ewc_description":
+    "aqueous sludges containing adhesives or sealants other than those mentioned in 08 04 13"},
+  {"ewc_code":"08 04 15*",
+    "ewc_description":
+    "aqueous liquid waste containing adhesives or sealants containing organic solvents or other hazardous substances"},
+  {"ewc_code":"08 04 16",
+    "ewc_description":
+    "aqueous liquid waste containing adhesives or sealants other than those mentioned in 08 04 15"},
+  {"ewc_code":"08 04 17*", "ewc_description":"rosin oil"},
+  {"ewc_code":"08 04 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"08 05",
+    "ewc_description":"wastes not otherwise specified in 08"},
+  {"ewc_code":"08 05 01*", "ewc_description":"waste isocyanates"},
+  {"ewc_code":"09",
+    "ewc_description":"WASTES FROM THE PHOTOGRAPHIC INDUSTRY"},
+  {"ewc_code":"09 01",
+    "ewc_description":"wastes from the photographic industry"},
+  {"ewc_code":"09 01 01*",
+    "ewc_description":"water-based developer and activator solutions"},
+  {"ewc_code":"09 01 02*",
+    "ewc_description":"water-based offset plate developer solutions"},
+  {"ewc_code":"09 01 03*",
+    "ewc_description":"solvent-based developer solutions"},
+  {"ewc_code":"09 01 04*", "ewc_description":"fixer solutions"},
+  {"ewc_code":"09 01 05*",
+    "ewc_description":"bleach solutions and bleach fixer solutions"},
+  {"ewc_code":"09 01 06*",
+    "ewc_description":
+    "wastes containing silver from on-site treatment of photographic wastes"},
+  {"ewc_code":"09 01 07",
+    "ewc_description":
+    "photographic film and paper containing silver or silver compounds"},
+  {"ewc_code":"09 01 08",
+    "ewc_description":
+    "photographic film and paper free of silver or silver compounds"},
+  {"ewc_code":"09 01 10",
+    "ewc_description":"single-use cameras without batteries"},
+  {"ewc_code":"09 01 11*",
+    "ewc_description":
+    "single-use cameras containing batteries included in 16 06 01, 16 06 02 or 16 06 03"},
+  {"ewc_code":"09 01 12",
+    "ewc_description":
+    "single-use cameras containing batteries other than those mentioned in 09 01 11"},
+  {"ewc_code":"09 01 13*",
+    "ewc_description":
+    "aqueous liquid waste from on-site reclamation of silver other than those mentioned in 09 01 06"},
+  {"ewc_code":"09 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10", "ewc_description":"WASTES FROM THERMAL PROCESSES"},
+  {"ewc_code":"10 01",
+    "ewc_description":
+    "wastes from power stations and other combustion plants (except 19)"},
+  {"ewc_code":"10 01 01",
+    "ewc_description":
+    "bottom ash, slag and boiler dust (excluding boiler dust mentioned in 10 01 04)"},
+  {"ewc_code":"10 01 02", "ewc_description":"coal fly ash"},
+  {"ewc_code":"10 01 03",
+    "ewc_description":"fly ash from peat and untreated wood"},
+  {"ewc_code":"10 01 04*",
+    "ewc_description":"oil fly ash and boiler dust"},
+  {"ewc_code":"10 01 05",
+    "ewc_description":
+    "calcium-based reaction wastes from flue-gas desulphurisation in solid form"},
+  {"ewc_code":"10 01 07",
+    "ewc_description":
+    "calcium-based reaction wastes from flue-gas desulphurisation in sludge form"},
+  {"ewc_code":"10 01 09*", "ewc_description":"sulphuric acid"},
+  {"ewc_code":"10 01 13*",
+    "ewc_description":
+    "fly ash from emulsified hydrocarbons used as fuel"},
+  {"ewc_code":"10 01 14*",
+    "ewc_description":
+    "bottom ash, slag and boiler dust from co-incineration containing hazardous substances"},
+  {"ewc_code":"10 01 15",
+    "ewc_description":
+    "bottom ash, slag and boiler dust from co-incineration other than those mentioned in 10 01 14"},
+  {"ewc_code":"10 01 16*",
+    "ewc_description":
+    "fly ash from co-incineration containing hazardous substances"},
+  {"ewc_code":"10 01 17",
+    "ewc_description":
+    "fly ash from co-incineration other than those mentioned in 10 01 16"},
+  {"ewc_code":"10 01 18*",
+    "ewc_description":
+    "wastes from gas cleaning containing hazardous substances"},
+  {"ewc_code":"10 01 19",
+    "ewc_description":
+    "wastes from gas cleaning other than those mentioned in 10 01 05, 10 01 07 and 10 01 18"},
+  {"ewc_code":"10 01 20*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"10 01 21",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 10 01 20"},
+  {"ewc_code":"10 01 22*",
+    "ewc_description":
+    "aqueous sludges from boiler cleansing containing hazardous substances"},
+  {"ewc_code":"10 01 23",
+    "ewc_description":
+    "aqueous sludges from boiler cleansing other than those mentioned in 10 01 22"},
+  {"ewc_code":"10 01 24",
+    "ewc_description":"sands from fluidised beds"},
+  {"ewc_code":"10 01 25",
+    "ewc_description":
+    "wastes from fuel storage and preparation of coal-fired power plants"},
+  {"ewc_code":"10 01 26",
+    "ewc_description":"wastes from cooling-water treatment"},
+  {"ewc_code":"10 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 02",
+    "ewc_description":"wastes from the iron and steel industry"},
+  {"ewc_code":"10 02 01",
+    "ewc_description":"wastes from the processing of slag"},
+  {"ewc_code":"10 02 02", "ewc_description":"unprocessed slag"},
+  {"ewc_code":"10 02 07*",
+    "ewc_description":
+    "solid wastes from gas treatment containing hazardous substances"},
+  {"ewc_code":"10 02 08",
+    "ewc_description":
+    "solid wastes from gas treatment other than those mentioned in 10 02 07"},
+  {"ewc_code":"10 02 10", "ewc_description":"mill scales"},
+  {"ewc_code":"10 02 11*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 02 12",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 02 11"},
+  {"ewc_code":"10 02 13*",
+    "ewc_description":
+    "sludges and filter cakes from gas treatment containing hazardous substances"},
+  {"ewc_code":"10 02 14",
+    "ewc_description":
+    "sludges and filter cakes from gas treatment other than those mentioned in 10 02 13"},
+  {"ewc_code":"10 02 15",
+    "ewc_description":"other sludges and filter cakes"},
+  {"ewc_code":"10 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 03",
+    "ewc_description":"wastes from aluminium thermal metallurgy"},
+  {"ewc_code":"10 03 02", "ewc_description":"anode scraps"},
+  {"ewc_code":"10 03 04*",
+    "ewc_description":"primary production slags"},
+  {"ewc_code":"10 03 05", "ewc_description":"waste alumina"},
+  {"ewc_code":"10 03 08*",
+    "ewc_description":"salt slags from secondary production"},
+  {"ewc_code":"10 03 09*",
+    "ewc_description":"black drosses from secondary production"},
+  {"ewc_code":"10 03 15*",
+    "ewc_description":
+    "skimmings that are flammable or emit, upon contact with water, flammable gases in hazardous quantities"},
+  {"ewc_code":"10 03 16",
+    "ewc_description":
+    "skimmings other than those mentioned in 10 03 15"},
+  {"ewc_code":"10 03 17*",
+    "ewc_description":"tar-containing wastes from anode manufacture"},
+  {"ewc_code":"10 03 18",
+    "ewc_description":
+    "carbon-containing wastes from anode manufacture other than those mentioned in 10 03 17"},
+  {"ewc_code":"10 03 19*",
+    "ewc_description":"flue-gas dust containing hazardous substances"},
+  {"ewc_code":"10 03 20",
+    "ewc_description":
+    "flue-gas dust other than those mentioned in 10 03 19"},
+  {"ewc_code":"10 03 21*",
+    "ewc_description":
+    "other particulates and dust (including ball-mill dust) containing hazardous substances"},
+  {"ewc_code":"10 03 22",
+    "ewc_description":
+    "other particulates and dust (including ball-mill dust) other than those mentioned in 10 03 21"},
+  {"ewc_code":"10 03 23*",
+    "ewc_description":
+    "solid wastes from gas treatment containing hazardous substances"},
+  {"ewc_code":"10 03 24",
+    "ewc_description":
+    "solid wastes from gas treatment other than those mentioned in 10 03 23"},
+  {"ewc_code":"10 03 25*",
+    "ewc_description":
+    "sludges and filter cakes from gas treatment containing hazardous substances"},
+  {"ewc_code":"10 03 26",
+    "ewc_description":
+    "sludges and filter cakes from gas treatment other than those mentioned in 10 03 25"},
+  {"ewc_code":"10 03 27*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 03 28",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 03 27"},
+  {"ewc_code":"10 03 29*",
+    "ewc_description":
+    "wastes from treatment of salt slags and black drosses containing hazardous substances"},
+  {"ewc_code":"10 03 30",
+    "ewc_description":
+    "wastes from treatment of salt slags and black drosses other than those mentioned in 10 03 29"},
+  {"ewc_code":"10 03 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 04",
+    "ewc_description":"wastes from lead thermal metallurgy"},
+  {"ewc_code":"10 04 01*",
+    "ewc_description":"slags from primary and secondary production"},
+  {"ewc_code":"10 04 02*",
+    "ewc_description":
+    "dross and skimmings from primary and secondary production"},
+  {"ewc_code":"10 04 03*", "ewc_description":"calcium arsenate"},
+  {"ewc_code":"10 04 04*", "ewc_description":"flue-gas dust"},
+  {"ewc_code":"10 04 05*",
+    "ewc_description":"other particulates and dust"},
+  {"ewc_code":"10 04 06*",
+    "ewc_description":"solid wastes from gas treatment"},
+  {"ewc_code":"10 04 07*",
+    "ewc_description":"sludges and filter cakes from gas treatment"},
+  {"ewc_code":"10 04 09*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 04 10",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 04 09"},
+  {"ewc_code":"10 04 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 05",
+    "ewc_description":"wastes from zinc thermal metallurgy"},
+  {"ewc_code":"10 05 01",
+    "ewc_description":"slags from primary and secondary production"},
+  {"ewc_code":"10 05 03*", "ewc_description":"flue-gas dust"},
+  {"ewc_code":"10 05 04",
+    "ewc_description":"other particulates and dust"},
+  {"ewc_code":"10 05 05*",
+    "ewc_description":"solid waste from gas treatment"},
+  {"ewc_code":"10 05 06*",
+    "ewc_description":"sludges and filter cakes from gas treatment"},
+  {"ewc_code":"10 05 08*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 05 09",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 05 08"},
+  {"ewc_code":"10 05 10*",
+    "ewc_description":
+    "dross and skimmings that are flammable or emit, upon contact with water, flammable gases in hazardous quantities"},
+  {"ewc_code":"10 05 11",
+    "ewc_description":
+    "dross and skimmings other than those mentioned in 10 05 10"},
+  {"ewc_code":"10 05 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 06",
+    "ewc_description":"wastes from copper thermal metallurgy"},
+  {"ewc_code":"10 06 01",
+    "ewc_description":"slags from primary and secondary production"},
+  {"ewc_code":"10 06 02",
+    "ewc_description":
+    "dross and skimmings from primary and secondary production"},
+  {"ewc_code":"10 06 03*", "ewc_description":"flue-gas dust"},
+  {"ewc_code":"10 06 04",
+    "ewc_description":"other particulates and dust"},
+  {"ewc_code":"10 06 06*",
+    "ewc_description":"solid wastes from gas treatment"},
+  {"ewc_code":"10 06 07*",
+    "ewc_description":"sludges and filter cakes from gas treatment"},
+  {"ewc_code":"10 06 09*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 06 10",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 06 09"},
+  {"ewc_code":"10 06 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 07",
+    "ewc_description":
+    "wastes from silver, gold and platinum thermal metallurgy"},
+  {"ewc_code":"10 07 01",
+    "ewc_description":"slags from primary and secondary production"},
+  {"ewc_code":"10 07 02",
+    "ewc_description":
+    "dross and skimmings from primary and secondary production"},
+  {"ewc_code":"10 07 03",
+    "ewc_description":"solid wastes from gas treatment"},
+  {"ewc_code":"10 07 04",
+    "ewc_description":"other particulates and dust"},
+  {"ewc_code":"10 07 05",
+    "ewc_description":"sludges and filter cakes from gas treatment"},
+  {"ewc_code":"10 07 07*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 07 08",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 07 07"},
+  {"ewc_code":"10 07 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 08",
+    "ewc_description":
+    "wastes from other non-ferrous thermal metallurgy"},
+  {"ewc_code":"10 08 04", "ewc_description":"particulates and dust"},
+  {"ewc_code":"10 08 08*",
+    "ewc_description":
+    "salt slag from primary and secondary production"},
+  {"ewc_code":"10 08 09", "ewc_description":"other slags"},
+  {"ewc_code":"10 08 10*",
+    "ewc_description":
+    "dross and skimmings that are flammable or emit, upon contact with water, flammable gases in hazardous quantities"},
+  {"ewc_code":"10 08 11",
+    "ewc_description":
+    "dross and skimmings other than those mentioned in 10 08 10"},
+  {"ewc_code":"10 08 12*",
+    "ewc_description":"tar-containing wastes from anode manufacture"},
+  {"ewc_code":"10 08 13",
+    "ewc_description":
+    "carbon-containing wastes from anode manufacture other than those mentioned in 10 08 12"},
+  {"ewc_code":"10 08 14", "ewc_description":"anode scrap"},
+  {"ewc_code":"10 08 15*",
+    "ewc_description":"flue-gas dust containing hazardous substances"},
+  {"ewc_code":"10 08 16",
+    "ewc_description":
+    "flue-gas dust other than those mentioned in 10 08 15"},
+  {"ewc_code":"10 08 17*",
+    "ewc_description":
+    "sludges and filter cakes from flue-gas treatment containing hazardous substances"},
+  {"ewc_code":"10 08 18",
+    "ewc_description":
+    "sludges and filter cakes from flue-gas treatment other than those mentioned in 10 08 17"},
+  {"ewc_code":"10 08 19*",
+    "ewc_description":
+    "wastes from cooling-water treatment containing oil"},
+  {"ewc_code":"10 08 20",
+    "ewc_description":
+    "wastes from cooling-water treatment other than those mentioned in 10 08 19"},
+  {"ewc_code":"10 08 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 09",
+    "ewc_description":"wastes from casting of ferrous pieces"},
+  {"ewc_code":"10 09 03", "ewc_description":"furnace slag"},
+  {"ewc_code":"10 09 05*",
+    "ewc_description":
+    "casting cores and moulds which have not undergone pouring containing hazardous substances"},
+  {"ewc_code":"10 09 06",
+    "ewc_description":
+    "casting cores and moulds which have not undergone pouring other than those mentioned in 10 09 05"},
+  {"ewc_code":"10 09 07*",
+    "ewc_description":
+    "casting cores and moulds which have undergone pouring containing hazardous substances"},
+  {"ewc_code":"10 09 08",
+    "ewc_description":
+    "casting cores and moulds which have undergone pouring other than those mentioned in 10 09 07"},
+  {"ewc_code":"10 09 09*",
+    "ewc_description":"flue-gas dust containing hazardous substances"},
+  {"ewc_code":"10 09 10",
+    "ewc_description":
+    "flue-gas dust other than those mentioned in 10 09 09"},
+  {"ewc_code":"10 09 11*",
+    "ewc_description":
+    "other particulates containing hazardous substances"},
+  {"ewc_code":"10 09 12",
+    "ewc_description":
+    "other particulates other than those mentioned in 10 09 11"},
+  {"ewc_code":"10 09 13*",
+    "ewc_description":"waste binders containing hazardous substances"},
+  {"ewc_code":"10 09 14",
+    "ewc_description":
+    "waste binders other than those mentioned in 10 09 13"},
+  {"ewc_code":"10 09 15*",
+    "ewc_description":
+    "waste crack-indicating agent containing hazardous substances"},
+  {"ewc_code":"10 09 16",
+    "ewc_description":
+    "waste crack-indicating agent other than those mentioned in 10 09 15"},
+  {"ewc_code":"10 09 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 10",
+    "ewc_description":"wastes from casting of non-ferrous pieces"},
+  {"ewc_code":"10 10 03", "ewc_description":"furnace slag"},
+  {"ewc_code":"10 10 05*",
+    "ewc_description":
+    "casting cores and moulds which have not undergone pouring, containing hazardous substances"},
+  {"ewc_code":"10 10 06",
+    "ewc_description":
+    "casting cores and moulds which have not undergone pouring, other than those mentioned in 10 10 05"},
+  {"ewc_code":"10 10 07*",
+    "ewc_description":
+    "casting cores and moulds which have undergone pouring, containing hazardous substances"},
+  {"ewc_code":"10 10 08",
+    "ewc_description":
+    "casting cores and moulds which have undergone pouring, other than those mentioned in 10 10 07"},
+  {"ewc_code":"10 10 09*",
+    "ewc_description":"flue-gas dust containing hazardous substances"},
+  {"ewc_code":"10 10 10",
+    "ewc_description":
+    "flue-gas dust other than those mentioned in 10 10 09"},
+  {"ewc_code":"10 10 11*",
+    "ewc_description":
+    "other particulates containing hazardous substances"},
+  {"ewc_code":"10 10 12",
+    "ewc_description":
+    "other particulates other than those mentioned in 10 10 11"},
+  {"ewc_code":"10 10 13*",
+    "ewc_description":"waste binders containing hazardous substances"},
+  {"ewc_code":"10 10 14",
+    "ewc_description":
+    "waste binders other than those mentioned in 10 10 13"},
+  {"ewc_code":"10 10 15*",
+    "ewc_description":
+    "waste crack-indicating agent containing hazardous substances"},
+  {"ewc_code":"10 10 16",
+    "ewc_description":
+    "waste crack-indicating agent other than those mentioned in 10 10 15"},
+  {"ewc_code":"10 10 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 11",
+    "ewc_description":
+    "wastes from manufacture of glass and glass products"},
+  {"ewc_code":"10 11 03",
+    "ewc_description":"waste glass-based fibrous materials"},
+  {"ewc_code":"10 11 05", "ewc_description":"particulates and dust"},
+  {"ewc_code":"10 11 09*",
+    "ewc_description":
+    "waste preparation mixture before thermal processing, containing hazardous substances"},
+  {"ewc_code":"10 11 10",
+    "ewc_description":
+    "waste preparation mixture before thermal processing, other than those mentioned in 10 11 09"},
+  {"ewc_code":"10 11 11*",
+    "ewc_description":
+    "waste glass in small particles and glass powder containing heavy metals (for example from cathode ray tubes)"},
+  {"ewc_code":"10 11 12",
+    "ewc_description":
+    "waste glass other than those mentioned in 10 11 11"},
+  {"ewc_code":"10 11 13*",
+    "ewc_description":
+    "glass-polishing and -grinding sludge containing hazardous substances"},
+  {"ewc_code":"10 11 14",
+    "ewc_description":
+    "glass-polishing and -grinding sludge other than those mentioned in 10 11 13"},
+  {"ewc_code":"10 11 15*",
+    "ewc_description":
+    "solid wastes from flue-gas treatment containing hazardous substances"},
+  {"ewc_code":"10 11 16",
+    "ewc_description":
+    "solid wastes from flue-gas treatment other than those mentioned in 10 11 15"},
+  {"ewc_code":"10 11 17*",
+    "ewc_description":
+    "sludges and filter cakes from flue-gas treatment containing hazardous substances"},
+  {"ewc_code":"10 11 18",
+    "ewc_description":
+    "sludges and filter cakes from flue-gas treatment other than those mentioned in 10 11 17"},
+  {"ewc_code":"10 11 19*",
+    "ewc_description":
+    "solid wastes from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"10 11 20",
+    "ewc_description":
+    "solid wastes from on-site effluent treatment other than those mentioned in 10 11 19"},
+  {"ewc_code":"10 11 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 12",
+    "ewc_description":
+    "wastes from manufacture of ceramic goods, bricks, tiles and construction products"},
+  {"ewc_code":"10 12 01",
+    "ewc_description":
+    "waste preparation mixture before thermal processing"},
+  {"ewc_code":"10 12 03", "ewc_description":"particulates and dust"},
+  {"ewc_code":"10 12 05",
+    "ewc_description":"sludges and filter cakes from gas treatment"},
+  {"ewc_code":"10 12 06", "ewc_description":"discarded moulds"},
+  {"ewc_code":"10 12 08",
+    "ewc_description":
+    "waste ceramics, bricks, tiles and construction products (after thermal processing)"},
+  {"ewc_code":"10 12 09*",
+    "ewc_description":
+    "solid wastes from gas treatment containing hazardous substances"},
+  {"ewc_code":"10 12 10",
+    "ewc_description":
+    "solid wastes from gas treatment other than those mentioned in 10 12 09"},
+  {"ewc_code":"10 12 11*",
+    "ewc_description":"wastes from glazing containing heavy metals"},
+  {"ewc_code":"10 12 12",
+    "ewc_description":
+    "wastes from glazing other than those mentioned in 10 12 11"},
+  {"ewc_code":"10 12 13",
+    "ewc_description":"sludge from on-site effluent treatment"},
+  {"ewc_code":"10 12 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 13",
+    "ewc_description":
+    "wastes from manufacture of cement, lime and plaster and articles and products made from them"},
+  {"ewc_code":"10 13 01",
+    "ewc_description":
+    "waste preparation mixture before thermal processing"},
+  {"ewc_code":"10 13 04",
+    "ewc_description":"wastes from calcination and hydration of lime"},
+  {"ewc_code":"10 13 06",
+    "ewc_description":
+    "particulates and dust (except 10 13 12 and 10 13 13)"},
+  {"ewc_code":"10 13 07",
+    "ewc_description":"sludges and filter cakes from gas treatment"},
+  {"ewc_code":"10 13 09*",
+    "ewc_description":
+    "wastes from asbestos-cement manufacture containing asbestos"},
+  {"ewc_code":"10 13 10",
+    "ewc_description":
+    "wastes from asbestos-cement manufacture other than those mentioned in 10 13 09"},
+  {"ewc_code":"10 13 11",
+    "ewc_description":
+    "wastes from cement-based composite materials other than those mentioned in 10 13 09 and 10 13 10"},
+  {"ewc_code":"10 13 12*",
+    "ewc_description":
+    "solid wastes from gas treatment containing hazardous substances"},
+  {"ewc_code":"10 13 13",
+    "ewc_description":
+    "solid wastes from gas treatment other than those mentioned in 10 13 12"},
+  {"ewc_code":"10 13 14",
+    "ewc_description":"waste concrete and concrete sludge"},
+  {"ewc_code":"10 13 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"10 14", "ewc_description":"waste from crematoria"},
+  {"ewc_code":"10 14 01*",
+    "ewc_description":"waste from gas cleaning containing mercury"},
+  {"ewc_code":"11",
+    "ewc_description":
+    "WASTES FROM CHEMICAL SURFACE TREATMENT AND COATING OF METALS AND OTHER MATERIALS; NON-FERROUS HYDRO-METALLURGY"},
+  {"ewc_code":"11 01",
+    "ewc_description":
+    "wastes from chemical surface treatment and coating of metals and other materials (for example galvanic processes, zinc coating processes, pickling processes, etching, phosphating, alkaline degreasing, anodising)"},
+  {"ewc_code":"11 01 05*", "ewc_description":"pickling acids"},
+  {"ewc_code":"11 01 06*",
+    "ewc_description":"acids not otherwise specified"},
+  {"ewc_code":"11 01 07*", "ewc_description":"pickling bases"},
+  {"ewc_code":"11 01 08*", "ewc_description":"phosphatising sludges"},
+  {"ewc_code":"11 01 09*",
+    "ewc_description":
+    "sludges and filter cakes containing hazardous substances"},
+  {"ewc_code":"11 01 10",
+    "ewc_description":
+    "sludges and filter cakes other than those mentioned in 11 01 09"},
+  {"ewc_code":"11 01 11*",
+    "ewc_description":
+    "aqueous rinsing liquids containing hazardous substances"},
+  {"ewc_code":"11 01 12",
+    "ewc_description":
+    "aqueous rinsing liquids other than those mentioned in 11 01 11"},
+  {"ewc_code":"11 01 13*",
+    "ewc_description":
+    "degreasing wastes containing hazardous substances"},
+  {"ewc_code":"11 01 14",
+    "ewc_description":
+    "degreasing wastes other than those mentioned in 11 01 13"},
+  {"ewc_code":"11 01 15*",
+    "ewc_description":
+    "eluate and sludges from membrane systems or ion exchange systems containing hazardous substances"},
+  {"ewc_code":"11 01 16*",
+    "ewc_description":"saturated or spent ion exchange resins"},
+  {"ewc_code":"11 01 98*",
+    "ewc_description":"other wastes containing hazardous substances"},
+  {"ewc_code":"11 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"11 02",
+    "ewc_description":
+    "wastes from non-ferrous hydrometallurgical processes"},
+  {"ewc_code":"11 02 02*",
+    "ewc_description":
+    "sludges from zinc hydrometallurgy (including jarosite, goethite)"},
+  {"ewc_code":"11 02 03",
+    "ewc_description":
+    "wastes from the production of anodes for aqueous electrolytical processes"},
+  {"ewc_code":"11 02 05*",
+    "ewc_description":
+    "wastes from copper hydrometallurgical processes containing hazardous substances"},
+  {"ewc_code":"11 02 06",
+    "ewc_description":
+    "wastes from copper hydrometallurgical processes other than those mentioned in 11 02 05"},
+  {"ewc_code":"11 02 07*",
+    "ewc_description":"other wastes containing hazardous substances"},
+  {"ewc_code":"11 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"11 03",
+    "ewc_description":"sludges and solids from tempering processes"},
+  {"ewc_code":"11 03 01*",
+    "ewc_description":"wastes containing cyanide"},
+  {"ewc_code":"11 03 02*", "ewc_description":"other wastes"},
+  {"ewc_code":"11 05",
+    "ewc_description":"wastes from hot galvanising processes"},
+  {"ewc_code":"11 05 01", "ewc_description":"hard zinc"},
+  {"ewc_code":"11 05 02", "ewc_description":"zinc ash"},
+  {"ewc_code":"11 05 03*",
+    "ewc_description":"solid wastes from gas treatment"},
+  {"ewc_code":"11 05 04*", "ewc_description":"spent flux"},
+  {"ewc_code":"11 05 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"12",
+    "ewc_description":
+    "WASTES FROM SHAPING AND PHYSICAL AND MECHANICAL SURFACE TREATMENT OF METALS AND PLASTICS"},
+  {"ewc_code":"12 01",
+    "ewc_description":
+    "wastes from shaping and physical and mechanical surface treatment of metals and plastics"},
+  {"ewc_code":"12 01 01",
+    "ewc_description":"ferrous metal filings and turnings"},
+  {"ewc_code":"12 01 02",
+    "ewc_description":"ferrous metal dust and particles"},
+  {"ewc_code":"12 01 03",
+    "ewc_description":"non-ferrous metal filings and turnings"},
+  {"ewc_code":"12 01 04",
+    "ewc_description":"non-ferrous metal dust and particles"},
+  {"ewc_code":"12 01 05",
+    "ewc_description":"plastics shavings and turnings"},
+  {"ewc_code":"12 01 06*",
+    "ewc_description":
+    "mineral-based machining oils containing halogens (except emulsions and solutions)"},
+  {"ewc_code":"12 01 07*",
+    "ewc_description":
+    "mineral-based machining oils free of halogens (except emulsions and solutions)"},
+  {"ewc_code":"12 01 08*",
+    "ewc_description":
+    "machining emulsions and solutions containing halogens"},
+  {"ewc_code":"12 01 09*",
+    "ewc_description":
+    "machining emulsions and solutions free of halogens"},
+  {"ewc_code":"12 01 10*",
+    "ewc_description":"synthetic machining oils"},
+  {"ewc_code":"12 01 12*", "ewc_description":"spent waxes and fats"},
+  {"ewc_code":"12 01 13", "ewc_description":"welding wastes"},
+  {"ewc_code":"12 01 14*",
+    "ewc_description":
+    "machining sludges containing hazardous substances"},
+  {"ewc_code":"12 01 15",
+    "ewc_description":
+    "machining sludges other than those mentioned in 12 01 14"},
+  {"ewc_code":"12 01 16*",
+    "ewc_description":
+    "waste blasting material containing hazardous substances"},
+  {"ewc_code":"12 01 17",
+    "ewc_description":
+    "waste blasting material other than those mentioned in 12 01 16"},
+  {"ewc_code":"12 01 18*",
+    "ewc_description":
+    "metal sludge (grinding, honing and lapping sludge) containing oil"},
+  {"ewc_code":"12 01 19*",
+    "ewc_description":"readily biodegradable machining oil"},
+  {"ewc_code":"12 01 20*",
+    "ewc_description":
+    "spent grinding bodies and grinding materials containing hazardous substances"},
+  {"ewc_code":"12 01 21",
+    "ewc_description":
+    "spent grinding bodies and grinding materials other than those mentioned in 12 01 20"},
+  {"ewc_code":"12 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"12 03",
+    "ewc_description":
+    "wastes from water and steam degreasing processes (except 11)"},
+  {"ewc_code":"12 03 01*", "ewc_description":
+  "aqueous washing liquids"},
+  {"ewc_code":"12 03 02*", "ewc_description":
+  "steam degreasing wastes"},
+  {"ewc_code":"13",
+    "ewc_description":
+    "OIL WASTES AND WASTES OF LIQUID FUELS (except edible oils, and those in chapters 05, 12 and 19)"},
+  {"ewc_code":"13 01", "ewc_description":"waste hydraulic oils"},
+  {"ewc_code":"13 01 01*",
+    "ewc_description":"hydraulic oils, containing PCBs"},
+  {"ewc_code":"13 01 04*", "ewc_description":"chlorinated emulsions"},
+  {"ewc_code":"13 01 05*",
+    "ewc_description":"non-chlorinated emulsions"},
+  {"ewc_code":"13 01 09*",
+    "ewc_description":"mineral-based chlorinated hydraulic oils"},
+  {"ewc_code":"13 01 10*",
+    "ewc_description":"mineral based non-chlorinated hydraulic oils"},
+  {"ewc_code":"13 01 11*",
+    "ewc_description":"synthetic hydraulic oils"},
+  {"ewc_code":"13 01 12*",
+    "ewc_description":"readily biodegradable hydraulic oils"},
+  {"ewc_code":"13 01 13*", "ewc_description":"other hydraulic oils"},
+  {"ewc_code":"13 02",
+    "ewc_description":"waste engine, gear and lubricating oils"},
+  {"ewc_code":"13 02 04*",
+    "ewc_description":
+    "mineral-based chlorinated engine, gear and lubricating oils"},
+  {"ewc_code":"13 02 05*",
+    "ewc_description":
+    "mineral-based non-chlorinated engine, gear and lubricating oils"},
+  {"ewc_code":"13 02 06*",
+    "ewc_description":"synthetic engine, gear and lubricating oils"},
+  {"ewc_code":"13 02 07*",
+    "ewc_description":
+    "readily biodegradable engine, gear and lubricating oils"},
+  {"ewc_code":"13 02 08*",
+    "ewc_description":"other engine, gear and lubricating oils"},
+  {"ewc_code":"13 03",
+    "ewc_description":"waste insulating and heat transmission oils"},
+  {"ewc_code":"13 03 01*",
+    "ewc_description":
+    "insulating or heat transmission oils containing PCBs"},
+  {"ewc_code":"13 03 06*",
+    "ewc_description":
+    "mineral-based chlorinated insulating and heat transmission oils other than those mentioned in 13 03 01"},
+  {"ewc_code":"13 03 07*",
+    "ewc_description":
+    "mineral-based non-chlorinated insulating and heat transmission oils"},
+  {"ewc_code":"13 03 08*",
+    "ewc_description":
+    "synthetic insulating and heat transmission oils"},
+  {"ewc_code":"13 03 09*",
+    "ewc_description":
+    "readily biodegradable insulating and heat transmission oils"},
+  {"ewc_code":"13 03 10*",
+    "ewc_description":"other insulating and heat transmission oils"},
+  {"ewc_code":"13 04", "ewc_description":"bilge oils"},
+  {"ewc_code":"13 04 01*",
+    "ewc_description":"bilge oils from inland navigation"},
+  {"ewc_code":"13 04 02*",
+    "ewc_description":"bilge oils from jetty sewers"},
+  {"ewc_code":"13 04 03*",
+    "ewc_description":"bilge oils from other navigation"},
+  {"ewc_code":"13 05",
+    "ewc_description":"oil\/water separator contents"},
+  {"ewc_code":"13 05 01*",
+    "ewc_description":
+    "solids from grit chambers and oil\/water separators"},
+  {"ewc_code":"13 05 02*",
+    "ewc_description":"sludges from oil\/water separators"},
+  {"ewc_code":"13 05 03*", "ewc_description":"interceptor sludges"},
+  {"ewc_code":"13 05 06*",
+    "ewc_description":"oil from oil\/water separators"},
+  {"ewc_code":"13 05 07*",
+    "ewc_description":"oily water from oil\/water separators"},
+  {"ewc_code":"13 05 08*",
+    "ewc_description":
+    "mixtures of wastes from grit chambers and oil\/water separators"},
+  {"ewc_code":"13 07", "ewc_description":"wastes of liquid fuels"},
+  {"ewc_code":"13 07 01*", "ewc_description":"fuel oil and diesel"},
+  {"ewc_code":"13 07 02*", "ewc_description":"Petrol"},
+  {"ewc_code":"13 07 03*",
+    "ewc_description":"other fuels (including mixtures)"},
+  {"ewc_code":"13 08",
+    "ewc_description":"oil wastes not otherwise specified"},
+  {"ewc_code":"13 08 01*",
+    "ewc_description":"desalter sludges or emulsions"},
+  {"ewc_code":"13 08 02*", "ewc_description":"other emulsions"},
+  {"ewc_code":"13 08 99*",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"14",
+    "ewc_description":
+    "WASTE ORGANIC SOLVENTS, REFRIGERANTS AND PROPELLANTS (except 07 and 08)"},
+  {"ewc_code":"14 06",
+    "ewc_description":
+    "waste organic solvents, refrigerants and foam\/aerosol propellants"},
+  {"ewc_code":"14 06 01*",
+    "ewc_description":"chlorofluorocarbons, HCFC, HFC"},
+  {"ewc_code":"14 06 02*",
+    "ewc_description":
+    "other halogenated solvents and solvent mixtures"},
+  {"ewc_code":"14 06 03*",
+    "ewc_description":"other solvents and solvent mixtures"},
+  {"ewc_code":"14 06 04*",
+    "ewc_description":
+    "sludges or solid wastes containing halogenated solvents"},
+  {"ewc_code":"14 06 05*",
+    "ewc_description":
+    "sludges or solid wastes containing other solvents"},
+  {"ewc_code":"15",
+    "ewc_description":
+    "WASTE PACKAGING; ABSORBENTS, WIPING CLOTHS, FILTER MATERIALS AND PROTECTIVE CLOTHING NOT OTHERWISE SPECIFIED"},
+  {"ewc_code":"15 01",
+    "ewc_description":
+    "packaging (including separately collected municipal packaging waste)"},
+  {"ewc_code":"15 01 01",
+    "ewc_description":"paper and cardboard packaging"},
+  {"ewc_code":"15 01 02", "ewc_description":"plastic packaging"},
+  {"ewc_code":"15 01 03", "ewc_description":"wooden packaging"},
+  {"ewc_code":"15 01 04", "ewc_description":"metallic packaging"},
+  {"ewc_code":"15 01 05", "ewc_description":"composite packaging"},
+  {"ewc_code":"15 01 06", "ewc_description":"mixed packaging"},
+  {"ewc_code":"15 01 07", "ewc_description":"glass packaging"},
+  {"ewc_code":"15 01 09", "ewc_description":"textile packaging"},
+  {"ewc_code":"15 01 10*",
+    "ewc_description":
+    "packaging containing residues of or contaminated by hazardous substances"},
+  {"ewc_code":"15 01 11*",
+    "ewc_description":
+    "metallic packaging containing a hazardous solid porous matrix (for example asbestos), including empty pressure containers"},
+  {"ewc_code":"15 02",
+    "ewc_description":
+    "absorbents, filter materials, wiping cloths and protective clothing"},
+  {"ewc_code":"15 02 02*",
+    "ewc_description":
+    "absorbents, filter materials (including oil filters not otherwise specified), wiping cloths, protective clothing contaminated by hazardous substances"},
+  {"ewc_code":"15 02 03",
+    "ewc_description":
+    "absorbents, filter materials, wiping cloths and protective clothing other than those mentioned in 15 02 02"},
+  {"ewc_code":"16",
+    "ewc_description":"WASTES NOT OTHERWISE SPECIFIED IN THE LIST"},
+  {"ewc_code":"16 01",
+    "ewc_description":
+    "end-of-life vehicles from different means of transport (including off-road machinery) and wastes from dismantling of end-of-life vehicles and vehicle maintenance (except 13, 14, 16 06 and 16 08)"},
+  {"ewc_code":"16 01 03", "ewc_description":"end-of-life tyres"},
+  {"ewc_code":"16 01 04*", "ewc_description":"end-of-life vehicles"},
+  {"ewc_code":"16 01 06",
+    "ewc_description":
+    "end-of-life vehicles, containing neither liquids nor other hazardous components"},
+  {"ewc_code":"16 01 07*", "ewc_description":"oil filters"},
+  {"ewc_code":"16 01 08*",
+    "ewc_description":"components containing mercury"},
+  {"ewc_code":"16 01 09*",
+    "ewc_description":"components containing PCBs"},
+  {"ewc_code":"16 01 10*",
+    "ewc_description":"explosive components (for example air bags)"},
+  {"ewc_code":"16 01 11*",
+    "ewc_description":"brake pads containing asbestos"},
+  {"ewc_code":"16 01 12",
+    "ewc_description":
+    "brake pads other than those mentioned in 16 01 11"},
+  {"ewc_code":"16 01 13*", "ewc_description":"brake fluids"},
+  {"ewc_code":"16 01 14*",
+    "ewc_description":
+    "antifreeze fluids containing hazardous substances"},
+  {"ewc_code":"16 01 15",
+    "ewc_description":
+    "antifreeze fluids other than those mentioned in 16 01 14"},
+  {"ewc_code":"16 01 16", "ewc_description":"tanks for liquefied gas"},
+  {"ewc_code":"16 01 17", "ewc_description":"ferrous metal"},
+  {"ewc_code":"16 01 18", "ewc_description":"non-ferrous metal"},
+  {"ewc_code":"16 01 19", "ewc_description":"Plastic"},
+  {"ewc_code":"16 01 20", "ewc_description":"Glass"},
+  {"ewc_code":"16 01 21*",
+    "ewc_description":
+    "hazardous components other than those mentioned in 16 01 07 to 16 01 11 and 16 01 13 and 16 01 14"},
+  {"ewc_code":"16 01 22",
+    "ewc_description":"components not otherwise specified"},
+  {"ewc_code":"16 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"16 02",
+    "ewc_description":
+    "wastes from electrical and electronic equipment"},
+  {"ewc_code":"16 02 09*",
+    "ewc_description":"transformers and capacitors containing PCBs"},
+  {"ewc_code":"16 02 10*",
+    "ewc_description":
+    "discarded equipment containing or contaminated by PCBs other than those mentioned in 16 02 09"},
+  {"ewc_code":"16 02 11*",
+    "ewc_description":
+    "discarded equipment containing chlorofluorocarbons, HCFC, HFC"},
+  {"ewc_code":"16 02 12*",
+    "ewc_description":"discarded equipment containing free asbestos"},
+  {"ewc_code":"16 02 13*",
+    "ewc_description":
+    "discarded equipment containing hazardous components (1) other than those mentioned in 16 02 09 to 16 02 12"},
+  {"ewc_code":"16 02 14",
+    "ewc_description":
+    "discarded equipment other than those mentioned in 16 02 09 to 16 02 13"},
+  {"ewc_code":"16 02 15*",
+    "ewc_description":
+    "hazardous components removed from discarded equipment"},
+  {"ewc_code":"16 02 16",
+    "ewc_description":
+    "components removed from discarded equipment other than those mentioned in 16 02 15"},
+  {"ewc_code":"16 03",
+    "ewc_description":"off-specification batches and unused products"},
+  {"ewc_code":"16 03 03*",
+    "ewc_description":
+    "inorganic wastes containing hazardous substances"},
+  {"ewc_code":"16 03 04",
+    "ewc_description":
+    "inorganic wastes other than those mentioned in 16 03 03"},
+  {"ewc_code":"16 03 05*",
+    "ewc_description":"organic wastes containing hazardous substances"},
+  {"ewc_code":"16 03 06",
+    "ewc_description":
+    "organic wastes other than those mentioned in 16 03 05"},
+  {"ewc_code":"16 03 07*", "ewc_description":"metallic mercury"},
+  {"ewc_code":"16 04", "ewc_description":"waste explosives"},
+  {"ewc_code":"16 04 01*", "ewc_description":"waste ammunition"},
+  {"ewc_code":"16 04 02*", "ewc_description":"fireworks wastes"},
+  {"ewc_code":"16 04 03*", "ewc_description":"other waste explosives"},
+  {"ewc_code":"16 05",
+    "ewc_description":
+    "gases in pressure containers and discarded chemicals"},
+  {"ewc_code":"16 05 04*",
+    "ewc_description":
+    "gases in pressure containers (including halons) containing hazardous substances"},
+  {"ewc_code":"16 05 05",
+    "ewc_description":
+    "gases in pressure containers other than those mentioned in 16 05 04"},
+  {"ewc_code":"16 05 06*",
+    "ewc_description":
+    "laboratory chemicals, consisting of or containing hazardous substances, including mixtures of laboratory chemicals"},
+  {"ewc_code":"16 05 07*",
+    "ewc_description":
+    "discarded inorganic chemicals consisting of or containing hazardous substances"},
+  {"ewc_code":"16 05 08*",
+    "ewc_description":
+    "discarded organic chemicals consisting of or containing hazardous substances"},
+  {"ewc_code":"16 05 09",
+    "ewc_description":
+    "discarded chemicals other than those mentioned in 16 05 06, 16 05 07 or 16 05 08"},
+  {"ewc_code":"16 06", "ewc_description":"batteries and accumulators"},
+  {"ewc_code":"16 06 01*", "ewc_description":"lead batteries"},
+  {"ewc_code":"16 06 02*", "ewc_description":"Ni-Cd batteries"},
+  {"ewc_code":"16 06 03*",
+    "ewc_description":"mercury-containing batteries"},
+  {"ewc_code":"16 06 04",
+    "ewc_description":"alkaline batteries (except 16 06 03)"},
+  {"ewc_code":"16 06 05",
+    "ewc_description":"other batteries and accumulators"},
+  {"ewc_code":"16 06 06*",
+    "ewc_description":
+    "separately collected electrolyte from batteries and accumulators"},
+  {"ewc_code":"16 07",
+    "ewc_description":
+    "wastes from transport tank, storage tank and barrel cleaning (except 05 and 13)"},
+  {"ewc_code":"16 07 08*", "ewc_description":"wastes containing oil"},
+  {"ewc_code":"16 07 09*",
+    "ewc_description":"wastes containing other hazardous substances"},
+  {"ewc_code":"16 07 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"16 08", "ewc_description":"spent catalysts"},
+  {"ewc_code":"16 08 01",
+    "ewc_description":
+    "spent catalysts containing gold, silver, rhenium, rhodium, palladium, iridium or platinum (except 16 08 07)"},
+  {"ewc_code":"16 08 02*",
+    "ewc_description":
+    "spent catalysts containing hazardous transition metals or hazardous transition metal compounds"},
+  {"ewc_code":"16 08 03",
+    "ewc_description":
+    "spent catalysts containing transition metals or transition metal compounds not otherwise specified"},
+  {"ewc_code":"16 08 04",
+    "ewc_description":
+    "spent fluid catalytic cracking catalysts (except 16 08 07)"},
+  {"ewc_code":"16 08 05*",
+    "ewc_description":"spent catalysts containing phosphoric acid"},
+  {"ewc_code":"16 08 06*",
+    "ewc_description":"spent liquids used as catalysts"},
+  {"ewc_code":"16 08 07*",
+    "ewc_description":
+    "spent catalysts contaminated with hazardous substances"},
+  {"ewc_code":"16 09", "ewc_description":"oxidising substances"},
+  {"ewc_code":"16 09 01*",
+    "ewc_description":
+    "permanganates, for example potassium permanganate"},
+  {"ewc_code":"16 09 02*",
+    "ewc_description":
+    "chromates, for example potassium chromate, potassium or sodium dichromate"},
+  {"ewc_code":"16 09 03*",
+    "ewc_description":"peroxides, for example hydrogen peroxide"},
+  {"ewc_code":"16 09 04*",
+    "ewc_description":"oxidising substances, not otherwise specified"},
+  {"ewc_code":"16 10",
+    "ewc_description":
+    "aqueous liquid wastes destined for off-site treatment"},
+  {"ewc_code":"16 10 01*",
+    "ewc_description":
+    "aqueous liquid wastes containing hazardous substances"},
+  {"ewc_code":"16 10 02",
+    "ewc_description":
+    "aqueous liquid wastes other than those mentioned in 16 10 01"},
+  {"ewc_code":"16 10 03*",
+    "ewc_description":
+    "aqueous concentrates containing hazardous substances"},
+  {"ewc_code":"16 10 04",
+    "ewc_description":
+    "aqueous concentrates other than those mentioned in 16 10 03"},
+  {"ewc_code":"16 11",
+    "ewc_description":"waste linings and refractories"},
+  {"ewc_code":"16 11 01*",
+    "ewc_description":
+    "carbon-based linings and refractories from metallurgical processes containing hazardous substances"},
+  {"ewc_code":"16 11 02",
+    "ewc_description":
+    "carbon-based linings and refractories from metallurgical processes others than those mentioned in 16 11 01"},
+  {"ewc_code":"16 11 03*",
+    "ewc_description":
+    "other linings and refractories from metallurgical processes containing hazardous substances"},
+  {"ewc_code":"16 11 04",
+    "ewc_description":
+    "other linings and refractories from metallurgical processes other than those mentioned in 16 11 03"},
+  {"ewc_code":"16 11 05*",
+    "ewc_description":
+    "linings and refractories from non-metallurgical processes containing hazardous substances"},
+  {"ewc_code":"16 11 06",
+    "ewc_description":
+    "linings and refractories from non-metallurgical processes others than those mentioned in 16 11 05"},
+  {"ewc_code":"17",
+    "ewc_description":
+    "CONSTRUCTION AND DEMOLITION WASTES (INCLUDING EXCAVATED SOIL FROM CONTAMINATED SITES)"},
+  {"ewc_code":"17 01",
+    "ewc_description":"concrete, bricks, tiles and ceramics"},
+  {"ewc_code":"17 01 01", "ewc_description":"Concrete"},
+  {"ewc_code":"17 01 02", "ewc_description":"Bricks"},
+  {"ewc_code":"17 01 03", "ewc_description":"tiles and ceramics"},
+  {"ewc_code":"17 01 06*",
+    "ewc_description":
+    "mixtures of, or separate fractions of concrete, bricks, tiles and ceramics containing hazardous substances"},
+  {"ewc_code":"17 01 07",
+    "ewc_description":
+    "mixtures of concrete, bricks, tiles and ceramics other than those mentioned in 17 01 06"},
+  {"ewc_code":"17 02", "ewc_description":"wood, glass and plastic"},
+  {"ewc_code":"17 02 01", "ewc_description":"Wood"},
+  {"ewc_code":"17 02 02", "ewc_description":"Glass"},
+  {"ewc_code":"17 02 03", "ewc_description":"Plastic"},
+  {"ewc_code":"17 02 04*",
+    "ewc_description":
+    "glass, plastic and wood containing or contaminated with hazardous substances"},
+  {"ewc_code":"17 03",
+    "ewc_description":
+    "bituminous mixtures, coal tar and tarred products"},
+  {"ewc_code":"17 03 01*",
+    "ewc_description":"bituminous mixtures containing coal tar"},
+  {"ewc_code":"17 03 02",
+    "ewc_description":
+    "bituminous mixtures other than those mentioned in 17 03 01"},
+  {"ewc_code":"17 03 03*",
+    "ewc_description":"coal tar and tarred products"},
+  {"ewc_code":"17 04",
+    "ewc_description":"metals (including their alloys)"},
+  {"ewc_code":"17 04 01", "ewc_description":"copper, bronze, brass"},
+  {"ewc_code":"17 04 02", "ewc_description":"Aluminium"},
+  {"ewc_code":"17 04 03", "ewc_description":"Lead"},
+  {"ewc_code":"17 04 04", "ewc_description":"Zinc"},
+  {"ewc_code":"17 04 05", "ewc_description":"iron and steel"},
+  {"ewc_code":"17 04 06", "ewc_description":"Tin"},
+  {"ewc_code":"17 04 07", "ewc_description":"mixed metals"},
+  {"ewc_code":"17 04 09*",
+    "ewc_description":
+    "metal waste contaminated with hazardous substances"},
+  {"ewc_code":"17 04 10*",
+    "ewc_description":
+    "cables containing oil, coal tar and other hazardous substances"},
+  {"ewc_code":"17 04 11",
+    "ewc_description":"cables other than those mentioned in 17 04 10"},
+  {"ewc_code":"17 05",
+    "ewc_description":
+    "soil (including excavated soil from contaminated sites), stones and dredging spoil"},
+  {"ewc_code":"17 05 03*",
+    "ewc_description":
+    "soil and stones containing hazardous substances"},
+  {"ewc_code":"17 05 04",
+    "ewc_description":
+    "soil and stones other than those mentioned in 17 05 03"},
+  {"ewc_code":"17 05 05*",
+    "ewc_description":"dredging spoil containing hazardous substances"},
+  {"ewc_code":"17 05 06",
+    "ewc_description":
+    "dredging spoil other than those mentioned in 17 05 05"},
+  {"ewc_code":"17 05 07*",
+    "ewc_description":"track ballast containing hazardous substances"},
+  {"ewc_code":"17 05 08",
+    "ewc_description":
+    "track ballast other than those mentioned in 17 05 07"},
+  {"ewc_code":"17 06",
+    "ewc_description":
+    "insulation materials and asbestos-containing construction materials"},
+  {"ewc_code":"17 06 01*",
+    "ewc_description":"insulation materials containing asbestos"},
+  {"ewc_code":"17 06 03*",
+    "ewc_description":
+    "other insulation materials consisting of or containing hazardous substances"},
+  {"ewc_code":"17 06 04",
+    "ewc_description":
+    "insulation materials other than those mentioned in 17 06 01 and 17 06 03"},
+  {"ewc_code":"17 06 05*",
+    "ewc_description":"construction materials containing asbestos"},
+  {"ewc_code":"17 08",
+    "ewc_description":"gypsum-based construction material"},
+  {"ewc_code":"17 08 01*",
+    "ewc_description":
+    "gypsum-based construction materials contaminated with hazardous substances"},
+  {"ewc_code":"17 08 02",
+    "ewc_description":
+    "gypsum-based construction materials other than those mentioned in 17 08 01"},
+  {"ewc_code":"17 09",
+    "ewc_description":"other construction and demolition wastes"},
+  {"ewc_code":"17 09 01*",
+    "ewc_description":
+    "construction and demolition wastes containing mercury"},
+  {"ewc_code":"17 09 02*",
+    "ewc_description":
+    "construction and demolition wastes containing PCB (for example PCB-containing sealants, PCB-containing resin-based floorings, PCB-containing sealed glazing units, PCB-containing capacitors)"},
+  {"ewc_code":"17 09 03*",
+    "ewc_description":
+    "other construction and demolition wastes (including mixed wastes) containing hazardous substances"},
+  {"ewc_code":"17 09 04",
+    "ewc_description":
+    "mixed construction and demolition wastes other than those mentioned in 17 09 01, 17 09 02 and 17 09 03"},
+  {"ewc_code":"18",
+    "ewc_description":
+    "WASTES FROM HUMAN OR ANIMAL HEALTH CARE AND\/OR RELATED RESEARCH (except kitchen and restaurant wastes not arising from immediate health care)"},
+  {"ewc_code":"18 01",
+    "ewc_description":
+    "wastes from natal care, diagnosis, treatment or prevention of disease in humans"},
+  {"ewc_code":"18 01 01", "ewc_description":
+  "sharps (except 18 01 03)"},
+  {"ewc_code":"18 01 02",
+    "ewc_description":
+    "body parts and organs including blood bags and blood preserves (except 18 01 03)"},
+  {"ewc_code":"18 01 03*",
+    "ewc_description":
+    "wastes whose collection and disposal is subject to special requirements in order to prevent infection"},
+  {"ewc_code":"18 01 04",
+    "ewc_description":
+    "wastes whose collection and disposal is not subject to special requirements in order to prevent infection (for example dressings, plaster casts, linen, disposable clothing, diapers)"},
+  {"ewc_code":"18 01 06*",
+    "ewc_description":
+    "chemicals consisting of or containing hazardous substances"},
+  {"ewc_code":"18 01 07",
+    "ewc_description":
+    "chemicals other than those mentioned in 18 01 06"},
+  {"ewc_code":"18 01 08*",
+    "ewc_description":"cytotoxic and cytostatic medicines"},
+  {"ewc_code":"18 01 09",
+    "ewc_description":
+    "medicines other than those mentioned in 18 01 08"},
+  {"ewc_code":"18 01 10*",
+    "ewc_description":"amalgam waste from dental care"},
+  {"ewc_code":"18 02",
+    "ewc_description":
+    "wastes from research, diagnosis, treatment or prevention of disease involving animals"},
+  {"ewc_code":"18 02 01", "ewc_description":
+  "sharps (except 18 02 02)"},
+  {"ewc_code":"18 02 02*",
+    "ewc_description":
+    "wastes whose collection and disposal is subject to special requirements in order to prevent infection"},
+  {"ewc_code":"18 02 03",
+    "ewc_description":
+    "wastes whose collection and disposal is not subject to special requirements in order to prevent infection"},
+  {"ewc_code":"18 02 05*",
+    "ewc_description":
+    "chemicals consisting of or containing hazardous substances"},
+  {"ewc_code":"18 02 06",
+    "ewc_description":
+    "chemicals other than those mentioned in 18 02 05"},
+  {"ewc_code":"18 02 07*",
+    "ewc_description":"cytotoxic and cytostatic medicines"},
+  {"ewc_code":"18 02 08",
+    "ewc_description":
+    "medicines other than those mentioned in 18 02 07"},
+  {"ewc_code":"19",
+    "ewc_description":
+    "WASTES FROM WASTE MANAGEMENT FACILITIES, OFF-SITE WASTE WATER TREATMENT PLANTS AND THE PREPARATION OF WATER INTENDED FOR HUMAN CONSUMPTION AND WATER FOR INDUSTRIAL USE"},
+  {"ewc_code":"19 01",
+    "ewc_description":"wastes from incineration or pyrolysis of waste"},
+  {"ewc_code":"19 01 02",
+    "ewc_description":"ferrous materials removed from bottom ash"},
+  {"ewc_code":"19 01 05*",
+    "ewc_description":"filter cake from gas treatment"},
+  {"ewc_code":"19 01 06*",
+    "ewc_description":
+    "aqueous liquid wastes from gas treatment and other aqueous liquid wastes"},
+  {"ewc_code":"19 01 07*",
+    "ewc_description":"solid wastes from gas treatment"},
+  {"ewc_code":"19 01 10*",
+    "ewc_description":"spent activated carbon from flue-gas treatment"},
+  {"ewc_code":"19 01 11*",
+    "ewc_description":
+    "bottom ash and slag containing hazardous substances"},
+  {"ewc_code":"19 01 12",
+    "ewc_description":
+    "bottom ash and slag other than those mentioned in 19 01 11"},
+  {"ewc_code":"19 01 13*",
+    "ewc_description":"fly ash containing hazardous substances"},
+  {"ewc_code":"19 01 14",
+    "ewc_description":"fly ash other than those mentioned in 19 01 13"},
+  {"ewc_code":"19 01 15*",
+    "ewc_description":"boiler dust containing hazardous substances"},
+  {"ewc_code":"19 01 16",
+    "ewc_description":
+    "boiler dust other than those mentioned in 19 01 15"},
+  {"ewc_code":"19 01 17*",
+    "ewc_description":
+    "pyrolysis wastes containing hazardous substances"},
+  {"ewc_code":"19 01 18",
+    "ewc_description":
+    "pyrolysis wastes other than those mentioned in 19 01 17"},
+  {"ewc_code":"19 01 19",
+    "ewc_description":"sands from fluidised beds"},
+  {"ewc_code":"19 01 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 02",
+    "ewc_description":
+    "wastes from physico\/chemical treatments of waste (including dechromatation, decyanidation, neutralisation)"},
+  {"ewc_code":"19 02 03",
+    "ewc_description":
+    "premixed wastes composed only of non-hazardous wastes"},
+  {"ewc_code":"19 02 04*",
+    "ewc_description":
+    "premixed wastes composed of at least one hazardous waste"},
+  {"ewc_code":"19 02 05*",
+    "ewc_description":
+    "sludges from physico\/chemical treatment containing hazardous substances"},
+  {"ewc_code":"19 02 06",
+    "ewc_description":
+    "sludges from physico\/chemical treatment other than those mentioned in 19 02 05"},
+  {"ewc_code":"19 02 07*",
+    "ewc_description":"oil and concentrates from separation"},
+  {"ewc_code":"19 02 08*",
+    "ewc_description":
+    "liquid combustible wastes containing hazardous substances"},
+  {"ewc_code":"19 02 09*",
+    "ewc_description":
+    "solid combustible wastes containing hazardous substances"},
+  {"ewc_code":"19 02 10",
+    "ewc_description":
+    "combustible wastes other than those mentioned in 19 02 08 and 19 02 09"},
+  {"ewc_code":"19 02 11*",
+    "ewc_description":"other wastes containing hazardous substances"},
+  {"ewc_code":"19 02 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 03",
+    "ewc_description":"stabilised\/solidified wastes"},
+  {"ewc_code":"19 03 04*",
+    "ewc_description":
+    "wastes marked as hazardous, partly stabilised other than 19 03 08"},
+  {"ewc_code":"19 03 05",
+    "ewc_description":
+    "stabilised wastes other than those mentioned in 19 03 04"},
+  {"ewc_code":"19 03 06*",
+    "ewc_description":"wastes marked as hazardous, solidified"},
+  {"ewc_code":"19 03 07",
+    "ewc_description":
+    "solidified wastes other than those mentioned in 19 03 06"},
+  {"ewc_code":"19 03 08*",
+    "ewc_description":"partly stabilised mercury"},
+  {"ewc_code":"19 04",
+    "ewc_description":"vitrified waste and wastes from vitrification"},
+  {"ewc_code":"19 04 01", "ewc_description":"vitrified waste"},
+  {"ewc_code":"19 04 02*",
+    "ewc_description":"fly ash and other flue-gas treatment wastes"},
+  {"ewc_code":"19 04 03*",
+    "ewc_description":"non-vitrified solid phase"},
+  {"ewc_code":"19 04 04",
+    "ewc_description":
+    "aqueous liquid wastes from vitrified waste tempering"},
+  {"ewc_code":"19 05",
+    "ewc_description":"wastes from aerobic treatment of solid wastes"},
+  {"ewc_code":"19 05 01",
+    "ewc_description":
+    "non-composted fraction of municipal and similar wastes"},
+  {"ewc_code":"19 05 02",
+    "ewc_description":
+    "non-composted fraction of animal and vegetable waste"},
+  {"ewc_code":"19 05 03",
+    "ewc_description":"off-specification compost"},
+  {"ewc_code":"19 05 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 06",
+    "ewc_description":"wastes from anaerobic treatment of waste"},
+  {"ewc_code":"19 06 03",
+    "ewc_description":
+    "liquor from anaerobic treatment of municipal waste"},
+  {"ewc_code":"19 06 04",
+    "ewc_description":
+    "digestate from anaerobic treatment of municipal waste"},
+  {"ewc_code":"19 06 05",
+    "ewc_description":
+    "liquor from anaerobic treatment of animal and vegetable waste"},
+  {"ewc_code":"19 06 06",
+    "ewc_description":
+    "digestate from anaerobic treatment of animal and vegetable waste"},
+  {"ewc_code":"19 06 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 07", "ewc_description":"landfill leachate"},
+  {"ewc_code":"19 07 02*",
+    "ewc_description":
+    "landfill leachate containing hazardous substances"},
+  {"ewc_code":"19 07 03",
+    "ewc_description":
+    "landfill leachate other than those mentioned in 19 07 02"},
+  {"ewc_code":"19 08",
+    "ewc_description":
+    "wastes from waste water treatment plants not otherwise specified"},
+  {"ewc_code":"19 08 01", "ewc_description":"Screenings"},
+  {"ewc_code":"19 08 02", "ewc_description":"waste from desanding"},
+  {"ewc_code":"19 08 05",
+    "ewc_description":"sludges from treatment of urban waste water"},
+  {"ewc_code":"19 08 06*",
+    "ewc_description":"saturated or spent ion exchange resins"},
+  {"ewc_code":"19 08 07*",
+    "ewc_description":
+    "solutions and sludges from regeneration of ion exchangers"},
+  {"ewc_code":"19 08 08*",
+    "ewc_description":"membrane system waste containing heavy metals"},
+  {"ewc_code":"19 08 09",
+    "ewc_description":
+    "grease and oil mixture from oil\/water separation containing only edible oil and fats"},
+  {"ewc_code":"19 08 10*",
+    "ewc_description":
+    "grease and oil mixture from oil\/water separation other than those mentioned in 19 08 09"},
+  {"ewc_code":"19 08 11*",
+    "ewc_description":
+    "sludges containing hazardous substances from biological treatment of industrial waste water"},
+  {"ewc_code":"19 08 12",
+    "ewc_description":
+    "sludges from biological treatment of industrial waste water other than those mentioned in 19 08 11"},
+  {"ewc_code":"19 08 13*",
+    "ewc_description":
+    "sludges containing hazardous substances from other treatment of industrial waste water"},
+  {"ewc_code":"19 08 14",
+    "ewc_description":
+    "sludges from other treatment of industrial waste water other than those mentioned in 19 08 13"},
+  {"ewc_code":"19 08 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 09",
+    "ewc_description":
+    "wastes from the preparation of water intended for human consumption or water for industrial use"},
+  {"ewc_code":"19 09 01",
+    "ewc_description":
+    "solid waste from primary filtration and screenings"},
+  {"ewc_code":"19 09 02",
+    "ewc_description":"sludges from water clarification"},
+  {"ewc_code":"19 09 03",
+    "ewc_description":"sludges from decarbonation"},
+  {"ewc_code":"19 09 04", "ewc_description":"spent activated carbon"},
+  {"ewc_code":"19 09 05",
+    "ewc_description":"saturated or spent ion exchange resins"},
+  {"ewc_code":"19 09 06",
+    "ewc_description":
+    "solutions and sludges from regeneration of ion exchangers"},
+  {"ewc_code":"19 09 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 10",
+    "ewc_description":
+    "wastes from shredding of metal-containing wastes"},
+  {"ewc_code":"19 10 01", "ewc_description":"iron and steel waste"},
+  {"ewc_code":"19 10 02", "ewc_description":"non-ferrous waste"},
+  {"ewc_code":"19 10 03*",
+    "ewc_description":
+    "fluff-light fraction and dust containing hazardous substances"},
+  {"ewc_code":"19 10 04",
+    "ewc_description":
+    "fluff-light fraction and dust other than those mentioned in 19 10 03"},
+  {"ewc_code":"19 10 05*",
+    "ewc_description":
+    "other fractions containing hazardous substances"},
+  {"ewc_code":"19 10 06",
+    "ewc_description":
+    "other fractions other than those mentioned in 19 10 05"},
+  {"ewc_code":"19 11",
+    "ewc_description":"wastes from oil regeneration"},
+  {"ewc_code":"19 11 01*", "ewc_description":"spent filter clays"},
+  {"ewc_code":"19 11 02*", "ewc_description":"acid tars"},
+  {"ewc_code":"19 11 03*", "ewc_description":"aqueous liquid wastes"},
+  {"ewc_code":"19 11 04*",
+    "ewc_description":"wastes from cleaning of fuel with bases"},
+  {"ewc_code":"19 11 05*",
+    "ewc_description":
+    "sludges from on-site effluent treatment containing hazardous substances"},
+  {"ewc_code":"19 11 06",
+    "ewc_description":
+    "sludges from on-site effluent treatment other than those mentioned in 19 11 05"},
+  {"ewc_code":"19 11 07*",
+    "ewc_description":"wastes from flue-gas cleaning"},
+  {"ewc_code":"19 11 99",
+    "ewc_description":"wastes not otherwise specified"},
+  {"ewc_code":"19 12",
+    "ewc_description":
+    "wastes from the mechanical treatment of waste (for example sorting, crushing, compacting, pelletising) not otherwise specified"},
+  {"ewc_code":"19 12 01", "ewc_description":"paper and cardboard"},
+  {"ewc_code":"19 12 02", "ewc_description":"ferrous metal"},
+  {"ewc_code":"19 12 03", "ewc_description":"non-ferrous metal"},
+  {"ewc_code":"19 12 04", "ewc_description":"plastic and rubber"},
+  {"ewc_code":"19 12 05", "ewc_description":"Glass"},
+  {"ewc_code":"19 12 06*",
+    "ewc_description":"wood containing hazardous substances"},
+  {"ewc_code":"19 12 07",
+    "ewc_description":"wood other than that mentioned in 19 12 06"},
+  {"ewc_code":"19 12 08", "ewc_description":"Textiles"},
+  {"ewc_code":"19 12 09",
+    "ewc_description":"minerals (for example sand, stones)"},
+  {"ewc_code":"19 12 10",
+    "ewc_description":"combustible waste (refuse derived fuel)"},
+  {"ewc_code":"19 12 11*",
+    "ewc_description":
+    "other wastes (including mixtures of materials) from mechanical treatment of waste containing hazardous substances"},
+  {"ewc_code":"19 12 12",
+    "ewc_description":
+    "other wastes (including mixtures of materials) from mechanical treatment of wastes other than those mentioned in 19 12 11"},
+  {"ewc_code":"19 13",
+    "ewc_description":"wastes from soil and groundwater remediation"},
+  {"ewc_code":"19 13 01*",
+    "ewc_description":
+    "solid wastes from soil remediation containing hazardous substances"},
+  {"ewc_code":"19 13 02",
+    "ewc_description":
+    "solid wastes from soil remediation other than those mentioned in 19 13 01"},
+  {"ewc_code":"19 13 03*",
+    "ewc_description":
+    "sludges from soil remediation containing hazardous substances"},
+  {"ewc_code":"19 13 04",
+    "ewc_description":
+    "sludges from soil remediation other than those mentioned in 19 13 03"},
+  {"ewc_code":"19 13 05*",
+    "ewc_description":
+    "sludges from groundwater remediation containing hazardous substances"},
+  {"ewc_code":"19 13 06",
+    "ewc_description":
+    "sludges from groundwater remediation other than those mentioned in 19 13 05"},
+  {"ewc_code":"19 13 07*",
+    "ewc_description":
+    "aqueous liquid wastes and aqueous concentrates from groundwater remediation containing hazardous substances"},
+  {"ewc_code":"19 13 08",
+    "ewc_description":
+    "aqueous liquid wastes and aqueous concentrates from groundwater remediation other than those mentioned in 19 13 07"},
+  {"ewc_code":"20",
+    "ewc_description":
+    "MUNICIPAL WASTES (HOUSEHOLD WASTE AND SIMILAR COMMERCIAL, INDUSTRIAL AND INSTITUTIONAL WASTES) INCLUDING SEPARATELY COLLECTED FRACTIONS"},
+  {"ewc_code":"20 01",
+    "ewc_description":"separately collected fractions (except 15 01)"},
+  {"ewc_code":"20 01 01", "ewc_description":"paper and cardboard"},
+  {"ewc_code":"20 01 02", "ewc_description":"Glass"},
+  {"ewc_code":"20 01 08",
+    "ewc_description":"biodegradable kitchen and canteen waste"},
+  {"ewc_code":"20 01 10", "ewc_description":"Clothes"},
+  {"ewc_code":"20 01 11", "ewc_description":"Textiles"},
+  {"ewc_code":"20 01 13*", "ewc_description":"Solvents"},
+  {"ewc_code":"20 01 14*", "ewc_description":"Acids"},
+  {"ewc_code":"20 01 15*", "ewc_description":"Alkalines"},
+  {"ewc_code":"20 01 17*", "ewc_description":"Photochemicals"},
+  {"ewc_code":"20 01 19*", "ewc_description":"Pesticides"},
+  {"ewc_code":"20 01 21*",
+    "ewc_description":
+    "fluorescent tubes and other mercury-containing waste"},
+  {"ewc_code":"20 01 23*",
+    "ewc_description":
+    "discarded equipment containing chlorofluorocarbons"},
+  {"ewc_code":"20 01 25", "ewc_description":"edible oil and fat"},
+  {"ewc_code":"20 01 26*",
+    "ewc_description":
+    "oil and fat other than those mentioned in 20 01 25"},
+  {"ewc_code":"20 01 27*",
+    "ewc_description":
+    "paint, inks, adhesives and resins containing hazardous substances"},
+  {"ewc_code":"20 01 28",
+    "ewc_description":
+    "paint, inks, adhesives and resins other than those mentioned in 20 01 27"},
+  {"ewc_code":"20 01 29*",
+    "ewc_description":"detergents containing hazardous substances"},
+  {"ewc_code":"20 01 30",
+    "ewc_description":
+    "detergents other than those mentioned in 20 01 29"},
+  {"ewc_code":"20 01 31*",
+    "ewc_description":"cytotoxic and cytostatic medicines"},
+  {"ewc_code":"20 01 32",
+    "ewc_description":
+    "medicines other than those mentioned in 20 01 31"},
+  {"ewc_code":"20 01 33*",
+    "ewc_description":
+    "batteries and accumulators included in 16 06 01, 16 06 02 or 16 06 03 and unsorted batteries and accumulators containing these batteries"},
+  {"ewc_code":"20 01 34",
+    "ewc_description":
+    "batteries and accumulators other than those mentioned in 20 01 33"},
+  {"ewc_code":"20 01 35*",
+    "ewc_description":
+    "discarded electrical and electronic equipment other than those mentioned in 20 01 21 and 20 01 23 containing hazardous components (1)"},
+  {"ewc_code":"20 01 36",
+    "ewc_description":
+    "discarded electrical and electronic equipment other than those mentioned in 20 01 21, 20 01 23 and 20 01 35"},
+  {"ewc_code":"20 01 37*",
+    "ewc_description":"wood containing hazardous substances"},
+  {"ewc_code":"20 01 38",
+    "ewc_description":"wood other than that mentioned in 20 01 37"},
+  {"ewc_code":"20 01 39", "ewc_description":"Plastics"},
+  {"ewc_code":"20 01 40", "ewc_description":"Metals"},
+  {"ewc_code":"20 01 41",
+    "ewc_description":"wastes from chimney sweeping"},
+  {"ewc_code":"20 01 99",
+    "ewc_description":"other fractions not otherwise specified"},
+  {"ewc_code":"20 02",
+    "ewc_description":
+    "garden and park wastes (including cemetery waste)"},
+  {"ewc_code":"20 02 01", "ewc_description":"biodegradable waste"},
+  {"ewc_code":"20 02 02", "ewc_description":"soil and stones"},
+  {"ewc_code":"20 02 03",
+    "ewc_description":"other non-biodegradable wastes"},
+  {"ewc_code":"20 03", "ewc_description":"other municipal wastes"},
+  {"ewc_code":"20 03 01", "ewc_description":"mixed municipal waste"},
+  {"ewc_code":"20 03 02", "ewc_description":"waste from markets"},
+  {"ewc_code":"20 03 03", "ewc_description":
+  "street-cleaning residues"},
+  {"ewc_code":"20 03 04", "ewc_description":"septic tank sludge"},
+  {"ewc_code":"20 03 06",
+    "ewc_description":"waste from sewage cleaning"},
+  {"ewc_code":"20 03 07", "ewc_description":"bulky waste"},
+  {"ewc_code":"20 03 99",
+    "ewc_description":"municipal wastes not otherwise specified"}]

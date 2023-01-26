@@ -15,76 +15,131 @@ router.get('/index', function (req, res) {
 
 
 
-router.get('/setup-producer', function (req, res) {
+router.get('/ut5receiver', function (req, res) {
   // Setup the data
-  if (req.session.data['first_time'] != 'false') {
     // Clear all data
     req.session.data = {}
 
     // initiate for first time/restart
-    req.session.data['have_waste'] = 'false'
-    req.session.data['have_how_waste_produced'] = 'false'
-    req.session.data['have_sic_code'] = 'false'
-    req.session.data['have_hazard'] = 'false'
+    req.session.data['have_waste'] = 'true'
+    req.session.data['have_how_waste_produced'] = 'true'
+    req.session.data['have_sic_code'] = 'true'
+    req.session.data['have_hazard'] = 'true'
  //   req.session.data['first_add_component'] = 'true'
     req.session.data['add_hazard'] = ''
-    req.session.data['have_physical_form'] = 'false'
-    req.session.data['have_weight'] = 'false'
-    req.session.data['container_asked_for'] = 'false'
+    req.session.data['have_physical_form'] = 'true'
+    req.session.data['have_weight'] = 'true'
+    req.session.data['container_asked_for'] = 'true'
 
-    req.session.data['producer_full_address'] = '';
+    req.session.data['producer_full_address'] = 'Unit 15, Berryedge Park, Dunstable, Bedfordshire, LU5 4AX';
     req.session.data['producer_address_line_1'] = 'Unit 15';
     req.session.data['producer_address_line_2'] = 'Berryedge Park';
     req.session.data['producer_address_town'] = 'Dunstable';
     req.session.data['producer_address_county'] = 'Bedfordshire';
     req.session.data['producer_postcode'] = 'LU5 4AX';
-    req.session.data['producer_full_address_cya'] = '<ul class="govuk-list"><li>Unit 15</li><li>Dunstble</li><li>LU5 4AX</li></ul>'
+    req.session.data['producer_full_address_cya'] = '<ul class="govuk-list"><li>Unit 15</li><li>Berryedge Park</li><li>Dunstable</li><li>LU5 4AX</li></ul>'
     req.session.data['producer_contact_cya'] = '<ul class="govuk-list"><li>roger@Zathunicon.com</li><li>07123 456789</li>'
 
-    req.session.data['receiver_full_address'] = '';
-    req.session.data['receiver_address_line_1'] = '';
-    req.session.data['receiver_address_line_2'] = '';
-    req.session.data['receiver_address_town'] = '';
-    req.session.data['receiver_address_county'] = '';
+    req.session.data['receiver_full_address'] = '29 Gwynnyth St, Cardiff, South Glamorgan, CF24 4PH';
+    req.session.data['receiver_address_line_1'] = '29 Gwynnyth St';
+    req.session.data['receiver_address_town'] = 'Cardiff';
+    req.session.data['receiver_address_county'] = 'South Glamorgan';
+    req.session.data['receiver_postcode'] = 'CF24 4PH';
+    req.session.data['receiver_full_address_cya'] = '<ul class="govuk-list"><li>29 Gwynnyth St</li><li>Cardiff</li><li>South Glamorgan</li><li>LU5 4AX</li></ul>'
 
-    req.session.data['waste_details_status'] = 'Not started'
-    req.session.data['waste_details_status_class'] = 'govuk-tag--grey'
-    req.session.data['how_waste_produced_status'] = 'Not started'
-    req.session.data['how_waste_produced_status_class'] = 'govuk-tag--grey'
-    req.session.data['producer_details_status'] = 'Not started'
-    req.session.data['producer_details_status_class'] = 'govuk-tag--grey'
-    req.session.data['pick_up_status'] = 'Not started'
-    req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
-    req.session.data['receiver_details_status'] = 'Not started'
-    req.session.data['receiver_details_status_class'] = 'govuk-tag--grey'
+    req.session.data['waste_details_status'] = 'Completed'
+    req.session.data['waste_details_status_class'] = ''
+    req.session.data['how_waste_produced_status'] = 'Completed'
+    req.session.data['how_waste_produced_status_class'] = ''
+    req.session.data['producer_details_status'] = 'Completed'
+    req.session.data['producer_details_status_class'] = ''
+    req.session.data['pick_up_status'] = 'Completed'
+    req.session.data['pick_up_status_class'] = ''
+    req.session.data['receiver_details_status'] = 'Completed'
+    req.session.data['receiver_details_status_class'] = ''
     req.session.data['payment_status'] = 'Cannot start yet'
     req.session.data['payment_status_class'] = 'govuk-tag--grey'
+    req.session.data['carrier_details_status'] = 'Completed'
+    req.session.data['carrier_details_status_class'] = ''
+    req.session.data['transportation_info_status'] = 'Completed'
+    req.session.data['transportation_info_status_class'] = ''
+    req.session.data['carrier_confirmation_status'] = 'Completed'
+    req.session.data['carrier_confirmation_status_class'] = ''
+    req.session.data['producer_confirmation_status'] = 'Completed'
+    req.session.data['producer_confirmation_status_class'] = ''
 
     // initiate variables that are used as conditions to display information in the WIN. If we don't do this we get a blank line
-    req.session.data['producer_business_name'] = ''
-    req.session.data['receiver_business_name'] = ''
-    req.session.data['pick_up_location'] = ''
-    req.session.data['carrier_business_name'] = ''
-    req.session.data['transport_type'] = ''
+    req.session.data['producer_business_name'] = 'Zathunicon'
+    req.session.data['receiver_business_name'] = 'Sampsoms Treatment'
+    req.session.data['pick_up_location'] = 'LU5 5AB'
+    req.session.data['carrier_business_name'] = 'Bags in a Flash'
+    req.session.data['transport_type'] = 'Road'
 
     // so we know the who started the note
     req.session.data['who_started'] = 'producer'
 
     // so we don't re-set when producer continues a note, rather than start one
     req.session.data['first_time'] = 'false'
-  }
+
 
   // who is signed in
-  req.session.data['producer_signed_in'] = 'true'
+  req.session.data['producer_signed_in'] = 'false'
   req.session.data['carrier_signed_in'] = 'false'
-  req.session.data['receiver_signed_in'] = 'false'
+  req.session.data['receiver_signed_in'] = 'true'
+
+  // set the rest of the data
+  req.session.data['ewc'] = '170601*'
+  req.session.data['is_hazardous_waste'] = 'true'
+  req.session.data['ewc_description'] = 'Insulation materials containing asbestos'
+  req.session.data['waste_additional_info'] = 'bagged loose-fill asbestos insulation waste (chrysotile)'
+  req.session.data['component'] = ''
+  req.session.data['hazard_codes'] = ''
+  req.session.data['hp4_concentration'] = ''
+  req.session.data['hp5_concentration'] = ''
+  req.session.data['hp6_concentration'] = ''
+  req.session.data['hp7_concentration'] = ''
+  req.session.data['hp8_concentration'] = ''
+  req.session.data['hp10_concentration'] = ''
+  req.session.data['hp11_concentration'] = ''
+  req.session.data['hp13_concentration'] = ''
+  req.session.data['hp14_concentration'] = ''
+  req.session.data['pop_concentration'] = ''
+  req.session.data['hazard_codes_cya'] = ''
+  req.session.data['concentration_cya'] = ''
+  req.session.data['first_component'] = 'false'
+  req.session.data['hp1_concentration'] = ''
+  req.session.data['hp2_concentration'] = ''
+  req.session.data['hp3_concentration'] = ''
+  req.session.data['hp9_concentration'] = ''
+  req.session.data['hp12_concentration'] = ''
+  req.session.data['hp15_concentration'] = ''
+  req.session.data['table_html'] = '<table class="govuk-table"><thead class="govuk-table__head"><tr class="govuk-table__row"><th scope="col" class="govuk-table__header app-custom-class">Component</th><th scope="col" class="govuk-table__header app-custom-class">Concentration</th><th scope="col" class="govuk-table__header app-custom-class">Hazard code</th><th scope="col" class="govuk-table__header app-custom-class"></th></tr></thead><tbody class="govuk-table__body"><tr class="govuk-table__row" id="thisRow"><th scope="row" class="govuk-table__header">Asbestos</th><td class="govuk-table__cell">100%</th><td class="govuk-table__cell">HP7: Carcinogenic</th><td class="govuk-table__cell"><a href="">Change</a></th></tr></tbody></table>'
+  req.session.data['nothing_chosen'] = 'false'
+  req.session.data['physical_form'] = 'Solid'
+  req.session.data['physical_form_cya'] = 'Solid'
+  req.session.data['weight'] = '20'
+  req.session.data['weight_cya'] = '20 kg'
+  req.session.data['container-type'] = 'sack or bag'
+  req.session.data['container-capacity'] = '5kg'
+  req.session.data['container-quantity'] = '4'
+  req.session.data['container_cya'] = '4 X 5kg capacity sack or bag'
+  req.session.data['sic_info'] = '47741: Retail sale of hearing aids'
+  req.session.data['sic_code'] = '47741'
+  req.session.data['sic_description'] = 'Remediation activities and other waste management services'
+  req.session.data['receiver_contact_name'] = 'Roger Anderson'
+  req.session.data['receiver_contact_email'] = 'randerson@sampsoms.org'
+  req.session.data['receiver_contact_phone'] = '079 4987 3028'
+  req.session.data['receiver_contact_cya'] = '<ul class="govuk-list"><li>Roger Anderson</li><li>randerson@sampsoms.org</li><li>079 4987 3028</li></ul>'
+  req.session.data['receiver_permit'] = 'DN3796LP'
+  req.session.data['pick_up_location_confirmed'] = 'true'
+  req.session.data['vehicle_reg_number'] = 'JU71 TAF'
 
   res.redirect( 'setup-win' )
 })
 
-router.get('/setup-carrier', function (req, res) {
+
+router.get('/ut5initiator', function (req, res) {
   // Setup the data
-  if (req.session.data['first_time'] != 'false') {
     // Clear all data
     req.session.data = {}
 
@@ -93,121 +148,65 @@ router.get('/setup-carrier', function (req, res) {
     req.session.data['have_how_waste_produced'] = 'false'
     req.session.data['have_sic_code'] = 'false'
     req.session.data['have_hazard'] = 'false'
-   // req.session.data['first_add_component'] = 'true'
-    req.session.data['add_hazard'] = ''
     req.session.data['have_physical_form'] = 'false'
     req.session.data['have_weight'] = 'false'
     req.session.data['container_asked_for'] = 'false'
 
-    req.session.data['producer_full_address'] = '';
-    req.session.data['producer_address_line_1'] = '';
-    req.session.data['producer_address_line_2'] = '';
-    req.session.data['producer_address_town'] = '';
-    req.session.data['producer_address_county'] = '';
-    req.session.data['receiver_full_address'] = '';
-    req.session.data['receiver_address_line_1'] = '';
-    req.session.data['receiver_address_line_2'] = '';
-    req.session.data['receiver_address_town'] = '';
-    req.session.data['receiver_address_county'] = '';
+    req.session.data['producer_full_address'] = '29 Gwynnyth St, Cardiff, South Glamorgan, CF24 4PH';
+    req.session.data['producer_address_line_1'] = '29 Gwynnyth St';
+    req.session.data['producer_address_town'] = 'Cardiff';
+    req.session.data['producer_address_county'] = 'South Glamorgan';
+    req.session.data['producer_postcode'] = 'CF24 4PH';
+    req.session.data['producer_full_address_cya'] = '<ul class="govuk-list"><li>29 Gwynnyth St</li><li>Cardiff</li><li>South Glamorgan</li><li>LU5 4AX</li></ul>'
+    req.session.data['producer_contact_cya'] = '<ul class="govuk-list"><li>Roger Anderson</li><li>randerson@sampsoms.org</li><li>079 4987 3028</li></ul>'
 
     req.session.data['waste_details_status'] = 'Not started'
     req.session.data['waste_details_status_class'] = 'govuk-tag--grey'
     req.session.data['how_waste_produced_status'] = 'Not started'
     req.session.data['how_waste_produced_status_class'] = 'govuk-tag--grey'
-    req.session.data['producer_details_status'] = 'Not started'
-    req.session.data['producer_details_status_class'] = 'govuk-tag--grey'
+    req.session.data['producer_details_status'] = 'Completed'
+    req.session.data['producer_details_status_class'] = ''
     req.session.data['pick_up_status'] = 'Not started'
     req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
     req.session.data['receiver_details_status'] = 'Not started'
     req.session.data['receiver_details_status_class'] = 'govuk-tag--grey'
     req.session.data['payment_status'] = 'Cannot start yet'
     req.session.data['payment_status_class'] = 'govuk-tag--grey'
+    req.session.data['carrier_details_status'] = 'Review'
+    req.session.data['carrier_details_status_class'] = 'govuk-tag--blue'
+    req.session.data['transportation_info_status'] = 'Not started'
+    req.session.data['transportation_info_status_class'] = 'govuk-tag--grey'
+    req.session.data['carrier_confirmation_status'] = 'Not started'
+    req.session.data['carrier_confirmation_status_class'] = 'govuk-tag--grey'
+    req.session.data['producer_confirmation_status'] = 'Cannot start yet'
+    req.session.data['producer_confirmation_status_class'] = 'govuk-tag--grey'
 
     // initiate variables that are used as conditions to display information in the WIN. If we don't do this we get a blank line
-    req.session.data['producer_business_name'] = ''
+    req.session.data['producer_business_name'] = 'Sampsoms Treatment'
     req.session.data['receiver_business_name'] = ''
     req.session.data['pick_up_location'] = ''
-    req.session.data['carrier_business_name'] = ''
+    req.session.data['carrier_business_name'] = 'Sampsoms Treatment'
     req.session.data['transport_type'] = ''
+    req.session.data['receiver_address_line_1'] = ''
+    req.session.data['receiver_address_line_2'] = ''
+    req.session.data['receiver_address_town'] = ''
+    req.session.data['receiver_address_county'] = ''
+    req.session.data['receiver_postcode'] = ''
 
     // so we know the who started the note
     req.session.data['who_started'] = 'carrier'
 
-    // so we don't re-set when carrier continues a note, rather than start one
+    // so we don't re-set when producer continues a note, rather than start one
     req.session.data['first_time'] = 'false'
-  }
 
-  // set-up user
+
+  // who is signed in
   req.session.data['producer_signed_in'] = 'false'
   req.session.data['carrier_signed_in'] = 'true'
   req.session.data['receiver_signed_in'] = 'false'
 
   res.redirect( 'setup-win' )
 })
-
-router.get('/setup-receiver', function (req, res) {
-  // Setup the data
-  if (req.session.data['first_time'] != 'false') {
-    // Clear all data
-    req.session.data = {}
-
-    // initiate for first time/restart
-    req.session.data['have_waste'] = 'false'
-    req.session.data['have_how_waste_produced'] = 'false'
-    req.session.data['have_sic_code'] = 'false'
-    req.session.data['have_hazard'] = 'false'
-   // req.session.data['first_add_component'] = 'true'
-    req.session.data['add_hazard'] = ''
-    req.session.data['have_physical_form'] = 'false'
-    req.session.data['have_weight'] = 'false'
-    req.session.data['container_asked_for'] = 'false'
-
-    req.session.data['producer_full_address'] = '';
-    req.session.data['producer_address_line_1'] = '';
-    req.session.data['producer_address_line_2'] = '';
-    req.session.data['producer_address_town'] = '';
-    req.session.data['producer_address_county'] = '';
-    req.session.data['receiver_full_address'] = '';
-    req.session.data['receiver_address_line_1'] = '';
-    req.session.data['receiver_address_line_2'] = '';
-    req.session.data['receiver_address_town'] = '';
-    req.session.data['receiver_address_county'] = '';
-
-    req.session.data['waste_details_status'] = 'Not started'
-    req.session.data['waste_details_status_class'] = 'govuk-tag--grey'
-    req.session.data['how_waste_produced_status'] = 'Not started'
-    req.session.data['how_waste_produced_status_class'] = 'govuk-tag--grey'
-    req.session.data['producer_details_status'] = 'Not started'
-    req.session.data['producer_details_status_class'] = 'govuk-tag--grey'
-    req.session.data['pick_up_status'] = 'Not started'
-    req.session.data['pick_up_status_class'] = 'govuk-tag--grey'
-    req.session.data['receiver_details_status'] = 'Not started'
-    req.session.data['receiver_details_status_class'] = 'govuk-tag--grey'
-    req.session.data['payment_status'] = 'Cannot start yet'
-    req.session.data['payment_status_class'] = 'govuk-tag--grey'
-
-    // initiate variables that are used as conditions to display information in the WIN. If we don't do this we get a blank line
-    req.session.data['producer_business_name'] = ''
-    req.session.data['receiver_business_name'] = ''
-    req.session.data['pick_up_location'] = ''
-    req.session.data['carrier_business_name'] = ''
-    req.session.data['transport_type'] = ''
-
-    // so we know the who started the note
-    req.session.data['who_started'] = 'receiver'
-
-    // so we don't re-set when carrier continues a note, rather than start one
-    req.session.data['first_time'] = 'false'
-  }
-
-  // set-up user
-  req.session.data['producer_signed_in'] = 'false'
-  req.session.data['carrier_signed_in'] = 'false'
-  req.session.data['receiver_signed_in'] = 'true'
-
-  res.redirect( 'setup-win' )
-})
-
 
 router.get('/setup-win', function (req, res) {
 // Set up the status for each component of the waste information note
@@ -357,6 +356,11 @@ router.get('/setup-win', function (req, res) {
       req.session.data['how_waste_produced_status_class'] = 'govuk-tag--blue'
     }
 
+    if (req.session.data['producer_details_status'] == 'Completed') {
+      req.session.data['producer_details_status'] = 'Review'
+      req.session.data['producer_details_status_class'] = 'govuk-tag--blue'
+    }
+
     if (req.session.data['pick_up_status'] == 'Completed') {
       req.session.data['pick_up_status'] = 'Review'
       req.session.data['pick_up_status_class'] = 'govuk-tag--blue'
@@ -372,7 +376,6 @@ router.get('/setup-win', function (req, res) {
 	  } else {
       req.session.data['carrier_details_status'] = 'Review'
       req.session.data['carrier_details_status_class'] = 'govuk-tag--blue'
-      req.session.data['carrier_business_name'] = 'Boxes in a Flash'
 	  }
 
     req.session.data['transportation_info_status'] = 'Not started'
@@ -393,7 +396,7 @@ router.get('/setup-win', function (req, res) {
 	  if (req.session.data['producer_confirmation_status'] == 'Completed') {
 	    req.session.data['producer_details_status_class'] = ''
 	  } else {
-      req.session.data['producer_confirmation_status'] = 'Locked'
+      req.session.data['producer_confirmation_status'] = 'Cannot start yet'
       req.session.data['producer_confirmation_status_class'] = 'govuk-tag--grey'
     }
 
@@ -472,6 +475,8 @@ router.get('/setup-win', function (req, res) {
       req.session.data['recovery_code_status_class'] = 'govuk-tag--grey'
     }
   }
+
+
 
   res.redirect( 'waste-info-note' )
 })
@@ -1102,7 +1107,7 @@ router.post('/producer-address', function(req, res) {
     if (req.session.data['producer_address_town'] != '') {
       producer_full_address_cya = producer_full_address_cya + '<li>' + req.session.data['producer_address_town'] + '</li>'
     }
-    if (req.session.data['receiver_address_county'] != '') {
+    if (req.session.data['producer_address_county'] != '') {
       producer_full_address_cya = producer_full_address_cya + '<li>' + req.session.data['producer_address_county'] + '</li>'
     }
     if (req.session.data['producer_postcode'] != '') {
@@ -1231,7 +1236,8 @@ router.post('/receiver-address', function(req, res) {
     // As we hard coded the addresses shown, we know the format is line 1, town, postcode.
     req.session.data['receiver_address_line_1'] = address_items[0];
     req.session.data['receiver_address_town'] = address_items[1];
-    req.session.data['receiver_postcode'] = address_items[2];
+    req.session.data['receiver_address_county'] = address_items[2];
+    req.session.data['receiver_postcode'] = address_items[3];
 
   	// make the 'Check answers' version of the receivers address
     receiver_full_address_cya = '<ul class="govuk-list"><li>' + req.session.data['receiver_address_line_1'] + '</li>'
@@ -1349,6 +1355,15 @@ router.post('/carrier-confirmation', function(req, res) {
   req.session.data['carrier_confirmation_status'] = 'Completed';
   req.session.data['carrier_confirmation_status_class'] = "";
 
+//BODGE
+  if (req.session.data['producer_confirmation_status'] == 'Completed') {
+    req.session.data['producer_confirmation_status_class'] = ''
+  } else if ((req.session.data['carrier_details_status'] == "Completed") && (req.session.data['transportation_info_status'] == "Completed")
+        && (req.session.data['carrier_confirmation_status'] == 'Completed')) {
+    req.session.data['producer_confirmation_status'] = 'Not started'
+    req.session.data['producer_confirmation_status_class'] = 'govuk-tag--grey'
+  }
+
   res.redirect( 'waste-info-note' );
 })
 
@@ -1408,6 +1423,15 @@ router.post('/waste-management', function(req, res) {
       req.session.data['recovery_code_status'] = "Completed";
       req.session.data['recovery_code_status_class'] = "";
       req.session.data['recovery_info'] = recovery_code + ': ' + recovery_code_text
+
+      // BODGE FOR NOW TO GET LINK FOR CONFIRMATION TO SHOW
+        // allow receiver to confirm and sign his part of the duty of care
+        if (req.session.data['receiver_confirmation_status'] == 'Completed') {
+          req.session.data['receiver_confirmation_status_class'] = ''
+        } else if ((req.session.data['producer_confirmation_status'] == 'Completed') && (req.session.data['recovery_code_status'] == 'Completed')) {
+          req.session.data['receiver_confirmation_status'] = 'Not started'
+          req.session.data['receiver_confirmation_status_class'] = 'govuk-tag--grey'
+        }
 
       res.redirect( 'waste-info-note' );
     } else { // the code provided wasn't valid, reshow the page with an error message

@@ -1,0 +1,186 @@
+[
+  {
+    "Code": "R1",
+    "Relates_To": "Use principally as a fuel or other means to generate energy"
+  },
+  {
+    "Code": "R01",
+    "Relates_To": "Use principally as a fuel or other means to generate energy"
+  },
+  {
+    "Code": "R2",
+    "Relates_To": "Solvent reclamation/regeneration"
+  },
+  {
+    "Code": "R02",
+    "Relates_To": "Solvent reclamation/regeneration"
+  },
+  {
+    "Code": "R3",
+    "Relates_To": "Recycling/reclamation of organic substances which are not used as solvents (including composting and other biological transformation processes)"
+  },
+  {
+    "Code": "R03",
+    "Relates_To": "Recycling/reclamation of organic substances which are not used as solvents (including composting and other biological transformation processes)"
+  },
+  {
+    "Code": "R4",
+    "Relates_To": "Recycling/reclamation of metals and metal compounds"
+  },
+  {
+    "Code": "R04",
+    "Relates_To": "Recycling/reclamation of metals and metal compounds"
+  },
+  {
+    "Code": "R5",
+    "Relates_To": "Recycling/reclamation of other inorganic materials"
+  },
+  {
+    "Code": "R05",
+    "Relates_To": "Recycling/reclamation of other inorganic materials"
+  },
+  {
+    "Code": "R6",
+    "Relates_To": "Regeneration of acids or bases"
+  },
+  {
+    "Code": "R06",
+    "Relates_To": "Regeneration of acids or bases"
+  },
+  {
+    "Code": "R7",
+    "Relates_To": "Recovery of components used for pollution abatement"
+  },
+  {
+    "Code": "R07",
+    "Relates_To": "Recovery of components used for pollution abatement"
+  },
+  {
+    "Code": "R8",
+    "Relates_To": "Recovery of components from catalysts"
+  },
+  {
+    "Code": "R08",
+    "Relates_To": "Recovery of components from catalysts"
+  },
+  {
+    "Code": "R9",
+    "Relates_To": "Oil Disposal Operations re-refining or other reuses of oil"
+  },
+  {
+    "Code": "R09",
+    "Relates_To": "Oil Disposal Operations re-refining or other reuses of oil"
+  },
+  {
+    "Code": "R10",
+    "Relates_To": "Land treatment resulting in benefit to agriculture or ecological improvement"
+  },
+  {
+    "Code": "R11",
+    "Relates_To": "Use of wastes obtained from any of the operations numbered R1 to R10"
+  },
+  {
+    "Code": "R12",
+    "Relates_To": "Exchange of wastes for submission to any of the operations numbered R1 to R11"
+  },
+  {
+    "Code": "R13",
+    "Relates_To": "Storage of wastes pending any of the operations numbered R1 to R12 (excluding temporary storage, pending collection, on the site where it is produced)"
+  },
+  {
+    "Code": "D1",
+    "Relates_To": "Disposal Operations Deposit into or onto land, e.g. landfill"
+  },
+  {
+    "Code": "D01",
+    "Relates_To": "Disposal Operations Deposit into or onto land, e.g. landfill"
+  },
+  {
+    "Code": "D2",
+    "Relates_To": "Land treatment, e.g. biodegradation of liquid or sludgy discards in soils"
+  },
+  {
+    "Code": "D02",
+    "Relates_To": "Land treatment, e.g. biodegradation of liquid or sludgy discards in soils"
+  },
+  {
+    "Code": "D3",
+    "Relates_To": "Deep injection, e.g. injection of pumpable discards into wells, salt domes or naturally occurring repositories"
+  },
+  {
+    "Code": "D03",
+    "Relates_To": "Deep injection, e.g. injection of pumpable discards into wells, salt domes or naturally occurring repositories"
+  },
+  {
+    "Code": "D4",
+    "Relates_To": "Surface impoundment, e.g. placement of liquid or sludgy discards into pits, ponds or lagoons"
+  },
+  {
+    "Code": "D04",
+    "Relates_To": "Surface impoundment, e.g. placement of liquid or sludgy discards into pits, ponds or lagoons"
+  },
+  {
+    "Code": "D5",
+    "Relates_To": "Specially engineered landfill, e.g. placement into lined discrete cells which are capped and isolated from one another and the environment"
+  },
+  {
+    "Code": "D05",
+    "Relates_To": "Specially engineered landfill, e.g. placement into lined discrete cells which are capped and isolated from one another and the environment"
+  },
+  {
+    "Code": "D6",
+    "Relates_To": "Release into a water body, except seas/oceans"
+  },
+  {
+    "Code": "D06",
+    "Relates_To": "Release into a water body, except seas/oceans"
+  },
+  {
+    "Code": "D7",
+    "Relates_To": "Release into seas/oceans, including sea-bed insertion"
+  },
+  {
+    "Code": "D07",
+    "Relates_To": "Release into seas/oceans, including sea-bed insertion"
+  },
+  {
+    "Code": "D8",
+    "Relates_To": "Biological treatment resulting in final compounds or mixtures which are discarded by any of the operations numbered D1 to D12"
+  },
+  {
+    "Code": "D08",
+    "Relates_To": "Biological treatment resulting in final compounds or mixtures which are discarded by any of the operations numbered D1 to D12"
+  },
+  {
+    "Code": "D9",
+    "Relates_To": "Physico-chemical treatment resulting in final compounds or mixtures which are discarded by any of the operations numbered D1 to D12, e.g. evaporation, drying, calcination"
+  },
+  {
+    "Code": "D09",
+    "Relates_To": "Physico-chemical treatment resulting in final compounds or mixtures which are discarded by any of the operations numbered D1 to D12, e.g. evaporation, drying, calcination"
+  },
+  {
+    "Code": "D10",
+    "Relates_To": "Incineration on land"
+  },
+  {
+    "Code": "D11",
+    "Relates_To": "Incineration at sea"
+  },
+  {
+    "Code": "D12",
+    "Relates_To": "Permanent storage, e.g. emplacement of containers in a mine"
+  },
+  {
+    "Code": "D13",
+    "Relates_To": "Blending or mixing prior to submission to any of the operations numbered D1 to D12"
+  },
+  {
+    "Code": "D14",
+    "Relates_To": "Repackaging prior to submission to any of the operations numbered D1 to D13"
+  },
+  {
+    "Code": "D15",
+    "Relates_To": "Storage pending any of the operations numbered D1 to D14 (excluding temporary storage, pending collection, on the site where it is produced)"
+  }
+]
