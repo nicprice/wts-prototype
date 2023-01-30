@@ -125,7 +125,7 @@ router.get('/ut5receiver', function (req, res) {
   req.session.data['container_cya'] = '4 X 5kg capacity sack or bag'
   req.session.data['sic_info'] = '47741: Retail sale of hearing aids'
   req.session.data['sic_code'] = '47741'
-  req.session.data['sic_description'] = 'Remediation activities and other waste management services'
+  req.session.data['sic_description'] = 'Retail sale of hearing aids'
   req.session.data['receiver_contact_name'] = 'Roger Anderson'
   req.session.data['receiver_contact_email'] = 'randerson@sampsoms.org'
   req.session.data['receiver_contact_phone'] = '079 4987 3028'
