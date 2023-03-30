@@ -1,0 +1,51 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Waste management
+      </h1>
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "R or D code"
+            },
+            value: {
+              text: data['recovery_info']
+            },
+            actions: {
+              items: [ {
+                href: "waste-management",
+                text: "Change",
+                visuallyHiddenText: "R or D code"
+              } ]
+            }
+          }
+        ]
+      }) }}
+
+      <form method="post">
+        {{ govukButton({
+          classes: "govuk-!-margin-top-5",
+          text: "Confirm"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

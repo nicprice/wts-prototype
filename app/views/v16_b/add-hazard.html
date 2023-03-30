@@ -1,0 +1,106 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: back_link
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Do you need to add another chemical or biological component?
+      </h1>
+
+      <!--  <table class="govuk-table">
+           <thead class="govuk-table__head">
+             <tr class="govuk-table__row">
+               <th scope="col" class="govuk-table__header app-custom-class">Component</th>
+               <th scope="col" class="govuk-table__header app-custom-class">Concentration</th>
+               <th scope="col" class="govuk-table__header app-custom-class">Hazard code</th>
+               <th scope="col" class="govuk-table__header app-custom-class"></th>
+             </tr>
+           </thead>
+
+           <tbody class="govuk-table__body">
+        {% for i in range(0, data['component_list'].length) -%}
+          <tr id="thisRow">
+            <td scope="row" class="govuk-table__header">{{ data['component_list'][i].component }}</td>
+            <td class="govuk-table__cell">{{ data['component_list'][i].concentration }}</td>
+            <td class="govuk-table__cell">{{ data['component_list'][i].hazard }}</td>
+            <td class="govuk-table__cell" onclick="setComponent(this)"><a href="">Change</a></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+      <script>
+        var item_number_in_list
+
+        function setComponent(tableCell) {
+          item_number_in_list = tableCell.parentNode.rowIndex -1
+          window.location.href = "hazard-component.html?item_number_in_list";
+        }
+      </script>-->
+
+      <form method="post">
+        {{ data['table_html'] | safe }}
+
+
+          {% if (data['nothing_chosen'] == 'true') %}
+            {{ govukRadios ({
+              classes: "govuk-radios--inline",
+              idPrefix: "add-hazard",
+              name: "add_hazard",
+              value: data['add_hazard'],
+              items: [
+                {
+                  value: "yes",
+                  text: "Yes"
+                },
+                {
+                  value: "no",
+                  text: "No"
+                }
+              ],
+              errorMessage: {
+                text: "Select Yes if you wish to add another component"
+              }
+            }) }}
+
+          {% else %}
+            {{ govukRadios ({
+              classes: "govuk-radios--inline",
+              idPrefix: "add-hazard",
+              name: "add_hazard",
+              value: data['add_hazard'],
+              items: [
+                {
+                  value: "yes",
+                  text: "Yes"
+                },
+                {
+                  value: "no",
+                  text: "No"
+                }
+              ]
+            }) }}
+          {% endif %}
+
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

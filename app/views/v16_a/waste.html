@@ -1,0 +1,81 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <form method="post">
+
+        <!-- if no EWC is entered show the error page -->
+        {% if data['ewc_provided'] == "false" %}
+          <div class="govuk-form-group govuk-form-group--error" style="display: inline-block">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--l" for="ewc">
+                Give the European Waste Catalogue (EWC) code of the waste
+              </label>
+            </h1>
+            <div id="ewc-hint" class="govuk-hint">
+              Six-digit code, e.g. 08 03 12 or 08 03 12*
+            </div>
+            <p id="ewc-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter a valid EWC code
+            </p>
+            <input class="govuk-input govuk-input--error govuk-input--width-10" id="ewc" name="ewc">
+
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button"  style="margin-left: 20px">
+              Check
+            </button>
+          </div>
+
+        {% else %}
+          <div style="display: inline-block">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--l" for="ewc">
+                Give the European Waste Catalogue (EWC) code of the waste
+              </label>
+            </h1>
+            <div id="ewc-hint" class="govuk-hint">
+              Six-digit code, e.g. 08 03 12 or 08 03 12*
+            </div>
+            <input class="govuk-input govuk-input--width-10" id="ewc" name="ewc" value="{{ data['ewc'] }}">
+
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button"  style="margin-left: 20px">
+              Check
+            </button>
+          </div>
+        {% endif %}
+
+        <p class="govuk-body">
+          <span class="govuk-!-font-weight-bold">Code description:</span> {{ data['ewc_description'] }}
+        </p>
+
+        {{ govukInput({
+          label: {
+            text: "Full description of the waste",
+            classes: "govuk-label--m"
+          },
+          hint: {
+           text: "This should include information needed to ensure the waste is handled safely. For example, bonded asbestos panels."
+          },
+          id: "waste-additional-info",
+          name: "waste_additional_info",
+          value: data['waste_additional_info']
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

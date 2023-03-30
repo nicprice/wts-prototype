@@ -1,0 +1,92 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Transportation details
+      </h1>
+
+      {% if data['transport_type'] == 'Road' %} <!-- if we have a registration number -->
+
+        {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+          rows: [
+          {
+            key: {
+              text: "Transportation type"
+            },
+            value: {
+              text: data['transport_type']
+            },
+            actions: {
+              items: [ {
+                href: "transportation",
+                text: "Change",
+                visuallyHiddenText: "transport type"
+              } ]
+            }
+          },
+
+          {
+            key: {
+              text: "Vehicle registration number"
+            },
+            value: {
+              text: data['vehicle_reg_number']
+            },
+            actions: {
+              items: [
+                {
+                  href: "transportation",
+                  text: "Change",
+                  visuallyHiddenText: "vehicle registration number"
+                }
+              ]
+            }
+          } ]
+        }) }}
+
+      {% else %} <!-- we don't have the reg number -->
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+          {
+            key: {
+              text: "Transportation type"
+            },
+            value: {
+              text: data['transport_type']
+            },
+            actions: {
+              items: [ {
+                href: "transportation",
+                text: "Change",
+                visuallyHiddenText: "transport type"
+              } ]
+            }
+          } ]
+        }) }}
+      {% endif %}
+
+      <form method="post">
+        {{ govukButton({
+          classes: "govuk-!-margin-top-5",
+          text: "Confirm transport details"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

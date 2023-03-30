@@ -1,0 +1,305 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: back_link
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <form method="post">
+        {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+        {% from "govuk/components/input/macro.njk" import govukInput %}
+
+        {% set hp4concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp4-concentration",
+            name: "hp4_concentration",
+            value: data['hp4_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp5concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp5-concentration",
+            name: "hp5_concentration",
+            value: data['hp5_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp6concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp6-concentration",
+            name: "hp6_concentration",
+            value: data['hp6_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp7concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp7-concentration",
+            name: "hp7_concentration",
+            value: data['hp7_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp8concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp8-concentration",
+            name: "hp8_concentration",
+            value: data['hp8_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp10concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp10-concentration",
+            name: "hp10_concentration",
+            value: data['hp10_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp11concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp11-concentration",
+            name: "hp11_concentration",
+            value: data['hp11_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp13concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp13-concentration",
+            name: "hp13_concentration",
+            value: data['hp13_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set hp14concentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "hp14-concentration",
+            name: "hp14_concentration",
+            value: data['hp14_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {% set popConcentration %}
+          {{ govukInput({
+            label: {
+              text: "Concentration"
+            },
+            classes: "govuk-input--width-2 govuk-!-margin-bottom-3",
+            id: "pop-concentration",
+            name: "pop_concentration",
+            value: data['pop_concentration'],
+            suffix: {
+              text: "%"
+            }
+          }) }}
+        {% endset %}
+
+        {{ govukCheckboxes({
+          idPrefix: "hazard_codes",
+          name: "hazard_codes",
+          fieldset: {
+            legend: {
+              text: "Select which hazard codes apply",
+              sPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          hint: {
+            text: "Select all codes that apply"
+          },
+          items: [
+            {
+              value: "HP1: Explosive",
+              text: "HP1: Explosive",
+              checked: checked("hazard_codes", "HP1: Explosive")
+            },
+            {
+              value: "HP2: Oxidising",
+              text: "HP2: Oxidising",
+              checked: checked("hazard_codes", "HP2: Oxidising")
+            },
+            {
+              value: "HP3: Flammable",
+              text: "HP3: Flammable",
+              checked: checked("hazard_codes", "HP3: Flammable")
+            },
+            {
+              value: "HP4: Irritant",
+              text: "HP4: Irritant",
+              checked: checked("hazard_codes", "HP4: Irritant"),
+              conditional: {
+                html: hp4concentration
+              }
+            },
+            {
+              value: "HP5: Harmful",
+              text: "HP5: Harmful",
+              checked: checked("hazard_codes", "HP5: Harmful"),
+              conditional: {
+                html: hp5concentration
+              }
+            },
+            {
+              value: "HP6: Toxic",
+              text: "HP6: Toxic",
+              checked: checked("hazard_codes", "HP6: Toxic"),
+              conditional: {
+                html: hp6concentration
+              }
+            },
+            {
+              value: "HP7: Carcinogenic",
+              text: "HP7: Carcinogenic",
+              checked: checked("hazard_codes", "HP7: Carcinogenic"),
+              conditional: {
+                html: hp7concentration
+              }
+            },
+            {
+              value: "HP8: Corrosive",
+              text: "HP8: Corrosive",
+              checked: checked("hazard_codes", "HP8: Corrosive"),
+              conditional: {
+                html: hp8concentration
+              }
+            },
+            {
+              value: "HP9: Infectious",
+              text: "HP9: Infectious",
+              checked: checked("hazard_codes", "HP9: Infectious")
+            } ,
+            {
+              value: "HP10: Toxic for reproduction",
+              text: "HP10: Toxic for reproduction",
+              checked: checked("hazard_codes", "HP10: Toxic for reproduction"),
+              conditional: {
+                html: hp10concentration
+              }
+            },
+            {
+              value: "HP11: Mutagenic",
+              text: "HP11: Mutagenic",
+              checked: checked("hazard_codes", "HP11: Mutagenic"),
+              conditional: {
+                html: hp11concentration
+              }
+            },
+            {
+              value: "HP12: Release of an acute toxic gas",
+              text: "HP12: Release of an acute toxic gas",
+              checked: checked("hazard_codes", "HP12: Release of an acute toxic gas")
+            },
+            {
+              value: "HP13: Sensitizing",
+              text: "HP13: Sensitizing",
+              checked: checked("hazard_codes", "HP13: Sensitizing"),
+              conditional: {
+                html: hp13concentration
+              }
+            },
+            {
+              value: "HP14: Ecotoxic",
+              text: "HP14: Ecotoxic",
+              checked: checked("hazard_codes", "HP14: Ecotoxic"),
+              conditional: {
+                html: hp14concentration
+              }
+            },
+            {
+              value: "HP15",
+              text: "HP15",
+              checked: checked("hazard_codes", "HP15")
+            },
+            {
+              value: "POPS",
+              text: "Persistent Organic Pollutants",
+              checked: checked("hazard_codes", "POPS"),
+              conditional: {
+                html: popConcentration
+              }
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "physical-form"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+        You have added one type of container
+      </h1>
+
+      <form method="post">
+        {{ data['container_table_html'] | safe }}
+
+        {{ govukInput({
+          label: {
+            text: "Describe the container the waste will be transported in",
+            classes: "govuk-label--s"
+          },
+          hint: {
+            text: "This should include information needed for the carrier to check they are picking up the correct waste. For example, 6 yard skip."
+          },
+          id: "container-type",
+          name: "container_type",
+          value: data['container_type']
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Number of containers"
+          },
+          classes: "govuk-input--width-3",
+          id: "container-quantity",
+          name: "container_quantity",
+          value: data['container_quantity']
+        }) }}
+
+        {{ govukRadios ({
+          fieldset: {
+            legend: {
+              text: "Do you need to add another type of container?",
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          classes: "govuk-radios--inline",
+          idPrefix: "add-container",
+          name: "add_container",
+          value: data['add_container'],
+          items: [
+            {
+              value: "yes",
+              text: "Yes"
+            },
+            {
+              value: "no",
+              text: "No"
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
