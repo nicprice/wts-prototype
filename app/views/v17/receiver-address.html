@@ -1,0 +1,79 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "receiver-contact"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form method="post">
+          <h1 class="govuk-heading-l">
+            Give the business address that will receive the waste
+          </h1>
+
+          <p>
+            {{ data['receiver_postcode'] }} <br>
+            <a href="receiver-contact">Change postcode</a>
+          </p>
+
+          {{ govukSelect ({
+            id: "receiver-full-address",
+            value: data['receiver_full_address'],
+            name: "receiver_full_address",
+            label: {
+              text: "Select an address:"
+            },
+            items: [
+              {
+                value: "",
+                text: "5 addresses found"
+              },
+              {
+                value: "2 Thornton Street, Milton Keynes, MK43 0WS",
+                text: "2 Thornton Street, Milton Keynes, MK43 0WS",
+                selected: data['receiver_full_address'] == "2 Thornton Street, Milton Keynes, MK43 0WS"
+              },
+              {
+                value: "4 Thornton Street, Milton Keynes, MK43 0WS",
+                text: "4 Thornton Street, Milton Keynes, MK43 0WS",
+                selected: data['receiver_full_address'] == "4 Thornton Street, Milton Keynes, MK43 0WS"
+              },
+              {
+                value: "6 Thornton Street, Milton Keynes, MK43 0WS",
+                text: "6 Thornton Street, Milton Keynes, MK43 0WS",
+                selected: data['receiver_full_address'] == "6 Thornton Street, Milton Keynes, MK43 0WS"
+              },
+              {
+                value: "8 Thornton Street, Milton Keynes, MK43 0WS",
+                text: "8 Thornton Street, Milton Keynes, MK43 0WS",
+                selected: data['receiver_full_address'] == "8 Thornton Street, Milton Keynes, MK43 0WS"
+              },
+              {
+                value: "10 Thornton Street, Milton Keynes, MK43 0WS",
+                text: "10 Thornton Street, Milton Keynes, MK43 0WS",
+                selected: data['receiver_full_address'] == "10 Thornton Street, Milton Keynes, MK43 0WS"
+              }
+            ]
+          }) }}
+
+          <p>
+            <a href="receiver-address-manual">I cannot find my address in the list</a>
+          </p>
+
+          {{ govukButton({
+            text: "Save and continue"
+          }) }}
+
+        </form>
+    </div>
+  </div>
+{% endblock %}

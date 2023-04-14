@@ -1,0 +1,130 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "weight"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+        Describe the chemical or biological component of the waste
+      </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <form method="post">
+        <!-- top row with labels -->
+        <div class="govuk-date-input" style="display: flex; flex-direction: row;">
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row; margin-bottom: -10px;">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="component1">
+                Component
+              </label>
+              <div id="component-hint" class="govuk-hint govuk-date-input__hint">
+                For example, Lead
+              </div>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-20" id="component1" name="component1" value="{{ data['component1'] }}">
+            </div>
+          </div>
+
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row; margin-bottom: -10px;">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="hazard-codes1">
+                Hazard codes
+              </label>
+              <div id="component-hint" class="govuk-hint govuk-date-input__hint">
+                All relevant codes
+              </div>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="hazard-codes1" name="hazard_codes1" value="{{ data['hazard_codes1'] }}">
+            </div>
+          </div>
+
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row; margin-bottom: -10px;">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="concentration1">
+                Concentration
+              </label>
+              <div class="govuk-input__wrapper  govuk-!-margin-top-7">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-3" id="concentration1" name="concentration1" value="{{ data['concentration1'] }}" >
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second row -->
+        <div class="govuk-date-input" style="display: flex; flex-direction: row;">
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row; margin-bottom: -10px;">
+            <div class="govuk-form-group">
+              <input class="govuk-input govuk-date-input__input govuk-input--width-20" id="component2" name="component2" value="{{ data['component2'] }}">
+            </div>
+          </div>
+
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row; margin-bottom: -10px;">
+            <div class="govuk-form-group">
+              <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="hazard-codes2" name="hazard_codes2" value="{{ data['hazard_codes2'] }}">
+            </div>
+          </div>
+
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row; margin-bottom: -10px;">
+            <div class="govuk-form-group">
+              <div class="govuk-input__wrapper">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-3" id="concentration2" name="concentration2" value="{{ data['concentration2'] }}" >
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third row -->
+        <div class="govuk-date-input" style="display: flex; flex-direction: row;">
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row;">
+            <div class="govuk-form-group">
+              <input class="govuk-input govuk-date-input__input govuk-input--width-20" id="component3" name="component3" value="{{ data['component3'] }}">
+            </div>
+          </div>
+
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row;">
+            <div class="govuk-form-group">
+              <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="hazard-codes3" name="hazard_codes3" value="{{ data['hazard_codes3'] }}">
+            </div>
+          </div>
+
+          <div class="govuk-date-input__item" style="display: flex; flex-direction: row;">
+            <div class="govuk-form-group">
+              <div class="govuk-input__wrapper">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-3" id="concentration3" name="concentration3" value="{{ data['concentration3'] }}" >
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{ govukButton({
+          text: "Add another",
+          classes: "govuk-button--secondary"
+        }) }}
+
+        <div class="govuk-!-padding-bottom-1"></div>
+
+        {{ govukButton({
+        classes: "govuk-!-margin-top-5",
+          text: "Continue"
+        }) }}
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

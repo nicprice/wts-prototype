@@ -1,0 +1,86 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: 'javascript:history.go(-1)'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <form method="post">
+        <h1 class="govuk-heading-l">
+          Give the details for the producer
+        </h1>
+
+        {{ data['producer_full_address_cya'] | safe }}
+        <p>
+          <a href="receiver-contact">Change address</a>
+        </p>
+
+
+        <h2 class="govuk-heading-m">Contact details</h2>
+
+        {{ govukInput({
+          label: {
+            text: 'Business name'
+          },
+          id: "producer-business",
+          name: "producer_business_name",
+          value: data['producer_business_name'],
+          autocomplete: "name"
+        }) }}
+
+
+        {{ govukInput({
+          label: {
+            text: 'Full name'
+          },
+          hint: {
+            text: "This should be the person who is responsible for producing the waste"
+          },
+          id: "producer-contact-name",
+          name: "producer_contact_name",
+          value: data['producer_contact_name'],
+          autocomplete: "name"
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: 'Email address'
+          },
+          id: "producer-contact-email",
+          name: "producer_contact_email",
+          value: data['producer_contact_email'],
+          autocomplete: "email"
+        }) }}
+
+        {{ govukInput({
+          label: {
+            text: "Phone number"
+          },
+          id: "producer-contact-phone",
+          name: "producer_contact_phone",
+          value: data['producer_contact_phone'],
+          type: "tel",
+          autocomplete: "tel",
+          classes: "govuk-input--width-20"
+        }) }}
+
+
+        {{ govukButton({
+          text: "Save and continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

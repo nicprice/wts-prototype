@@ -1,0 +1,51 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+        Where will the waste be moved from?
+      </h1>
+
+      <form method="post">
+        {{ govukRadios({
+          idPrefix: "pick-up-location",
+          name: "pick_up_location",
+          items: [
+            {
+              value: "LU5 4AX",
+              html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX<br />England",
+              checked: data['pick_up_location'] == "LU5 4AX"
+            },
+            {
+              value: "LU2 9NZ",
+              html: "1 Dean Street<br />Luton<br />LU2 9NZ<br />England",
+              checked: data['pick_up_location'] == "LU2 9NZ"
+            }
+          ]
+        }) }}
+
+        <input type="hidden" name="pick_up_location_confirmed" value="true">
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% set mainClasses = "govuk-main-wrapper--l" %}
+{% from "govuk/components/panel/macro.njk" import govukPanel %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      {{ govukPanel({
+        titleText: "Waste note successfully started",
+        html: "Your waste note ID is <br><strong>AAAA-4712</strong>"
+      }) }}
+
+      <p class="govuk-body">
+        We have sent a confirmation to dave@bagsinaflash.com.
+      </p>
+
+      <h2 class="govuk-heading-m">
+        What happens next
+      </h2>
+
+      <p class="govuk-body">
+        A notification will be sent to roger@Zathunicon.com and sanderson@sampsoms.org to let them know the waste note has been started.
+      </p>
+
+      <p class="govuk-body">
+        <a href="#" class="govuk-link">Return to homepage</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}

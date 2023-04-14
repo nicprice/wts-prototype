@@ -1,0 +1,129 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Check waste producer and location details
+      </h1>
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "Business name"
+            },
+            value: {
+              text: data['producer_business_name']
+            },
+            actions: {
+              items: [ {
+                href: "producer-business-name",
+                text: "Change",
+                visuallyHiddenText: "business name"
+              }]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: data['producer_full_address_cya']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "address"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Contact details"
+            },
+            value: {
+              html: data['producer_contact_cya']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "contact details"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "SIC code of business"
+            },
+            value: {
+              html: data['producer_business_sic']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "sic code"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "SIC code of waste production"
+            },
+            value: {
+              html: data['sic_info']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "sic code"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Pick up location"
+            },
+            value: {
+              html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX"
+            },
+            actions: {
+              items: [ {
+              href: "pick-up",
+              text: "Change",
+              visuallyHiddenText: "pick up location"
+              } ]
+            }
+          }
+        ]
+      }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+
+      <!-- continue after checking your answers to return to the tasklist -->
+      <form method="post">
+        {{ govukButton({
+          classes: "govuk-!-margin-top-5",
+          text: "Confirm details"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}
