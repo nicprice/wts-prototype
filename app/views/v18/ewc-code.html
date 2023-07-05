@@ -1,0 +1,77 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+Do you have a European Waste Catalogue (EWC) code?
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <form class="form" method="post">
+
+            <div class="govuk-form-group">
+
+                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <span class="govuk-caption-l">Waste codes and description</span>
+                    <h1 class="govuk-fieldset__heading">
+                        Do you have a European Waste Catalogue (EWC) code?
+                    </h1>
+                  </legend>
+
+                  <div id="contact-hint" class="govuk-hint">
+                    This can also be called a list of waste (LoW) code. For more help with these codes, <a class="govuk-link" href="https://www.gov.uk/government/publications/waste-classification-technical-guidance">see the waste classification technical guidance</a>.
+                  </div>
+                  
+                  <div class="govuk-radios" data-module="govuk-radios">
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="ec-code" name="ec-code" type="radio" value="Yes" data-aria-controls="conditional-contact">
+                      <label class="govuk-label govuk-radios__label" for="ec-code">
+                        Yes
+                      </label>
+                    </div>
+
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact" name="eccode">
+                      <div id="contact-hint" class="govuk-hint">
+                        Choose from the list or start typing
+                      </div>
+                      <div class="govuk-form-group">
+                        <div id="ewc-wastes-typeahead-container" data-default-value="{{ data['ewc-wastes-typeahead'] }}"></div>
+                      </div>
+                    </div>
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="ec-code" name="ec-code" type="radio" value="No" data-aria-controls="conditional-contact-2">
+                      <label class="govuk-label govuk-radios__label" for="ec-code">
+                        No
+                      </label>
+                    </div>
+
+                  </div>
+
+                </fieldset>
+
+            </div>
+
+            <div class="govuk-!-padding-bottom-6"></div>
+
+            <!----- BUTTONS ----->
+            <div class="govuk-button-group">
+                {{ govukButton({
+                  text: "Save and continue"
+                }) }}
+              
+                {{ govukButton({
+                  text: "Save and return to draft",
+                  classes: "govuk-button--secondary"
+                }) }}
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    {% endblock %}

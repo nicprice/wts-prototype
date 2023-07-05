@@ -1,0 +1,78 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+        What form does the waste take?
+      </h1>
+
+      <form method="post">
+        {{ govukRadios({
+          idPrefix: "physical-form",
+          name: "physical_form",
+          fieldset: {
+            legend: { }
+          },
+          items: [
+            {
+              value: "Gas",
+              text: "Gas",
+              checked: data['physical_form'] == "Gas"
+            },
+            {
+              value: "Liquid",
+              text: "Liquid",
+              checked: data['physical_form'] == "Liquid"
+            },
+            {
+              value: "Solid",
+              text: "Solid",
+              checked: data['physical_form'] == "Solid"
+            },
+            {
+              value: "Powder",
+              text: "Powder",
+              checked: data['physical_form'] == "Powder"
+            },
+            {
+              value: "Sludge",
+              text: "Sludge",
+              checked: data['physical_form'] == "Sludge"
+            },
+            {
+              divider: "or"
+            },
+            {
+              value: "Mixed",
+              text: "Mixed",
+              checked: data['physical_form'] == "Mixed"
+            }
+          ]
+        }) }}
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <!----- BUTTONS ----->
+        <div class="govuk-button-group">
+            {{ govukButton({
+            text: "Save and continue"
+            }) }}
+            
+            {{ govukButton({
+            text: "Save and return to draft",
+            classes: "govuk-button--secondary"
+            }) }}
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

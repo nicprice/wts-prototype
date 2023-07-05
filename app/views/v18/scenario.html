@@ -1,0 +1,46 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Usability testing scenario
+      </h1>
+
+      <p>
+        There is a skip load of soil excavated from a contaminated site which is found to contain lead and oil in
+        concentrations above the threshold for ecotoxic and carcinogenic meaning it is hazardous.
+      </p>
+      <p>
+        Producers’r’us (at 3 Cunnery Rd, Malvern Link, WR14 0UH) have provided you with the following waste details,
+        and asked you to take the waste to Disposals’r’us located at 6 Thornton Street, Milton Keynes, MK43 0WS.
+      </p>
+
+      <h2 class="govuk-heading-m">
+        Details
+      </h2>
+
+      <ul class="govuk-list">
+        <li>EWC code: 17 05 03* Soil and stones</li>
+        <li>SIC Code: 41201 Construction of commercial buildings</li>
+        <li>Description: contaminated soil from excavation of brownfield site</li>
+        <li>Quantity: 1000 kg</li>
+        <li>Physical form: solid</li>
+        <li>Container: 6-yard skip</li>
+        <li>Chem/biological composition:</li>
+        <ul class="govuk-list--bullet">
+          <li>Lead Oxide 2% HP14 ecotoxic</li>
+          <li>TPH (total petroleum hydrocarbons) 3% HP7 Carcinogenic</li>
+        </ul>
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.go(-1)'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <form method="post">
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+                <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+                <h1 class="govuk-fieldset__heading">
+                  Where was the waste created?
+                </h1>
+
+              </legend>
+              <div id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-1" name="waste-source" type="checkbox" value="residential">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                    Residential property
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste-source" type="checkbox" value="commercial">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Commercial premises
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste-source" type="checkbox" value="construction">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Construction site
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-4" name="waste-source" type="checkbox" value="medical">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-4">
+                        Medical or research facility
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-5" name="waste-source" type="checkbox" value="education">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-5">
+                        Education premises
+                    </label>
+                </div>
+
+                <div class="govuk-!-padding-bottom-4"></div>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="waste-other">
+                      Other
+                    </label>
+                    <input class="govuk-input" id="waste-other" name="waste-other" type="text">
+                  </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <!----- BUTTONS ----->
+        <div class="govuk-button-group">
+            {{ govukButton({
+            text: "Save and continue"
+            }) }}
+            
+            {{ govukButton({
+            text: "Save and return to draft",
+            classes: "govuk-button--secondary"
+            }) }}
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

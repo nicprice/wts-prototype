@@ -1,0 +1,114 @@
+
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  Move waste in the UK
+{% endblock %}
+
+{% block beforeContent%}
+{{ govukBackLink({
+  text: 'Back',
+  href: 'javascript:history.go(-1)'
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-!-padding-bottom-2"></div>
+
+    <div>
+      <h1 class="govuk-heading-l">
+        Move waste in the UK
+      </h1>
+      <div class="div-line"></div>
+    </div>
+
+    <h2 class="govuk-heading-m">
+      New waste movements
+    </h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="start-waste-note.html">Tell us about some waste</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Continue a draft export</a>
+      </li>
+    </ul>  
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <h2 class="govuk-heading-m">
+      In progress waste movements
+    </h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Add details to a waste movements</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">View in-progress waste movements</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Reject some waste</a>
+      </li>
+    </ul>  
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <h2 class="govuk-heading-m">
+      Multiple collection tickets
+    </h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Create a new multiple collection round</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">View existing collection rounds</a>
+      </li>
+    </ul>  
+      
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <h2 class="govuk-heading-m">
+      Completed waste movements
+    </h2>
+      <a class="govuk-link govuk-body" href="#">View and check all of your submitted waste</a>
+
+
+    <div class="govuk-!-margin-bottom-8"></div>
+    <div class="govuk-!-padding-bottom-8"></div>
+
+
+    <div>
+       <h1 class="govuk-heading-l">
+        Templates and guidance
+      </h1>
+      <div class="div-line"></div>
+    </div>
+
+    <h2 class="govuk-heading-m">
+      Templates
+    </h2>
+      <p class="govuk-body">Create a template if most of the details stay the same</p>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Create a template</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Manage templates</a>
+        </li>
+      </ul>  
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+      <h2 class="govuk-heading-m">
+        How to submit multiple movements using a CSV
+      </h2>
+        <p class="govuk-body">Find out how you can <a class="govuk-link" href="#">submit multiple waste movements at the same time using a CSV file</a>. </p>
+
+  </div>
+</div>
+
+{% endblock %}

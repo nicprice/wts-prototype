@@ -1,0 +1,45 @@
+
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">Waste organisation name</span>
+    <h1 class="govuk-heading-xl">
+      John Smith
+    </h1>
+
+    <div>
+      <h2 class="govuk-heading-l">
+        Move, export or import waste
+      </h2>
+
+      <div class="div-line"></div>
+    </div>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link govuk-!-font-weight-bold" href="home-move-waste-uk">Move waste in the UK</a>
+        <p class="govuk-body">Move and track hazardous and non-hazardous waste for processing and recovery around the UK.</p>
+      </li>
+
+      <li>
+        <a class="govuk-link govuk-!-font-weight-bold" href="home-export-waste.html">Export waste from the UK</a>
+        <p class="govuk-body">Notify environmental agency officers if you plan to export green list waste.</p>
+      </li>
+
+      <li>
+        <a class="govuk-link govuk-!-font-weight-bold" href="">Import waste to the UK</a></li>
+        <p class="govuk-body">Notify environmental agency officers if you’ve received imported green list waste.</p>
+    </ul>
+
+  </div>
+</div>
+
+{% endblock %}

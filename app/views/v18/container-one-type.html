@@ -1,0 +1,61 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.go(-1)'
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <h1 class="govuk-heading-l">
+      <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+      Describe the type ofcontainer the waste will be transported in
+    </h1>
+
+    <form method="post">
+      {{ govukInput({
+        hint: {
+          text: "This should include information needed for the carrier to check they are picking up the correct waste. For example, 6 yard skip."
+        },
+        id: "container-type",
+        name: "container_type",
+        value: data['container_type']
+      }) }}
+
+      {{ govukInput({
+        label: {
+          text: "How many of these containers are there?"
+        },
+        classes: "govuk-input--width-3",
+        id: "container-quantity",
+        name: "container_quantity",
+        value: data['container_quantity']
+      }) }}
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+      <!----- BUTTONS ----->
+      <div class="govuk-button-group">
+          {{ govukButton({
+          text: "Save and continue"
+          }) }}
+          
+          {{ govukButton({
+          text: "Save and return to draft",
+          classes: "govuk-button--secondary"
+          }) }}
+      </div>
+
+    </form>
+
+  </div>
+</div>
+{% endblock %}

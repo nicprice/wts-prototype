@@ -42,6 +42,13 @@ router.use('/v15', require('./views/v15/_routes'))
 router.use('/v16_a', require('./views/v16_a/_routes'))
 router.use('/v16_b', require('./views/v16_b/_routes'))
 router.use('/v17', require('./views/v17/_routes'))
+//router.use('/v18', require('./views/v18/_routes'))
+
+// V18 routes
+router.use('/v18/', (req, res, next) => {
+  //req.session.data["entered-criteria"] = undefined;
+  return require(`./views/v18/_routes`)(req, res, next);
+})
 
 
 module.exports = router
