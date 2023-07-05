@@ -1,0 +1,85 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Describe the waste</h1>
+
+        {% if data['have_waste'] == "true" %}
+          <p class="govuk-body">EWC code: {{ data['ewc'] }}</p>
+          <p class="govuk-body">Description: {{ data['ewc_description'] }}</p>
+
+          {% if data['waste-additional-info'] %}
+            <p class="govuk-body">Additional details: {{ data['waste_additional_info'] }}</p>
+          {% endif %}
+
+          <form method="post">
+            {{ govukButton({
+              classes: "govuk-!-margin-top-5",
+              text: "Confirm"
+            }) }}
+          </form>
+
+          <p class="govuk-body govuk-!-margin-top-9"><a href="reset-ewc">Change the EWC code</a></p>
+
+        {% else %}
+
+          <form method="post">
+            {% if data['ewc_provided'] == "false" %}
+              {{ govukInput({
+                label: {
+                  text: "What is the EWC code for the waste"
+                },
+                hint: {
+                  text: "Six digit code e.g. 08 03 12"
+                },
+                errorMessage: {
+                  text: "Enter a valid EWC code"
+                },
+                classes: "govuk-input--width-10",
+                id: "ewc",
+                name: "ewc"
+              }) }}
+
+            {% else %}
+              {{ govukInput({
+                label: {
+                  text: "What is the EWC code for the waste"
+                },
+                hint: {
+                  text: "Six digit code e.g. 08 03 12"
+                },
+                classes: "govuk-input--width-10",
+                id: "ewc",
+                name: "ewc"
+              }) }}
+
+            {% endif %}
+
+            {{ govukDetails({
+              summaryText: "Help with EWC codes",
+              text: "Before you tell us about a waste movement, you must..."
+            }) }}
+
+            {{ govukButton({
+              text: "Continue"
+            }) }}
+          </form>
+
+        {% endif %}
+    </div>
+  </div>
+{% endblock %}

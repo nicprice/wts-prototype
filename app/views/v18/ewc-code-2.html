@@ -1,0 +1,50 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+Enter an EWC code
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+            <form class="form" method="post">
+
+              <div class="govuk-form-group">
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Enter an EWC code
+                      </h1>
+                    </legend>
+                    <div id="contact-hint" class="govuk-hint">
+                      Choose from the list or start typing
+                    </div>
+                    <div id="ewc-wastes-typeahead-container" data-default-value="">
+                    </div>
+
+                  </fieldset>
+                </div>
+
+            </div>
+
+            <!----- BUTTONS ----->
+            <div class="govuk-button-group">
+                {{ govukButton({
+                  text: "Save and continue"
+                }) }}
+              
+                {{ govukButton({
+                  text: "Save and return to draft",
+                  classes: "govuk-button--secondary"
+                }) }}
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    {% endblock %}

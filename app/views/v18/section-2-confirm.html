@@ -1,0 +1,419 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Check the waste note details
+        <span class="win-id govuk-caption-l">ID: AAAA-4712</span>
+      </h1>
+
+      <h2 class="govuk-heading-m">
+        What is the waste
+      </h2>
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "EWC code"
+            },
+            value: {
+              html: data['ewc'] + '<br />' + data['ewc_description']
+            },
+            actions: {
+              items: [
+                {
+                  href: "change-ewc-code",
+                  text: "Change",
+                  visuallyHiddenText: "EWC code"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Waste description"
+            },
+            value: {
+              text: data['waste_additional_info']
+            },
+            actions: {
+              items: [
+                {
+                  href: "change-additional-details",
+                  text: "Change",
+                  visuallyHiddenText: "more information"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Physical form"
+            },
+            value: {
+              html: data['physical_form_cya']
+            },
+            actions: {
+              items: [
+                {
+                  href: "physical-form",
+                  text: "Change",
+                  visuallyHiddenText: "physical form"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Weight"
+            },
+            value: {
+              html: data['weight_cya']
+            },
+            actions: {
+              items: [
+                {
+                  href: "weight",
+                  text: "Change",
+                  visuallyHiddenText: "weight"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Container"
+            },
+            value: {
+              html: data['container_cya']
+            },
+            actions: {
+              items: [
+                {
+                  href: "container",
+                  text: "Change",
+                  visuallyHiddenText: "container details"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Handling needs"
+            },
+            value: {
+              html: data['handling_needs']
+            },
+            actions: {
+              items: [
+                {
+                  href: "handling-requirements",
+                  text: "Change",
+                  visuallyHiddenText: "handling requirements"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Contains POPS"
+            },
+            value: {
+              html: data['pops']
+            },
+            actions: {
+              items: [
+                {
+                  href: "pops",
+                  text: "Change",
+                  visuallyHiddenText: "contains pops"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+      <h2 class="govuk-heading-m">
+        Where is the waste
+      </h2>
+        {{ govukSummaryList({
+          classes: "govuk-!-margin-bottom-1",
+          rows: [
+          {
+            key: {
+              text: "Pick up location"
+            },
+            value: {
+              html: "Unit 15<br />Berryedge Park<br />Dunstable<br />LU5 4AX"
+            },
+            actions: {
+              items: [ {
+                href: "pick-up",
+                text: "Change",
+                visuallyHiddenText: "pick up location"
+              } ]
+            }
+          } ]
+        }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+      <h2 class="govuk-heading-m">
+        Who produced the waste
+      </h2>
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "Business name"
+            },
+            value: {
+              text: data['producer_business_name']
+            },
+            actions: {
+              items: [ {
+                href: "producer-business-name",
+                text: "Change",
+                visuallyHiddenText: "business name"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: data['producer_full_address_cya']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "address"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Contact details"
+            },
+            value: {
+              html: data['producer_contact_cya']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "contact details"
+              } ]
+            }
+          },
+            {
+            key: {
+              text: "SIC code"
+            },
+            value: {
+              html: data['producer_business_sic']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "sic code"
+              } ]
+            }
+          }
+        ]
+      }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+      <h2 class="govuk-heading-m">
+        Where will the waste go
+      </h2>
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "Business name"
+            },
+            value: {
+              text: data['receiver_business_name']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "business name"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: data['receiver_full_address_cya']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "address"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Contact details"
+            },
+            value: {
+              html: data['receiver_contact_cya']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "contact details"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Permit number"
+            },
+            value: {
+              html: data['receiver_permit']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "contact details"
+            } ]
+          }
+        } ]
+      }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+      <h2 class="govuk-heading-m">
+        Carrier contact information
+      </h2>
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "Business name"
+            },
+            value: {
+              text: data['carrier_business_name']
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "business name"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: '<p class="govuk-body">4 Fortune Close<br>Riverside Business Park<br>Northampton<br>NN3 9HZ<br>England</p>'
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "address"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Contact details"
+            },
+            value: {
+              html: '<p class="govuk-body">owen@boxes.com</p><p class="govuk-body">01604 216468</p>'
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "contact details"
+              } ]
+            }
+          },
+          {
+            key: {
+              text: "Carrier registration number"
+            },
+            value: {
+              html: '<p class="govuk-body">4712945</p>'
+            },
+            actions: {
+              items: [ {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "carrier registration number"
+              } ]
+            }
+          }
+        ]
+      }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+      <h2 class="govuk-heading-l">
+        Declaration
+      </h2>
+
+      <p class="govuk-body">
+        By continuing, you confirm that:
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the information you have given is correct</li>
+          <li>the carrier is registered or exempt</li>
+        </ul>
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l">
+
+      {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+      {{ govukWarningText({
+        text: "It is an offence to enter false or misleading information.",
+        iconFallbackText: "Warning"
+      }) }}
+
+
+      <div class="govuk-button-group">
+        <button class="govuk-button" data-module="govuk-button" onclick="location.href='note-started-confirmation'">
+          Confirm
+        </button>
+        <button class="govuk-button govuk-button--warning" data-module="govuk-button" onclick="location.href='note-started-rejection'">
+          Reject
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock %}

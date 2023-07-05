@@ -1,0 +1,99 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Carrier contact details
+      </h1>
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [{
+          key: {
+            text: "Business name"
+          },
+          value: {
+            text: data['carrier_business_name']
+          },
+          actions: {
+            items: [ {
+              href: "#",
+              text: "Change",
+              visuallyHiddenText: "business name"
+            } ]
+          }
+        },
+
+        {
+          key: {
+            text: "Address"
+          },
+          value: {
+            html: '<p class="govuk-body">4 Fortune Close<br>Riverside Business Park<br>Northampton<br>NN3 9HZ<br>England</p>'
+          },
+          actions: {
+            items: [ {
+              href: "#",
+              text: "Change",
+              visuallyHiddenText: "address"
+            } ]
+          }
+        },
+
+        {
+          key: {
+            text: "Contact details"
+          },
+          value: {
+            html: '<p class="govuk-body">owen@boxes.com</p><p class="govuk-body">01604 216468</p>'
+          },
+          actions: {
+            items: [ {
+              href: "#",
+              text: "Change",
+              visuallyHiddenText: "contact details"
+            } ]
+          }
+        },
+
+        {
+          key: {
+            text: "Carrier registration number"
+          },
+          value: {
+            html: '<p class="govuk-body">4712945</p>'
+          },
+          actions: {
+            items: [ {
+              href: "#",
+              text: "Change",
+              visuallyHiddenText: "carrier registration number"
+            } ]
+          }
+
+        } ]
+      }) }}
+
+      <form method="post">
+        {{ govukButton({
+          classes: "govuk-!-margin-top-4",
+          text: "Confirm carrier details"
+        }) }}
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

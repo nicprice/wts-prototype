@@ -1,0 +1,41 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-m">
+        Declaration
+      </h1>
+
+      <p class="govuk-body">
+        By submitting these details you certify that:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the information given is complete and correct</li>
+        <li>the carrier is registered or exempt and is advised of the appropriate precautionary measures</li>
+        <li>the waste is packaged and labelled correctly</li>
+        <li>I have fulfilled my duty to apply the waste hierachy as required by Regulation 12 of the Waste (England and Wales) Regulations 2011</li>
+      </ul>
+
+      <form method="post">
+        {{ govukButton({
+          classes: "govuk-!-margin-top-4",
+          text: "Confirm"
+        }) }}
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

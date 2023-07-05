@@ -1,0 +1,60 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.go(-1)'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+        What is the actual volume of waste?
+      </h1>
+      <p class="govuk-body">Only provide the net volume. Do not include the weight of the container or vehicle. If the volume might change, <a class="govuk-link" href="volume-estimate-cubic.html">enter an actual weight instead</a>.</p>
+
+      <div class="govuk-!-padding-bottom-3"></div>
+
+      <form method="post">
+
+        {{ govukInput({
+          label: {
+            text: "Enter volume, in cubic metres"
+          },
+          classes: "govuk-input--width-5",
+          id: "volume",
+          name: "volume",
+          value: data['volume-actual-m3'],
+          suffix: {
+            text: "m³"
+          },
+          spellcheck: false
+        }) }}
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <!----- BUTTONS ----->
+        <div class="govuk-button-group">
+           {{ govukButton({
+           text: "Save and continue"
+           }) }}
+            
+           {{ govukButton({
+           text: "Save and return to draft",
+           classes: "govuk-button--secondary"
+           }) }}
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

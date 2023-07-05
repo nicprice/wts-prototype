@@ -1,0 +1,160 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "waste-info-note"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        Check waste details
+      </h1>
+
+      {{ govukSummaryList({
+        classes: "govuk-!-margin-bottom-1",
+        rows: [
+          {
+            key: {
+              text: "EWC code"
+            },
+            value: {
+              html: data['ewc'] + '<br />' + data['ewc_description']
+            },
+            actions: {
+              items: [
+                {
+                  href: "change-ewc-code",
+                  text: "Change",
+                  visuallyHiddenText: "EWC code"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Waste description"
+            },
+            value: {
+              text: data['waste_additional_info']
+            },
+            actions: {
+              items: [
+                {
+                  href: "change-additional-details",
+                  text: "Change",
+                  visuallyHiddenText: "more information"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Physical form"
+            },
+            value: {
+              html: data['physical_form_cya']
+            },
+            actions: {
+              items: [
+                {
+                  href: "physical-form",
+                  text: "Change",
+                  visuallyHiddenText: "physical form"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Weight"
+            },
+            value: {
+              html: data['weight_cya']
+            },
+            actions: {
+              items: [
+                {
+                  href: "weight",
+                  text: "Change",
+                  visuallyHiddenText: "weight"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Container"
+            },
+            value: {
+              html: data['container_cya']
+            },
+            actions: {
+              items: [
+                {
+                  href: "container",
+                  text: "Change",
+                  visuallyHiddenText: "container details"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Handling needs"
+            },
+            value: {
+              html: data['handling_needs']
+            },
+            actions: {
+              items: [
+                {
+                  href: "handling-requirements",
+                  text: "Change",
+                  visuallyHiddenText: "handling requirements"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Contains POPS"
+            },
+            value: {
+              html: data['pops']
+            },
+            actions: {
+              items: [
+                {
+                  href: "pops",
+                  text: "Change",
+                  visuallyHiddenText: "contains pops"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+      <hr class="govuk-section-break govuk-section-break--l">
+
+      {{ data['component_table_html'] | safe }}
+
+      <!-- continue after checking your answers to return to the tasklist -->
+      <form method="post">
+        {{ govukButton({
+          classes: "govuk-!-margin-top-5",
+          text: "Confirm waste details"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

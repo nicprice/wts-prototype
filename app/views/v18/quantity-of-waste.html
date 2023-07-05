@@ -1,0 +1,81 @@
+{% extends "../layout.html" %}
+
+{% block pageTitle %}
+  {{serviceName}}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.go(-1)'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">
+        <span class="win-id govuk-caption-l">EWC code: {{ data['ewc'] }}</span>
+        How will you enter the quantity of waste?
+      </h1>
+      <p class="govuk-body">If the quantity might change, enter an estimate.</p>
+
+      <form method="post">
+        {{ govukRadios({
+          idPrefix: "waste-amount",
+          name: "waste-amount",
+          fieldset: {
+            legend: { }
+          },
+          items: [
+            {
+              value: "actual-tonnes",
+              text: "Actual weight (tonnes)",
+              checked: data['waste-amount'] == "actual-tonnes"
+            },
+            {
+              value: "estimated-tonnes",
+              text: "Estimated weight (tonnes)",
+              checked: data['waste-amount'] == "estimated-tonnes"
+            },
+            {
+              value: "actual-cubic",
+              text: "Actual volume (cubic metres)",
+              checked: data['waste-amount'] == "actual-cubic"
+            },
+            {
+              value: "estimated-cubic",
+              text: "Estimated volume (cubic metres)",
+              checked: data['waste-amount'] == "estimated-cubic"
+            },
+            {
+              divider: "or"
+            },
+            {
+              value: "unknown",
+              text: "I don’t know the amount yet",
+              checked: data['waste-amount'] == "unknown"
+            }
+          ]
+        }) }}
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <!----- BUTTONS ----->
+        <div class="govuk-button-group">
+            {{ govukButton({
+            text: "Save and continue"
+            }) }}
+            
+            {{ govukButton({
+            text: "Save and return to draft",
+            classes: "govuk-button--secondary"
+            }) }}
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
