@@ -14,6 +14,10 @@
   <div class="govuk-grid-column-two-thirds">
         <form method="post" action="">
 
+        <!--
+
+        We can use nunjucks to show the length of the carrierArray
+
         {% if data['code-count'] == '0' %}
         <h1 class="govuk-heading-l">
         You have added 1 EWC code
@@ -36,6 +40,13 @@
         </h1>
 
         {% endif %}
+
+-->
+
+        <h1 class="govuk-heading-l">
+        You have added {{ codes.length }} EWC codes
+        </h1>
+
 
 <!---------- SUMMARY LIST ---------->
 
@@ -104,7 +115,7 @@
             {{ govukButton({
             text: "Save and continue"
             }) }}
-            
+
             {{ govukButton({
             text: "Save and return to draft",
             classes: "govuk-button--secondary"
